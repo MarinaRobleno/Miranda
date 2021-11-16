@@ -1,0 +1,24 @@
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+body section, article {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  border: 2px solid blue;
+  height: 70px;
+}
+.header .hamburger-button {
+  border: 2px solid red;
+}
+
+/*# sourceMappingURL=home.css.map */
