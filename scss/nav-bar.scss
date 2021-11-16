@@ -51,16 +51,29 @@
             padding: 10px;
             background: #c4bdaf no-repeat fixed center;
             color: #FFFFFF;
+            padding-right: 40px;
           }
           .space{
               height: 10px;
           }
         }
-        .drop-down-contact{
+        .contact-and-icon{
+          display: inline-flex;
+          padding: 0px 20px;
+
+          .drop-down-contact{
             color: #40505c;
-            padding: 5px;
+            padding: 5px 20px;
+            font-size: 18px;
 
         }
+          .drop-down-icon{
+            width: 30px;
+            height: 30px;
+            margin-bottom: 10px;
+          }
+        }
+
         .drop-down-box--visible {
           display: block;
           animation: displayMenu 200ms linear;
