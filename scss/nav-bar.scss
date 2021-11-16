@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../Font-Awesome-Pro/Font\ Awesome\ Pro\ Brands.ttf") format
+      ("truetype"),
+    url("../Font-Awesome-Pro/Font\ Awesome\ Pro\ Light.ttf") format ("truetype"),
+    url("../Font-Awesome-Pro/Font\ Awesome\ Pro\ Regular.ttf") format
+      ("truetype"),
+    url("../Font-Awesome-Pro/Font\ Awesome\ Pro\ Solid.ttf") format ("truetype");
+}
+
+.header {
+    margin: none;
+    .header-bar {
+        display: inline-flex;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        min-height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        .hotel-miranda-title {
+          width:50%;
+          padding-top: 12px;
+          margin-left: 30px;
+          letter-spacing: 2.6px;
+          color: #111111;
+          font-size: 20px;
+          opacity: 1;
+          }
+        .hamburger-button {
+          margin-right: 25px;
+          cursor: pointer;
+          }
+    }
+    .drop-down-box {
+        display: none;
+        width: 90%;
+        background-color: #f7f9fa;
+        position: absolute;
+        right: 0px;
+        z-index: 0;
+        text-align: right;
+      
+        .drop-down-list {
+          list-style-type: none;
+          align-items: center;
+          width: 100%;
+          padding: 15px 20px;
+      
+          .drop-down-element {
+            padding: 10px;
+            background: #c4bdaf no-repeat fixed center;
+            color: #FFFFFF;
+          }
+          .space{
+              height: 10px;
+          }
+        }
+        .drop-down-contact{
+            color: #40505c;
+            padding: 5px;
+
+        }
+        .drop-down-box--visible {
+          display: block;
+          animation: displayMenu 200ms linear;
+        }
+      
+        @keyframes displayMenu {
+          0% {
+            top: 0;
+          }
+          100% {
+            top: 70px;
+          }
+        }
+    }
+}
