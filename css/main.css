@@ -407,7 +407,7 @@ template {
   height: 30px;
   margin-bottom: 10px;
 }
-.header .drop-down-box .drop-down-box--visible {
+.header .drop-down-box--visible {
   display: block;
   animation: displayMenu 200ms linear;
 }
@@ -422,12 +422,15 @@ template {
 
 .home-main {
   height: 300px;
-  background-color: #e9e9e9;
+  background-image: url("../Images/pexels-ricardo-ortiz-6263634.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
   width: 100%;
 }
 .home-main .home-main-text {
   width: 55%;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-left: 30px;
   font-size: 30px;
   font-family: "Old Standard TT", serif;
@@ -495,6 +498,7 @@ template {
   display: inline-flex;
   font-weight: 700;
   font-size: 12px;
+  letter-spacing: 1.5px;
   color: #777777;
 }
 .section-header .since {
@@ -526,6 +530,8 @@ template {
   border: none;
 }
 .services-grid .service-card .service-icon {
+  color: #bead8e;
+  font-size: 45px;
   width: 40px;
   height: 40px;
 }
@@ -538,6 +544,9 @@ template {
 }
 .services-grid .service-card:hover {
   box-shadow: 5px 14px 24px #bead8e;
+}
+.services-grid .service-card #luxury-icon {
+  opacity: 0.8;
 }
 .services-grid .service-card-negative {
   background: #bead8e 0% 0% no-repeat padding-box;
@@ -667,6 +676,65 @@ template {
   padding-right: 70px;
   font-size: 12px;
   color: #777777;
+}
+
+.feedback-container {
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+}
+.feedback-container .feedback-card {
+  text-align: center;
+  max-width: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 14px 24px #BEAD8E33;
+}
+.feedback-container .feedback-card .feedback-image {
+  object-fit: cover;
+  width: 30%;
+  margin: 20px 30px;
+  border-radius: 70%;
+}
+.feedback-container .feedback-card .feedback-check {
+  display: none;
+  position: absolute;
+  left: 30%;
+  margin-left: -8px;
+  border-radius: 50%;
+}
+.feedback-container .feedback-card .feedback-name {
+  margin-bottom: 5px;
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  letter-spacing: -0.9px;
+  color: #222222;
+}
+.feedback-container .feedback-card .feedback-job {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+}
+.feedback-container .feedback-card .feedback-description {
+  padding: 0 20px 20px;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #777777;
+}
+
+.testimonials-extra-panel {
+  margin-top: 10px;
+  padding: 20px 15px;
+  font-family: "Old Standard TT", serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  letter-spacing: -1.4px;
+  background-image: url("../Images/pexels-photo-2507007.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*!

@@ -71,7 +71,7 @@
           }
         }
 
-        .drop-down-box--visible {
+        &--visible {
           display: block;
           animation: displayMenu 200ms linear;
         }
