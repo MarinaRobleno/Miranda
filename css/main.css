@@ -598,7 +598,7 @@ template {
 
 .paragraph-and-button {
   display: flex;
-  margin: 0 15px;
+  margin: 0 15px 30px;
 }
 .paragraph-and-button .action-paragraph {
   width: 90%;
@@ -614,6 +614,49 @@ template {
   background: black 0% 0% no-repeat padding-box;
   border: none;
   cursor: pointer;
+}
+
+.tour-advantages {
+  margin: 0 15px;
+}
+.tour-advantages .individual-advantage {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.tour-advantages .individual-advantage .advantage-icon {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px #BEAD8E33;
+}
+.tour-advantages .individual-advantage #negative-icon {
+  background: #BEAD8E 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 16px #BEAD8E33;
+}
+.tour-advantages .individual-advantage .advantage-text-container {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.tour-advantages .individual-advantage .advantage-text-container .advantage-title {
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-family: "Old Standard TT", serif;
+  letter-spacing: -0.9px;
+  color: #111111;
+}
+.tour-advantages .individual-advantage .advantage-text-container .advantage-paragraph {
+  font-size: 12px;
+  line-height: 15px;
+  color: #777777;
+}
+
+.border-bottom-advantages {
+  margin: auto;
+  width: 80%;
+  height: 7px;
+  background: #BEAD8E 0% 0% no-repeat padding-box;
 }
 
 /*!
