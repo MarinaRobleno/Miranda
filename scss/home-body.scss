@@ -141,10 +141,14 @@
 }
 
 .section-body{
-    padding: 0px 15px 25px;
+    padding: 0px 15px 15px;
     text-align: left;
     font-family: "Old Standard TT", serif;
     font-size: 26px;
+}
+
+.room-type-section{
+    margin-top: 20px;
 }
 
 .room-type-nav{
@@ -157,12 +161,38 @@
         font-size: 10px;
         padding: 15px 10px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: none;
+        border: 2px solid white;
         color: #B6B6B6;
         &:hover{
             color: black;
             border: 2px solid #E6E6E6;
         }
     }
+}
 
+.room-type-image-grid{
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    background-color: grey;
+}
+
+.paragraph-and-button{
+    display: flex;
+    margin: 0 15px;
+    .action-paragraph{
+        width:90%;
+        color: #A08D69
+    }
+    .action-button{
+        color: white;
+        font-weight: 700;
+        font-size: 8px;
+        letter-spacing: 1.8px;
+        width: 125px;
+        height: 35px;
+        background: black 0% 0% no-repeat padding-box;
+        border: none;
+        cursor: pointer;
+    }
 }
