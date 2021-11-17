@@ -24,11 +24,11 @@
 <body>
   <header class='header'>
     <div class='header-bar'>
-        <div class='hotel-miranda-title'>HOTEL MIRANDA</div>
-        <svg id='hamburger-button' class='hamburger-button' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="30" height="30"
-            viewBox="0 0 172 172"
-            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#4b5c6b"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></svg>
+        <div class='hotel-miranda-title'>
+          <div class='hotel-bold'>HOTEL</div> 
+          <div>MIRANDA</div>
+        </div>
+        <i class="fa fa-bars hamburger-button" id='hamburger-button' aria-hidden="true"></i>    
     </div>
     <div id='drop-down-box' class='drop-down-box'>
         <ul class='drop-down-list'>
@@ -88,7 +88,7 @@
       <div class='since'>SINCE</div>
       <div class='year'>1994</div>
     </div>
-    <div class='section-body'>
+    <div class='section-body-center'>
       Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond.
     </div>
     <div class='services-grid'>
@@ -109,6 +109,17 @@
         <p class='service-card-text'>CITY GUIDE</p>
       </button>
     </div>
+
+  <section class='room-type-section'>
+    <div class='section-header'>ROOM TYPE</div>
+    <div class='section-body'>Inspired Lodging</div>
+    <div class='room-type-nav'>
+      <button class='room-type-nav-button'>Luxury</button>
+      <button class='room-type-nav-button'>Family</button>
+      <button class='room-type-nav-button'>Double Bed</button>
+      <button class='room-type-nav-button'>Relax</button>
+    </div>
+    <div class='room-type-image-grid'></div>
   </section>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
