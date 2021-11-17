@@ -47,6 +47,8 @@
             background: #c4bdaf no-repeat fixed center;
             color: #FFFFFF;
             padding-right: 40px;
+            font-family: 'Archivo Narrow', sans-serif;
+            letter-spacing: 1.5px;
           }
           .space{
               height: 10px;
@@ -62,6 +64,8 @@
             color: #40505c;
             padding: 5px 20px;
             font-size: 18px;
+            font-family: 'Archivo Narrow', sans-serif;
+            letter-spacing: 1.5px;
 
         }
           .drop-down-icon{
@@ -73,16 +77,16 @@
 
         &--visible {
           display: block;
-          animation: displayMenu 200ms linear;
+          //animation: displayMenu 200ms linear;
         }
       
-        @keyframes displayMenu {
+        /*@keyframes displayMenu {
           0% {
             top: 0;
           }
           100% {
             top: 70px;
           }
-        }
+        }*/
     }
 }

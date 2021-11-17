@@ -375,6 +375,14 @@ template {
   right: 0px;
   z-index: 0;
   text-align: right;
+  /*@keyframes displayMenu {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 70px;
+    }
+  }*/
 }
 .header .drop-down-box .drop-down-list {
   list-style-type: none;
@@ -387,6 +395,8 @@ template {
   background: #c4bdaf no-repeat fixed center;
   color: #FFFFFF;
   padding-right: 40px;
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1.5px;
 }
 .header .drop-down-box .drop-down-list .space {
   height: 10px;
@@ -401,6 +411,8 @@ template {
   color: #40505c;
   padding: 5px 20px;
   font-size: 18px;
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1.5px;
 }
 .header .drop-down-box .contact-and-icon .drop-down-icon {
   width: 30px;
@@ -409,15 +421,6 @@ template {
 }
 .header .drop-down-box--visible {
   display: block;
-  animation: displayMenu 200ms linear;
-}
-@keyframes displayMenu {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 70px;
-  }
 }
 
 .home-main {
@@ -3871,12 +3874,14 @@ footer .copyright {
   font-size: 8px;
   letter-spacing: 1px;
   color: #FFFFFF;
-  padding: 20px;
+  padding: 17px;
 }
 footer .logo-line {
   margin-right: 3px;
+  text-align: center;
 }
 footer .logo-line .copy-icon {
+  width: 37px;
   font-size: 12px;
   padding: 13px;
   color: white;
