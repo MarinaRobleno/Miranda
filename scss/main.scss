@@ -1,7 +1,7 @@
 @import 'normalize';
 @import 'nav-bar';
 @import 'home-body';
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Condensed&display=swap');
+@import 'font-awesome';
 
 html, *{
     box-sizing: border-box;
@@ -10,11 +10,10 @@ html, *{
 
 html{
     background: #ffffff 0% 0% no-repeat padding-box;
-    font-family: 'Archivo', sans-serif;
 }
 
 body{
     width: 100%;
     margin: 0 auto;
-    font-family: 'Font Awesome';
+    font-family: 'Archivo', sans-serif;
 }
