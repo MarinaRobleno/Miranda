@@ -92,7 +92,7 @@
   padding: 0px 10px 25px;
   text-align: center;
   font-family: "Old Standard TT", serif;
-  font-size: 26px;
+  font-size: 28px;
 }
 .services-grid {
   text-align: center;
@@ -153,7 +153,7 @@
     padding: 0px 15px 15px;
     text-align: left;
     font-family: "Old Standard TT", serif;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .room-type-section{
@@ -306,7 +306,7 @@
 }
 
 .testimonials-extra-panel{
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 20px 15px;
   font-family: "Old Standard TT", serif;
   font-size: 25px;
@@ -317,4 +317,76 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.section-body-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .section-body{
+    padding-bottom: 0;
+  }
+  .blog-button-line{
+    margin-right: 15px;
+    .blog-button{
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 2px solid #e0e0e0;
+      .blog-arrow-left{
+        font-size: 10px;
+      }
+      .blog-arrow-right{
+        font-size: 10px;
+        color: white;
+      }
+    }
+    #golden-button{
+      border-color: #BEAD8E;
+      background: #BEAD8E 0% 0% no-repeat padding-box;
+      box-shadow: 0px 14px 24px #BEAD8E4D;
+    }
+  }
+
+}
+
+.post-container{
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  .post{
+    text-align: left;
+    max-width: 50%;
+    .post-image{
+      max-width: 100%;
+      display: block;
+    }
+    .post-data{
+      display: flex;
+      justify-content: space-around;
+      font-size: 10px;
+      .post-card-data{
+        display: flex;
+        align-items: center;
+        color: #777777;
+        .news-feeds-icon{
+          padding: 4px;
+        }
+      }
+    }
+    .post-title{
+      font-family: "Old Standard TT", serif;
+      font-size: 14px;
+      line-height: 19px;
+      color: #111111;
+      margin: 5px 0;
+    }
+    .post-description{
+      font-size: 12px;
+      line-height: 17px;
+      color: #777777;
+      margin: 5px 0;
+    }
+  }
 }
