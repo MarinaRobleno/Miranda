@@ -352,9 +352,9 @@
 }
 
 .post-container{
-  margin: 1px;
   display: flex;
   justify-content: center;
+  margin: 20px 0;
   .post{
     text-align: left;
     max-width: 50%;
@@ -381,12 +381,14 @@
       line-height: 19px;
       color: #111111;
       margin: 5px 0;
+      padding: 0 7px;
     }
     .post-description{
       font-size: 12px;
       line-height: 17px;
       color: #777777;
       margin: 5px 0;
+      padding: 0 7px;
     }
   }
 }

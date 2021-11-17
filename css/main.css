@@ -769,9 +769,9 @@ template {
 }
 
 .post-container {
-  margin: 1px;
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 .post-container .post {
   text-align: left;
@@ -800,12 +800,14 @@ template {
   line-height: 19px;
   color: #111111;
   margin: 5px 0;
+  padding: 0 7px;
 }
 .post-container .post .post-description {
   font-size: 12px;
   line-height: 17px;
   color: #777777;
   margin: 5px 0;
+  padding: 0 7px;
 }
 
 /*!
@@ -3853,6 +3855,35 @@ template {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 100px;
+  background: #111111 0% 0% no-repeat padding-box;
+}
+footer .copyright {
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  padding: 20px;
+}
+footer .logo-line {
+  margin-right: 3px;
+}
+footer .logo-line .copy-icon {
+  font-size: 12px;
+  padding: 13px;
+  color: white;
+  background: #212121 0% 0% no-repeat padding-box;
+}
+footer .logo-line #twitter {
+  background: #BEAD8E 0% 0% no-repeat padding-box;
 }
 
 html, * {
