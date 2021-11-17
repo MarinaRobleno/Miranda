@@ -394,6 +394,8 @@ template {
 .header .drop-down-box .contact-and-icon {
   display: inline-flex;
   padding: 0px 20px;
+  font-size: 30px;
+  color: #40505c;
 }
 .header .drop-down-box .contact-and-icon .drop-down-contact {
   color: #40505c;
@@ -657,6 +659,14 @@ template {
   width: 80%;
   height: 7px;
   background: #BEAD8E 0% 0% no-repeat padding-box;
+}
+
+.take-a-tour-paragraph {
+  margin: 0 15px 20px;
+  text-align: justify;
+  padding-right: 70px;
+  font-size: 12px;
+  color: #777777;
 }
 
 /*!
