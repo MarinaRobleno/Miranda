@@ -603,11 +603,46 @@ template {
   border: 2px solid #E6E6E6;
 }
 
-.room-type-image-grid {
+.room-type-grid {
+  display: grid;
+  grid-template-columns: auto auto;
   width: 100%;
   height: 400px;
   margin: 20px 0;
-  background-color: grey;
+}
+.room-type-grid .room-type-grid-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 150px 15px 15px;
+}
+.room-type-grid .room-type-grid-item .room-type-grid-data {
+  display: flex;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+}
+.room-type-grid .room-type-grid-item .room-type-grid-data .grid-icon {
+  padding-right: 5px;
+}
+.room-type-grid .room-type-grid-item .room-type-grid-title {
+  font-size: 18px;
+  font-family: "Old Standard TT", serif;
+}
+.room-type-grid #room-type-1 {
+  background-image: url("../Images/pexels-max-vakhtbovych-6394711.jpg");
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.room-type-grid #room-type-2 {
+  background-image: url("../Images/pexels-quark-studio-2507014.jpg");
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.room-type-grid #room-type-3 {
+  background-image: url("../Images/pexels-cottonbro-6466490 (1).jpg");
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .paragraph-and-button {
@@ -750,6 +785,8 @@ template {
 }
 .section-body-container .blog-button-line {
   margin-right: 15px;
+  align-content: center;
+  text-align: center;
 }
 .section-body-container .blog-button-line .blog-button {
   width: 40px;
@@ -3871,13 +3908,13 @@ footer {
 }
 footer .copyright {
   font-weight: 700;
-  font-size: 8px;
+  font-size: 7.5px;
   letter-spacing: 1px;
   color: #FFFFFF;
-  padding: 17px;
+  padding-left: 15px;
 }
 footer .logo-line {
-  margin-right: 3px;
+  padding-right: 12px;
   text-align: center;
 }
 footer .logo-line .copy-icon {
