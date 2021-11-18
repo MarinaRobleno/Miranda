@@ -4026,6 +4026,7 @@ footer .logo-line #twitter {
   width: 170px;
   height: 170px;
   background: #292929 0% 0% no-repeat padding-box;
+  box-shadow: none;
 }
 .facilities-section #features-grid .features-card .features-icon-row {
   display: flex;
@@ -4063,6 +4064,44 @@ footer .logo-line #twitter {
   line-height: 13px;
   color: #D4D4D4;
   font-size: 9px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-container .counter-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  min-width: 280px;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0px 14px 24px #b8b8b81a;
+}
+.counter-container .counter-card .counter-icon {
+  padding: 20px;
+  color: #BEAD8E;
+  font-size: 30px;
+}
+.counter-container .counter-card .count-and-text {
+  padding: 20px;
+  text-align: center;
+}
+.counter-container .counter-card .count-and-text .counter-number {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+}
+.counter-container .counter-card .count-and-text .counter-text {
+  color: #777777;
+  font-size: 12px;
+}
+.counter-container .counter-card .counter-arrow {
+  padding: 20px;
+  color: #DCDCDC;
+  font-size: 25px;
 }
 
 html, * {
