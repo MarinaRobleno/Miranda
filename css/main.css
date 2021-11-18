@@ -648,10 +648,12 @@ template {
 .paragraph-and-button {
   display: flex;
   margin: 0 15px 30px;
+  align-items: center;
 }
 .paragraph-and-button .action-paragraph {
   width: 90%;
   color: #A08D69;
+  line-height: 23px;
 }
 .paragraph-and-button .action-button {
   color: white;
@@ -673,14 +675,24 @@ template {
   display: flex;
   align-items: center;
 }
-.tour-advantages .individual-advantage .advantage-icon {
+.tour-advantages .individual-advantage .advantage-icon-frame {
+  text-align: center;
   width: 70px;
   height: 70px;
-  padding: 10px;
+  min-width: 70px;
+  min-height: 70px;
   border-radius: 50%;
   box-shadow: 0px 8px 16px #BEAD8E33;
 }
-.tour-advantages .individual-advantage #negative-icon {
+.tour-advantages .individual-advantage .advantage-icon-frame .advantage-icon {
+  padding: 12px 0;
+  font-size: 46px;
+  color: #BEAD8E;
+}
+.tour-advantages .individual-advantage .advantage-icon-frame #negative-icon {
+  color: white;
+}
+.tour-advantages .individual-advantage #negative-frame {
   background: #BEAD8E 0% 0% no-repeat padding-box;
   box-shadow: 0px 8px 16px #BEAD8E33;
 }
@@ -696,16 +708,60 @@ template {
   color: #111111;
 }
 .tour-advantages .individual-advantage .advantage-text-container .advantage-paragraph {
-  font-size: 12px;
-  line-height: 15px;
+  text-align: justify;
+  font-size: 10px;
+  line-height: 17px;
   color: #777777;
 }
 
 .border-bottom-advantages {
   margin: auto;
+  margin-bottom: 20px;
   width: 80%;
   height: 7px;
   background: #BEAD8E 0% 0% no-repeat padding-box;
+}
+
+.carousel-section {
+  background-color: grey;
+  justify-content: center;
+  height: 280px;
+}
+.carousel-section .carousel-container {
+  width: 100%;
+}
+.carousel-section .carousel-detail-box {
+  width: 45%;
+  height: 170px;
+  padding: 15px;
+  margin: 40px;
+  background-color: black;
+  color: #BEAD8E;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-header .carousel-detail-box-icon {
+  font-size: 20px;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-header .carousel-detail-box-counter {
+  font-size: 8px;
+  font-weight: 700;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-title {
+  padding-top: 15px;
+  color: white;
+  font-family: "Old Standard TT", serif;
+  font-size: 18px;
+  letter-spacing: -0.8;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-description {
+  padding-top: 15px;
+  line-height: 12px;
+  color: #D4D4D4;
+  font-size: 9px;
 }
 
 .take-a-tour-paragraph {
@@ -731,7 +787,7 @@ template {
   object-fit: cover;
   width: 30%;
   margin: 20px 30px;
-  border-radius: 70%;
+  border-radius: 50%;
 }
 .feedback-container .feedback-card .feedback-check {
   display: none;
@@ -785,7 +841,6 @@ template {
 }
 .section-body-container .blog-button-line {
   margin-right: 15px;
-  align-content: center;
   text-align: center;
 }
 .section-body-container .blog-button-line .blog-button {
@@ -3905,12 +3960,12 @@ footer {
   width: 100%;
   height: 100px;
   background: #111111 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
 }
 footer .copyright {
   font-weight: 700;
   font-size: 7.5px;
   letter-spacing: 1px;
-  color: #FFFFFF;
   padding-left: 15px;
 }
 footer .logo-line {
@@ -3921,7 +3976,6 @@ footer .logo-line .copy-icon {
   width: 37px;
   font-size: 12px;
   padding: 13px;
-  color: white;
   background: #212121 0% 0% no-repeat padding-box;
 }
 footer .logo-line #twitter {

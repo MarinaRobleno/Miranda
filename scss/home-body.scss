@@ -226,9 +226,11 @@
 .paragraph-and-button{
     display: flex;
     margin: 0 15px 30px;
+    align-items: center;
     .action-paragraph{
         width:90%;
-        color: #A08D69
+        color: #A08D69;
+        line-height: 23px;
     }
     .action-button{
         color: white;
@@ -249,20 +251,27 @@
         margin: 15px 0;
         display: flex;
         align-items: center;
-
-        .advantage-icon{
-            width: 70px;
-            height: 70px;
-            padding: 10px;
-            border-radius: 50%;
-            box-shadow: 0px 8px 16px #BEAD8E33;
+        .advantage-icon-frame{
+          text-align: center;
+          width: 70px;
+          height: 70px;
+          min-width: 70px;
+          min-height: 70px;
+          border-radius: 50%;
+          box-shadow: 0px 8px 16px #BEAD8E33;
+          .advantage-icon{
+            padding: 12px 0;
+            font-size: 46px;
+            color: #BEAD8E;
+          }
+          #negative-icon{
+            color: white; 
+          }
         }
-
-        #negative-icon{
-            background: #BEAD8E 0% 0% no-repeat padding-box;
-            box-shadow: 0px 8px 16px #BEAD8E33;
+        #negative-frame{
+          background: #BEAD8E 0% 0% no-repeat padding-box;
+          box-shadow: 0px 8px 16px #BEAD8E33;
         }
-
         .advantage-text-container{
             margin-left: 15px;
             margin-bottom: 15px;
@@ -274,8 +283,9 @@
                 color: #111111;
             }
             .advantage-paragraph{
-                font-size: 12px;
-                line-height: 15px;
+                text-align: justify;
+                font-size: 10px;
+                line-height: 17px;
                 color: #777777;
             }
         }
@@ -284,9 +294,54 @@
 
 .border-bottom-advantages{
     margin: auto;
+    margin-bottom: 20px;
     width: 80%;
     height: 7px;
     background: #BEAD8E 0% 0% no-repeat padding-box;
+}
+
+.carousel-section{
+  background-color: grey;
+  justify-content: center;
+  height: 280px;
+  .carousel-container{
+    width: 100%;
+
+  }
+  .carousel-detail-box{
+    width: 45%;
+    height: 170px;
+    padding: 15px;
+    margin: 40px;
+    background-color: black;
+    color: #BEAD8E;
+    .carousel-detail-box-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .carousel-detail-box-icon{
+        font-size: 20px;
+      }
+      .carousel-detail-box-counter{
+        font-size: 8px;
+        font-weight: 700;
+      }
+    }
+    .carousel-detail-box-title{
+      padding-top: 15px;
+      color: white;
+      font-family: "Old Standard TT", serif;
+      font-size: 18px;
+      letter-spacing: -0.8;
+    }
+    .carousel-detail-box-description{
+      padding-top: 15px;
+      line-height: 12px;
+      color: #D4D4D4;
+      font-size: 9px;
+    }
+  }
+
 }
 
 .take-a-tour-paragraph{
@@ -310,7 +365,7 @@
       object-fit: cover;
       width:30%;
       margin: 20px 30px;
-      border-radius: 70%;
+      border-radius: 50%;
     }
     .feedback-check{
       display: none;
@@ -365,7 +420,6 @@
   }
   .blog-button-line{
     margin-right: 15px;
-    align-content: center;
     text-align: center;
     .blog-button{
       width: 40px;
@@ -387,7 +441,6 @@
       box-shadow: 0px 14px 24px #BEAD8E4D;
     }
   }
-
 }
 
 .post-container{
