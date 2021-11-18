@@ -16,10 +16,63 @@
 }
 
 .room-list-section{
+    margin: 20px 0;
+    color: #222222;
     .room-list-card{
         .room-list-image{
             max-width: 100%;
         }
+        .room-icon-bar{
+            max-width: 50%;
+            margin-left: 15px;
+            display: flex;
+            justify-content: space-between;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 8px 16px #8A8A8A0A;
+            .room-icon-bar-icon{
 
+            }
+        }
+        .room-list-card-content{
+            display: flex;
+            margin: 10px 5px;
+            .room-list-card-information{
+                width: 70%;
+                margin: 20px 5px 10px;
+                .room-list-card-title{
+                    margin-bottom: 10px;
+                    font-family: 'Old Standard TT', sans-serif;
+                    font-size: 18px;
+                }
+                .room-list-card-text{
+                    color: #777777;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            .room-list-card-booking{
+                text-align: center;
+                margin-right: 5px;
+                .room-list-card-price{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 25px;
+                    .room-list-price-number{
+                        font-size: 25px;
+                        font-weight: 700;
+                        color: #BEAD8E;
+                    }
+                    .room-list-price-night{
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #BEAD8E;
+                    }
+                }
+                .room-list-card-booking-text{
+                    font-weight: 700;
+                    color: #BDBDBD;
+                }
+            }
+        }
     }
 }
