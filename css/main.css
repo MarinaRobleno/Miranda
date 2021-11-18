@@ -465,25 +465,36 @@ template {
 }
 
 .book-panel {
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
 }
 .book-panel .check-in-line-panel {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
   height: 70px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 14px 24px #8b8b8b0f;
   margin: 0px 20px 10px;
 }
 .book-panel .check-in-line-panel .check-in-panel {
-  margin: 0 20px;
   display: inline-block;
   font-weight: 700;
   font-size: 10px;
   padding-bottom: 40px;
   padding-left: 20px;
-  border-left: 0.1px solid #bead8e;
   color: #777777;
+}
+.book-panel .check-in-line-panel .check-in-panel .check-in-input {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid #777777;
+  padding: 5px 0;
+}
+.book-panel .check-in-line-panel .check-in-panel .check-in-input:focus {
+  outline: none;
+  border-color: #bead8e;
 }
 .book-panel .book-button {
   color: white;
@@ -735,7 +746,8 @@ template {
   height: 170px;
   padding: 15px;
   margin: 40px;
-  background-color: black;
+  background: #111111 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 32px #11111133;
   color: #BEAD8E;
 }
 .carousel-section .carousel-detail-box .carousel-detail-box-header {
@@ -759,7 +771,7 @@ template {
 }
 .carousel-section .carousel-detail-box .carousel-detail-box-description {
   padding-top: 15px;
-  line-height: 12px;
+  line-height: 13px;
   color: #D4D4D4;
   font-size: 9px;
 }
