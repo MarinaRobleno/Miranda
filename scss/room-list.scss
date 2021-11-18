@@ -1,0 +1,25 @@
+.ultimate-main{
+    height: 150px;
+    background-image: url('../Images/pexels-cottonbro-5379062.jpg');
+    color: white;
+    .ultimate-header{
+        display: block;
+        font-size: 10px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    .ultimate-main-text{
+        width: 65%;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+}
+
+.room-list-section{
+    .room-list-card{
+        .room-list-image{
+            max-width: 100%;
+        }
+
+    }
+}
