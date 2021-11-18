@@ -527,6 +527,7 @@ template {
   text-align: center;
   font-family: "Old Standard TT", serif;
   font-size: 28px;
+  letter-spacing: -2.16px;
 }
 
 .services-grid {
@@ -589,6 +590,7 @@ template {
   text-align: left;
   font-family: "Old Standard TT", serif;
   font-size: 28px;
+  letter-spacing: -2.16px;
 }
 
 .room-type-section {
@@ -3992,6 +3994,75 @@ footer .logo-line .copy-icon {
 }
 footer .logo-line #twitter {
   background: #BEAD8E 0% 0% no-repeat padding-box;
+}
+
+.about-us-video {
+  background-color: grey;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.facilities-section {
+  background: #222222 0% 0% no-repeat padding-box;
+  text-align: center;
+  margin: 20px 0;
+}
+.facilities-section #facilities {
+  padding-top: 20px;
+  font-size: 10px;
+  letter-spacing: 2.8px;
+  color: #C2C2C2;
+}
+.facilities-section #core-features {
+  color: white;
+  font-size: 35px;
+}
+.facilities-section #features-grid {
+  grid-gap: 10px 10px;
+  padding-bottom: 20px;
+}
+.facilities-section #features-grid .features-card {
+  width: 170px;
+  height: 170px;
+  background: #292929 0% 0% no-repeat padding-box;
+}
+.facilities-section #features-grid .features-card .features-icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+.facilities-section #features-grid .features-card .features-icon-row .features-icon {
+  font-size: 35px;
+  color: #BEAD8E;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+.facilities-section #features-grid .features-card .features-icon-row .features-number {
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: -12px;
+  padding: 0;
+  letter-spacing: 0px;
+  color: #222222;
+}
+.facilities-section #features-grid .features-card .features-title {
+  padding: 0 10px;
+  text-align: left;
+  padding-top: 15px;
+  color: white;
+  font-family: "Old Standard TT", serif;
+  font-size: 18px;
+  letter-spacing: -0.8;
+}
+.facilities-section #features-grid .features-card .features-description {
+  padding: 0 10px;
+  text-align: left;
+  padding-top: 15px;
+  line-height: 13px;
+  color: #D4D4D4;
+  font-size: 9px;
 }
 
 html, * {
