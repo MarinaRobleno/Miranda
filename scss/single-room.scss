@@ -1,0 +1,98 @@
+.single-room-section{
+    width: 100%;
+    .room-background{
+        background-image: url('../Images/pexels-photo-1457845.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        .single-room-name-price{
+            display: flex;
+            width: 75%;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            background-color: white;
+            .single-room-name{
+                font-family: 'Old Standard TT', sans-serif;
+            }
+            .single-room-price{
+                display: flex;
+                margin-bottom: 15px;
+                .single-room-price-number{
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #BEAD8E;
+                }
+                .single-room-price-night{
+                    font-size: 10px;
+                    font-weight: 700;
+                    color: #BEAD8E;
+                }
+            }
+        }
+    }
+    
+}
+
+.check-availability-container { 
+    margin: 15px 0;
+    width: 100%;
+    max-width: 100%;
+	.check-availability-header { 
+        margin-left: 25px;
+        font-weight: 700;
+        font-size: 12px;
+	}
+
+	.check-availability-form-container { 
+        display: flex;
+        justify-content: space-between;
+
+		.check-availability-check-in-container { 
+            margin: 10px;
+            color: #222222;
+			.check-in-header { 
+                margin-bottom: 5px;
+                font-weight: 700;
+                font-size: 10px;
+			}
+
+			.check-in-input { 
+                font-size: 10px;
+                text-align: left;
+                padding: 10px 30px 10px 10px;
+                letter-spacing: 0px;
+                color: #777777;
+                border: none;
+                background: #F8F8F8 0% 0% no-repeat padding-box;
+			}
+		}
+	}
+	.check-availability-description { 
+        font-size: 10px;
+        margin: 10px;
+        color: #777777;
+        
+	}
+}
+.center{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .check-availability-button{
+        width: 60%;
+        text-align: center;
+        padding: 17px;
+        letter-spacing: 1.8px;
+        font-size: 10px;
+        font-weight: 700;
+        color: #FFFFFF;
+        border: none;
+        background: #BEAD8E 0% 0% no-repeat padding-box;
+    }
+}
+
