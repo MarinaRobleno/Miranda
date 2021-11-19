@@ -72,7 +72,7 @@
 	}
 	.check-availability-description { 
         font-size: 10px;
-        margin: 10px;
+        margin: 15px;
         color: #777777;
         
 	}
@@ -95,4 +95,61 @@
         background: #BEAD8E 0% 0% no-repeat padding-box;
     }
 }
+.single-room-common-title { 
+    font-family: 'Old Standard TT', sans-serif;
+    padding-bottom: 5px;
+    
+}
+.divisor{
+    width: 100%;
+    height: 0.5px;
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    margin-bottom: 5px;
+}
+.single-room-amenities { 
+    margin: 15px 15px 0;
 
+
+	.single-room-amenities-container { 
+        display: flex;
+        max-height: 120px;
+        font-size: 12px;
+		.amenities-list { 
+            list-style: none;
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            flex-wrap: wrap;
+			.amenities-individual { 
+                display: flex;
+                align-items: center;
+
+                .amenities-individual-icon{
+                    padding:5px;
+                }
+
+				.amenities-individual-name { 
+                    font-weight: 700;
+                    padding-right: 5px;
+                    color: #777777;
+				}
+			}
+		}
+	}
+}
+
+.cancellation-section { 
+    margin: 25px 15px;
+	.cancellation-text { 
+        color: #777777;
+        font-size: 11px;
+	}
+
+
+}
+.location { 
+    margin: 10px 0;
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+}
