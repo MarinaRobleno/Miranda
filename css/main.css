@@ -615,6 +615,10 @@ template {
   cursor: pointer;
 }
 
+.arrow-down-section {
+  display: none;
+}
+
 .section-header {
   margin: 10px 15px;
   display: inline-flex;
@@ -691,6 +695,9 @@ template {
 }
 .services-grid .service-card-negative:hover {
   box-shadow: 5px 14px 24px #bead8e;
+}
+.services-grid #bbq-party {
+  display: none;
 }
 
 .section-body {
@@ -1031,6 +1038,7 @@ template {
   .home-main {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 700px;
     margin-top: 120px;
     padding: 0 14%;
@@ -1070,45 +1078,126 @@ template {
     width: 200px;
     height: 50px;
   }
-  .home-main .home-main-container .full-screen-main-image {
-    display: none;
-  }
   .home-main .full-screen-main-image {
     display: block;
-    width: 700px;
+    max-width: 700px;
     height: 700px;
     object-fit: cover;
   }
-}
-.book-panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  width: 60%;
-  margin: 0 auto;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 14px 24px #8b8b8b0f;
-}
-.book-panel .check-in-line-panel {
-  box-shadow: none;
-}
-.book-panel .check-in-line-panel .check-in-panel {
-  font-size: 16px;
-  padding-bottom: 0;
-  padding-left: 30px;
-}
-.book-panel .check-in-line-panel .check-in-panel .check-in-input {
-  width: 240px;
-  padding: 5px 0;
-  color: #bead8e;
-}
-.book-panel .book-button {
-  font-size: 24px;
-  width: 250px;
-  height: 60px;
-}
 
+  .book-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 60%;
+    margin: 0 auto;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #8b8b8b0f;
+  }
+  .book-panel .check-in-line-panel {
+    box-shadow: none;
+  }
+  .book-panel .check-in-line-panel .check-in-panel {
+    font-size: 16px;
+    padding-bottom: 0;
+    padding-left: 30px;
+  }
+  .book-panel .check-in-line-panel .check-in-panel .check-in-input {
+    width: 240px;
+    padding: 5px 0;
+    color: #bead8e;
+  }
+  .book-panel .book-button {
+    font-size: 24px;
+    width: 250px;
+    height: 60px;
+  }
+
+  .arrow-down-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 110px 0;
+  }
+  .arrow-down-section .arrow-down-external {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #E6E6E680;
+    background: #22222200 0% 0% no-repeat padding-box;
+  }
+  .arrow-down-section .arrow-down-external .arrow-down-internal {
+    padding-top: 25px;
+    font-size: 16px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    background: #BEAD8E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #BEAD8E4D;
+    border-radius: 50%;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20%;
+  }
+  .services-section .section-header {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+
+  .section-body-center {
+    margin: 0 5%;
+    padding: 0px;
+    font-size: 80px;
+    letter-spacing: -2.4px;
+  }
+
+  .services-grid {
+    display: flex;
+    justify-content: space-around;
+  }
+  .services-grid .service-card {
+    width: 200px;
+    height: 200px;
+  }
+  .services-grid .service-card .service-icon {
+    font-size: 60px;
+    width: 70px;
+    height: 60px;
+  }
+  .services-grid .service-card .service-card-text {
+    font-size: 12px;
+  }
+  .services-grid .service-card-negative {
+    width: 200px;
+    height: 200px;
+  }
+  .services-grid .service-card-negative .service-icon {
+    width: 70px;
+    height: 60px;
+  }
+  .services-grid .service-card-negative .service-card-text-negative {
+    font-size: 12px;
+  }
+  .services-grid #bbq-party {
+    display: block;
+  }
+  .services-grid .second-height {
+    margin-top: 100px;
+  }
+  .services-grid .third-height {
+    margin-top: 200px;
+  }
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

@@ -92,6 +92,10 @@
   }
 }
 
+.arrow-down-section{
+  display: none;
+}
+
 .section-header {
   margin: 10px 15px;
   display: inline-flex;
@@ -165,6 +169,9 @@
     &:hover {
       box-shadow: 5px 14px 24px #bead8e;
     }
+  }
+  #bbq-party{
+    display: none;
   }
 }
 
@@ -510,6 +517,7 @@
 .home-main{
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 700px;
   margin-top: 120px;
   padding: 0 14%;
@@ -551,18 +559,15 @@
         height: 50px;
       }
     }
-    .full-screen-main-image{
-      display: none;
-    }
   }
   .full-screen-main-image{
     display: block;
-    width: 700px;
+    max-width: 700px;
     height: 700px;
     object-fit: cover;
   }
 }
-}
+
 
 .book-panel {
   display: flex;
@@ -591,4 +596,89 @@
     width: 250px;
     height: 60px
   }
+}
+
+.arrow-down-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 110px 0;
+  .arrow-down-external{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #E6E6E680;
+    background: #22222200 0% 0% no-repeat padding-box;
+    .arrow-down-internal{
+      padding-top: 25px;
+      font-size: 16px;
+      color: white;
+      width: 60px;
+      height: 60px;
+      background: #BEAD8E 0% 0% no-repeat padding-box;
+      box-shadow: 0px 14px 24px #BEAD8E4D;
+      border-radius: 50%;
+    }
+  }
+}
+
+.services-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20%;
+  .section-header {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+
+}
+.section-body-center {
+  margin: 0 5%;
+  padding: 0px;
+  font-size: 80px;
+  letter-spacing: -2.4px;
+}
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  .service-card {
+    width: 200px;
+    height: 200px;
+    .service-icon {
+      font-size: 60px;
+      width: 70px;
+      height: 60px;
+    }
+    .service-card-text {
+      font-size: 12px;
+    }
+  }
+  .service-card-negative {
+    width: 200px;
+    height: 200px;
+    .service-icon {
+      width: 70px;
+      height: 60px;
+    }
+    .service-card-text-negative {
+      font-size: 12px;
+    }
+  }
+  #bbq-party{
+    display: block;
+  }
+  .second-height{
+    margin-top: 100px;
+  }
+  .third-height{
+    margin-top: 200px;
+  }
+}
+
 }
