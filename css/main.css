@@ -1047,6 +1047,10 @@ template {
   padding: 0 7px;
 }
 
+.subscribe-section {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
   .home-main {
     display: flex;
@@ -1445,6 +1449,7 @@ template {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 118px;
     width: 100%;
     height: 729px;
     font-size: 80px;
@@ -1485,6 +1490,146 @@ template {
   .testimonials-section .testimonials-extra-panel .extra-panel-button-line #main-button-2 {
     background: none;
     border: 2px solid #e0e0e0;
+    cursor: pointer;
+  }
+
+  .blog-section {
+    margin: 0 20% 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .blog-section .section-body-container .blog-button-line {
+    margin: 0;
+    padding: 0;
+  }
+  .blog-section .section-body-container .blog-button-line .blog-button {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .blog-section .section-body-container .blog-button-line .blog-button .blog-arrow-left {
+    font-size: 18px;
+  }
+  .blog-section .section-body-container .blog-button-line .blog-button .blog-arrow-right {
+    font-size: 18px;
+    color: white;
+  }
+  .blog-section .post-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .blog-section .post-container .post {
+    width: 370px;
+    height: 516px;
+  }
+  .blog-section .post-container .post .post-image {
+    width: 370px;
+    height: 260px;
+    margin-bottom: 30px;
+  }
+  .blog-section .post-container .post .post-data {
+    width: 285px;
+    margin: 0 40px;
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+  .blog-section .post-container .post .post-title {
+    width: 285px;
+    margin: 0 40px;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: -0.72px;
+    line-height: 34px;
+    margin-bottom: 17px;
+  }
+  .blog-section .post-container .post .post-description {
+    width: 285px;
+    margin: 0 40px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-section .hotel-miranda-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 46px;
+    width: 243px;
+    font-size: 26px;
+    letter-spacing: 2.6px;
+  }
+  .subscribe-section .hotel-miranda-title .hotel-bold {
+    font-weight: bold;
+  }
+  .subscribe-section .hotel-miranda-title .hotel-miranda-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #8B8B8B1A;
+  }
+  .subscribe-section .subscribe-text {
+    width: 720px;
+    text-align: center;
+    margin-bottom: 26px;
+    color: #777777;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .subscribe-section .subscribe-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 724px;
+    height: 90px;
+    margin-bottom: 120px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+  }
+  .subscribe-section .subscribe-form .subscribe-input {
+    width: 524px;
+    height: 90px;
+    padding: 37px 50px;
+    text-align: left;
+    color: #AEAEAE;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3.2px;
+    border: none;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+  }
+  .subscribe-section .subscribe-form .subscribe-input:focus {
+    outline: none;
+    border-color: #bead8e;
+  }
+  .subscribe-section .subscribe-form .subscribe-button {
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    letter-spacing: 2.8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    background: #BEAD8E 0% 0% no-repeat padding-box;
+    cursor: pointer;
   }
 }
 /*!
