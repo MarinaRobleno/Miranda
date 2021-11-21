@@ -817,5 +817,71 @@
   margin-bottom: 120px;
 }
 
+.carousel-section{
+  height: 580px;
+  margin-bottom: 239px;
+  .carousel-detail-box{
+    margin: 80px 375px;
+    height: 400px;
+    width: 370px;
+    .carousel-detail-box-header{
+      margin: 60px 40px 0;
+      .carousel-detail-box-icon{
+        font-size: 66px;
+      }
+      .carousel-detail-box-counter{
+        font-size: 14px;
+      }
+    }
+    .carousel-detail-box-title{
+      font-size: 36px;
+      padding: 0;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    .carousel-detail-box-description{
+      font-size: 14px;
+      line-height: 26px;
+      padding: 0;
+      margin-top: 25px;
+      margin-left: 40px;
+    }
+  }
+}
+
+.take-a-tour-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 238px 20%;
+  .take-a-tour-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: left;
+    padding-right: 100px;
+    .section-body{
+      margin: 30px 0 0px;
+      padding: 0;
+    }
+    .take-a-tour-paragraph{
+      padding: 0;
+      margin: 25px 0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    #view-all-button{
+      margin: 0;
+      width: 216px;
+      height: 60px;
+    }
+  }
+  #discover-video{
+    height: 480px;
+    width: 612px;
+  }
+
+}
+
 
 }

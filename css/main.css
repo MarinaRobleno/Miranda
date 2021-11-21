@@ -1335,6 +1335,71 @@ template {
     width: 1100px;
     margin-bottom: 120px;
   }
+
+  .carousel-section {
+    height: 580px;
+    margin-bottom: 239px;
+  }
+  .carousel-section .carousel-detail-box {
+    margin: 80px 375px;
+    height: 400px;
+    width: 370px;
+  }
+  .carousel-section .carousel-detail-box .carousel-detail-box-header {
+    margin: 60px 40px 0;
+  }
+  .carousel-section .carousel-detail-box .carousel-detail-box-header .carousel-detail-box-icon {
+    font-size: 66px;
+  }
+  .carousel-section .carousel-detail-box .carousel-detail-box-header .carousel-detail-box-counter {
+    font-size: 14px;
+  }
+  .carousel-section .carousel-detail-box .carousel-detail-box-title {
+    font-size: 36px;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .carousel-section .carousel-detail-box .carousel-detail-box-description {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 40px;
+  }
+
+  .take-a-tour-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 238px 20%;
+  }
+  .take-a-tour-section .take-a-tour-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: left;
+    padding-right: 100px;
+  }
+  .take-a-tour-section .take-a-tour-text .section-body {
+    margin: 30px 0 0px;
+    padding: 0;
+  }
+  .take-a-tour-section .take-a-tour-text .take-a-tour-paragraph {
+    padding: 0;
+    margin: 25px 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .take-a-tour-section .take-a-tour-text #view-all-button {
+    margin: 0;
+    width: 216px;
+    height: 60px;
+  }
+  .take-a-tour-section #discover-video {
+    height: 480px;
+    width: 612px;
+  }
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
