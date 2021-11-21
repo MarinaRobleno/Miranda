@@ -760,7 +760,61 @@
 }
 
 .call-to-action-section{
-  margin: 300px 20%;
+  margin: 300px 20% 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .tour-header{
+    flex-direction: column;
+    max-width: 45%;
+    .paragraph-and-button{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      .action-paragraph{
+        margin: 30px 0;
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .action-button{
+        width: 216px;
+        height: 60px;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+      }
+    }
+  }
+  .tour-advantages{
+    max-width: 55%;
+    .individual-advantage{
+      margin: 33px 0;
+      align-items: flex-start;
+      .advantage-icon-frame{
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+        .advantage-icon{
+          padding-top: 25px;
+          font-size: 70px;
+        }
+      }
+      .advantage-text-container{
+        .advantage-title{
+          font-size: 30px;
+        }
+        .advantage-paragraph{
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+.border-bottom-advantages{
+  height: 20px;
+  width: 1100px;
+  margin-bottom: 120px;
 }
 
 
