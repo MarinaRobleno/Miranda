@@ -511,7 +511,7 @@ template {
   .header .drop-down-box .contact-and-icon-container .contact-and-icon .drop-down-contact {
     min-width: 140px;
     padding: 0;
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Old Standard TT", serif;
     letter-spacing: 0px;
   }
@@ -771,6 +771,13 @@ template {
   background-image: url("../Images/pexels-cottonbro-6466490 (1).jpg");
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.room-type-grid #room-type-4 {
+  display: none;
+}
+
+#view-all-button {
+  display: none;
 }
 
 .paragraph-and-button {
@@ -1196,6 +1203,84 @@ template {
   }
   .services-grid .third-height {
     margin-top: 200px;
+  }
+
+  .section-header {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .section-body {
+    padding: 0;
+    font-size: 80px;
+    letter-spacing: -2.4px;
+  }
+
+  .room-type-section {
+    margin: 300px 20%;
+  }
+
+  .room-type-grid {
+    grid-gap: 15px;
+    height: 575px;
+  }
+  .room-type-grid .room-type-grid-item {
+    padding: 0;
+    padding-left: 40px;
+  }
+  .room-type-grid .room-type-grid-item .room-type-grid-data {
+    padding-top: 200px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+  .room-type-grid .room-type-grid-item .room-type-grid-data .grid-icon {
+    padding-right: 5px;
+  }
+  .room-type-grid .room-type-grid-item .room-type-grid-title {
+    font-size: 36px;
+  }
+  .room-type-grid #room-type-1 {
+    background-image: url("../Images/pexels-max-vakhtbovych-6394711.jpg");
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .room-type-grid #room-type-2 {
+    background-image: url("../Images/pexels-quark-studio-2507014.jpg");
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .room-type-grid #room-type-3 {
+    background-image: url("../Images/pexels-cottonbro-6466490 (1).jpg");
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .room-type-grid #room-type-4 {
+    display: block;
+    padding-top: 300px;
+    background-image: url("../Images/pexels-cottonbro-6466490 (1).jpg");
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  #view-all-button {
+    display: block;
+    margin: 40px auto;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    width: 255px;
+    height: 60px;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    border: none;
+    box-shadow: 0px 14px 24px #bead8e66;
+    cursor: pointer;
+  }
+
+  .call-to-action-section {
+    margin: 300px 20%;
   }
 }
 /*!
