@@ -5108,6 +5108,10 @@ footer .logo-line #twitter {
   color: #BDBDBD;
 }
 
+.room-detail-main {
+  display: none;
+}
+
 .single-room-section {
   width: 100%;
 }
@@ -5187,6 +5191,10 @@ footer .logo-line #twitter {
   color: #777777;
 }
 
+#availability-description-extra {
+  display: none;
+}
+
 .center {
   width: 100%;
   margin: 15px 0;
@@ -5244,6 +5252,10 @@ footer .logo-line #twitter {
   font-weight: 700;
   padding-right: 5px;
   color: #777777;
+}
+
+.house-rules-section {
+  display: none;
 }
 
 .cancellation-section {
@@ -5340,6 +5352,69 @@ footer .logo-line #twitter {
   padding: 0 10px;
 }
 
+.check-availability-form-container {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-body-content-room {
+    display: flex;
+    justify-content: center;
+    margin: 0 20%;
+  }
+  .main-body-content-room .left-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-body-content-room .left-column .single-room-section .room-background {
+    width: 770px;
+    height: 490px;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 730px;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .section-header {
+    margin-left: 50px;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price {
+    display: flex;
+    align-items: center;
+    width: 730px;
+    padding: 0 0 19px;
+    margin-left: 0;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-name {
+    font-size: 48px;
+    letter-spacing: -1.44px;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price {
+    padding: 0;
+    margin: 0;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price .single-room-price-number {
+    font-size: 40px;
+  }
+  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price .single-room-price-night {
+    font-size: 16px;
+  }
+  .main-body-content-room .left-column .check-availability-container .check-availability-header {
+    display: none;
+  }
+  .main-body-content-room .left-column .check-availability-container .check-availability-form-container {
+    display: none;
+  }
+  .main-body-content-room .left-column .check-availability-container .center {
+    display: none;
+  }
+  .main-body-content-room .check-availability-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contact-form-section {
   display: flex;
   flex-direction: column;
@@ -5456,7 +5531,7 @@ footer .logo-line #twitter {
     align-self: flex-end;
     align-items: center;
     justify-content: center;
-    width: 176px;
+    width: 200px;
     height: 60px;
     background-color: #FFFFFF;
   }

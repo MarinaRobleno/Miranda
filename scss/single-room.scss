@@ -1,3 +1,7 @@
+.room-detail-main{
+    display: none;
+}
+
 .single-room-section{
     width: 100%;
     .room-background{
@@ -82,6 +86,9 @@
         
 	}
 }
+#availability-description-extra{
+    display: none;
+}
 .center{
     width: 100%;
     margin: 15px 0;
@@ -141,6 +148,9 @@
 			}
 		}
 	}
+}
+.house-rules-section{
+    display: none;
 }
 
 .cancellation-section { 
@@ -235,6 +245,74 @@
                 color: #BDBDBD;
                 padding: 0 10px;
             }
+        }
+    }
+}
+.check-availability-form-container{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    .main-body-content-room{
+        display:flex;
+        justify-content: center;
+        margin: 0 20%;
+        .left-column{
+            display: flex;
+            flex-direction: column;
+            .single-room-section{
+                .room-background{
+                    width: 770px;
+                    height: 490px; 
+                }
+                .white-background{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: white;
+                    width: 730px;
+                    .section-header{
+                        margin-left: 50px;
+                    }
+                    .single-room-name-price{
+                        display: flex;
+                        align-items: center;
+                        width: 730px;
+                        padding: 0 0 19px;
+                        margin-left: 0;
+                        .single-room-name{
+                            font-size: 48px;
+                            letter-spacing: -1.44px;
+                        }
+                        .single-room-price{
+                            padding: 0;
+                            margin: 0;
+                            .single-room-price-number{
+                                font-size: 40px;
+                            }
+                            .single-room-price-night{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .check-availability-container{
+                .check-availability-header{
+                    display: none;
+                }
+                .check-availability-form-container{
+                    display: none;
+                }
+                .center{
+                    display: none;
+                }
+            }
+    }
+        .check-availability-form-container{
+            display: flex;
+            flex-direction: column;
         }
     }
 }
