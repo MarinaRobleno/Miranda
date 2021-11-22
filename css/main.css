@@ -4799,6 +4799,9 @@ footer .logo-line #twitter {
   color: #D4D4D4;
   font-size: 9px;
 }
+.facilities-section #features-grid #extra-card {
+  display: none;
+}
 
 .counter-container {
   display: flex;
@@ -4838,6 +4841,10 @@ footer .logo-line #twitter {
   font-size: 25px;
 }
 
+.counter-image-row {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
   #about-us-main {
     display: flex;
@@ -4845,6 +4852,7 @@ footer .logo-line #twitter {
     align-items: center;
     justify-content: space-around;
     height: 293px;
+    margin-bottom: 120px;
     background-color: #222222;
   }
   #about-us-main .ultimate-header {
@@ -4885,6 +4893,143 @@ footer .logo-line #twitter {
   }
   #about-us-main .about-navigator-container #about-tag-about {
     color: #BEAD8E;
+  }
+
+  .about-us-intro-section {
+    margin: 0 20% 80px;
+  }
+  .about-us-intro-section .inverted-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-intro-section .inverted-container .about-us-video {
+    height: 650px;
+  }
+  .about-us-intro-section .inverted-container .section-body-center {
+    font-size: 72px;
+    margin-bottom: 104px;
+  }
+
+  .facilities-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 118px;
+    min-height: 1149px;
+  }
+  .facilities-section #facilities {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+  .facilities-section #core-features {
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+    font-size: 80px;
+  }
+  .facilities-section #features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+  }
+  .facilities-section #features-grid .features-card {
+    width: 370px;
+    height: 349px;
+  }
+  .facilities-section #features-grid .features-card .features-icon-row .features-icon {
+    padding: 0;
+    margin: 60px 60px 37px;
+    height: 70px;
+    width: 70px;
+    font-size: 70px;
+  }
+  .facilities-section #features-grid .features-card .features-icon-row .features-number {
+    font-size: 120px;
+    margin: -30px -10px;
+  }
+  .facilities-section #features-grid .features-card .features-title {
+    padding: 0;
+    margin: 0;
+    margin-left: 57px;
+    margin-bottom: 28px;
+    font-size: 30px;
+    letter-spacing: -0.9px;
+  }
+  .facilities-section #features-grid .features-card .features-description {
+    margin: 0 60px 0 57px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .facilities-section #features-grid #extra-card {
+    display: block;
+  }
+
+  .counter-section {
+    margin: 0 20% 118px;
+  }
+  .counter-section .counter-container {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 61px;
+  }
+  .counter-section .counter-container .counter-card {
+    height: 134px;
+    width: 370px;
+    margin: 0;
+  }
+  .counter-section .counter-container .counter-card .counter-icon {
+    padding-left: 40px;
+    padding-right: 0;
+    font-size: 60px;
+  }
+  .counter-section .counter-container .counter-card .count-and-text .counter-number {
+    font-size: 60px;
+  }
+  .counter-section .counter-container .counter-card .count-and-text .counter-text {
+    font-size: 16px;
+  }
+  .counter-section .counter-container .counter-card .counter-arrow {
+    font-size: 40px;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .counter-section .counter-image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .counter-section .counter-image-row .counter-image {
+    width: 570px;
+    height: 400px;
+    background: #DFDFDF 0% 0% no-repeat padding-box;
+  }
+
+  #about-blog-section {
+    margin: 0 20% 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-blog-section .blog-button-line {
+    display: none;
+  }
+  #about-blog-section .post-container {
+    display: flex;
+    flex-direction: row;
+  }
+  #about-blog-section .post-container .post {
+    margin-right: 20px;
   }
 }
 .ultimate-main {
