@@ -5061,6 +5061,7 @@ footer .logo-line #twitter {
 
 .room-list-card .room-list-image {
   max-width: 100%;
+  object-fit: cover;
 }
 .room-list-card .room-icon-bar {
   max-width: 50%;
@@ -5078,6 +5079,9 @@ footer .logo-line #twitter {
   width: 70%;
   margin: 20px 5px 10px;
 }
+.room-list-card .room-list-card-content .room-list-card-information .section-header {
+  display: none;
+}
 .room-list-card .room-list-card-content .room-list-card-information .room-list-card-title {
   margin-bottom: 10px;
   font-family: "Old Standard TT", sans-serif;
@@ -5087,6 +5091,9 @@ footer .logo-line #twitter {
   color: #777777;
   font-size: 12px;
   line-height: 18px;
+}
+.room-list-card .room-list-card-content .room-list-card-information .room-offer-book-button {
+  display: none;
 }
 .room-list-card .room-list-card-content .room-list-card-booking {
   text-align: center;
@@ -5110,6 +5117,13 @@ footer .logo-line #twitter {
 .room-list-card .room-list-card-content .room-list-card-booking .room-list-card-booking-text {
   font-weight: 700;
   color: #BDBDBD;
+}
+.room-list-card .room-list-card-content .room-list-card-booking .room-offers-benefits-list {
+  display: none;
+}
+
+.popular-rooms-section {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -5193,6 +5207,147 @@ footer .logo-line #twitter {
     font-weight: 700;
     color: #BDBDBD;
     margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .room-offers-section {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  .room-offers-section .room-offers-card {
+    width: 1170px;
+    height: 988px;
+  }
+  .room-offers-section .room-offers-card .room-offers-image {
+    width: 1170px;
+    height: 570px;
+  }
+  .room-offers-section .room-offers-card .room-icon-bar {
+    display: none;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    width: 1050px;
+    height: 480px;
+    background-color: white;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-offers-card-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 55%;
+    margin: 50px 60px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-offers-card-information .section-header {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-offers-card-information .room-list-card-title {
+    font-size: 48px;
+    letter-spacing: -1.44px;
+    margin-bottom: 60px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-offers-card-information .room-list-card-text {
+    width: 496px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-offers-card-information .room-offer-book-button {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.8px;
+    width: 216px;
+    height: 60px;
+    background-color: #BDAC8D;
+    border: none;
+    cursor: pointer;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 45%;
+    margin: 50px 60px 50px 0;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-list-card-price {
+    padding-left: 200px;
+    margin-bottom: 100px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-number {
+    font-size: 40px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-night {
+    font-size: 16px;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-list-card-booking-text {
+    display: none;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-offers-benefits-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 163px;
+    color: #777777;
+    font-size: 16px;
+    line-height: 36px;
+    list-style: none;
+  }
+  .room-offers-section .room-offers-card .room-offers-card-content .room-list-card-booking .room-offers-benefits-list .room-offers-benefit {
+    padding: 2px 15px 2px 0;
+  }
+
+  .popular-rooms-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 133px;
+    background-color: #222222;
+    width: 100%;
+    height: 885px;
+  }
+  .popular-rooms-section .section-header {
+    margin: 0;
+    margin-top: 0;
+    color: #BDAC8D;
+    font-size: 14px;
+    margin-bottom: 34px;
+  }
+  .popular-rooms-section .section-body {
+    color: white;
+    margin-bottom: 80px;
+  }
+  .popular-rooms-section .popular-rooms-container .related-room-card {
+    width: 370px;
+    height: 438px;
+    background-color: white;
+  }
+  .popular-rooms-section .popular-rooms-container .related-room-card .related-room-image {
+    width: 370px;
+    height: 240px;
+  }
+  .popular-rooms-section .popular-rooms-container .related-room-card .related-room-image .room-icon-bar {
+    margin-top: 220px;
+  }
+  .popular-rooms-section .popular-rooms-container .related-room-card .room-list-card-content .room-list-card-information {
+    padding-top: 20px;
   }
 }
 .room-detail-main {

@@ -1,0 +1,86 @@
+@media only screen and (min-width: 1000px){
+    .room-list-section{
+        display: grid;
+        margin: 0 20% 240px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px 20px;
+        .room-list-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0;
+            width: 370px;
+            height: 438px;
+            box-shadow: 0px 14px 24px #BEAD8E33;
+            .room-list-image{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 200px;
+                background-size: cover;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
+            .room-icon-bar{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: -20px;
+                margin-left: 0px;
+                padding: 10px;
+                background-color: white;
+                box-shadow: 0px 8px 16px #8A8A8A0A;
+            }
+            
+            
+            .room-list-card-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 10px 5px;
+                .room-list-card-information{
+                    width: 70%;
+                    margin: 20px 5px 10px;
+                    .room-list-card-title{
+                        margin-bottom: 10px;
+                        font-family: 'Old Standard TT', sans-serif;
+                        font-size: 19px;
+                    }
+                    .room-list-card-text{
+                        color: #777777;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+                .room-list-card-booking{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    .room-list-card-price{
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 0 10px;
+                        .room-list-price-number{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #BEAD8E;
+                        }
+                        .room-list-price-night{
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #BEAD8E;
+                        }
+                    }
+                    .room-list-card-booking-text{
+                        font-weight: 700;
+                        color: #BDBDBD;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

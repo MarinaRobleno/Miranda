@@ -1,0 +1,144 @@
+@media only screen and (min-width: 1000px){
+    .room-offers-section{
+        width: 1170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        .room-offers-card{
+            width: 1170px;
+            height: 988px;
+            .room-offers-image{
+                width: 1170px;
+                height: 570px;
+            }
+            .room-icon-bar{
+                display: none;
+            }
+            .room-offers-card-content{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 0;
+                margin-top: -20px;
+                padding: 0;
+                width: 1050px;
+                height: 480px;
+                background-color: white;
+                .room-offers-card-information{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 55%;
+                    margin: 50px 60px;
+                    .section-header{
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+                    .room-list-card-title{
+                        font-size: 48px;
+                        letter-spacing: -1.44px;
+                        margin-bottom: 60px;
+                    }
+                    .room-list-card-text{
+                        width: 496px;
+                        text-align: left;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 12px;
+                    }
+                    .room-offer-book-button{
+                        display: block;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 2.8px;
+                        width: 216px;
+                        height: 60px;
+                        background-color: #BDAC8D;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+                .room-list-card-booking{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 45%;
+                    margin: 50px 60px 50px 0;
+                    .room-list-card-price{
+                        padding-left: 200px;
+                        margin-bottom: 100px;
+                        .room-list-price-number{
+                            font-size: 40px;
+                        }
+                        .room-list-price-night{
+                            font-size: 16px;
+                        }
+                    }
+                    .room-list-card-booking-text{
+                        display:none;
+                    }
+                    .room-offers-benefits-list{
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        height: 163px;
+                        color: #777777;
+                        font-size: 16px;
+                        line-height: 36px;
+                        list-style: none;
+                        .room-offers-benefit{
+                            padding: 2px 15px 2px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popular-rooms-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 133px;
+        background-color: #222222;
+        width: 100%;
+        height: 885px;
+        .section-header{
+            margin: 0;
+            margin-top: 0;
+            color: #BDAC8D;
+            font-size: 14px;
+            margin-bottom: 34px;
+        }
+        .section-body{
+            color: white;
+            margin-bottom: 80px;
+        }
+        .popular-rooms-container{
+            .related-room-card{
+                width: 370px;
+                height: 438px;
+                background-color: white;
+                .related-room-image{
+                    width: 370px;
+                    height: 240px;
+                    .room-icon-bar{
+                        margin-top: 220px;;
+                    }
+                }
+                .room-list-card-content{
+                    .room-list-card-information{
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}    
