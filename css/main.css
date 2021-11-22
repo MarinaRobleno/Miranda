@@ -5273,6 +5273,10 @@ footer .logo-line #twitter {
   background-color: grey;
 }
 
+.related-rooms-section .divisor {
+  display: none;
+}
+
 .related-room-card {
   display: flex;
   flex-direction: column;
@@ -5369,6 +5373,7 @@ footer .logo-line #twitter {
   .main-body-content-room .left-column .single-room-section .room-background {
     width: 770px;
     height: 490px;
+    margin-bottom: 55px;
   }
   .main-body-content-room .left-column .single-room-section .white-background {
     display: flex;
@@ -5410,9 +5415,146 @@ footer .logo-line #twitter {
   .main-body-content-room .left-column .check-availability-container .center {
     display: none;
   }
+  .main-body-content-room .left-column .check-availability-container .check-availability-description {
+    max-width: 769px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 89px;
+  }
+  .main-body-content-room .left-column .single-room-amenities {
+    margin-bottom: 89px;
+  }
+  .main-body-content-room .left-column .single-room-amenities .single-room-amenities-container {
+    max-width: 769px;
+    min-height: 250px;
+    font-size: 16px;
+  }
+  .main-body-content-room .left-column .single-room-amenities .single-room-amenities-container .amenities-list .amenities-individual {
+    padding: 14px 45px;
+  }
+  .main-body-content-room .left-column .single-room-amenities .single-room-amenities-container .amenities-list .amenities-individual .amenities-individual-icon {
+    color: #BEAD8E;
+  }
+  .main-body-content-room .left-column #availability-description-extra {
+    display: block;
+    max-width: 769px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 41px;
+    color: #777777;
+  }
+  .main-body-content-room .left-column .testimonials-section {
+    width: 770px;
+  }
+  .main-body-content-room .left-column .testimonials-section .section-header {
+    display: none;
+  }
+  .main-body-content-room .left-column .testimonials-section .section-body {
+    display: none;
+  }
+  .main-body-content-room .left-column .house-rules-section {
+    display: block;
+    max-width: 769px;
+    margin-bottom: 157px;
+  }
+  .main-body-content-room .left-column .house-rules-section .house-rules {
+    margin-top: 37px;
+    list-style: none;
+  }
+  .main-body-content-room .left-column .house-rules-section .house-rules .house-individual-rule {
+    display: flex;
+    padding: 10px 0;
+  }
+  .main-body-content-room .left-column .house-rules-section .house-rules .house-individual-rule .house-rules-icon {
+    color: #BDAC8D;
+    padding-right: 5px;
+  }
+  .main-body-content-room .left-column .house-rules-section .house-rules .house-individual-rule .house-rules-text {
+    font-size: 16px;
+    color: #777777;
+  }
+  .main-body-content-room .left-column .cancellation-section {
+    max-width: 769px;
+    margin-bottom: 109px;
+  }
+  .main-body-content-room .left-column .cancellation-section .cancellation-text {
+    margin-top: 36px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .main-body-content-room .left-column .location {
+    width: 770px;
+    height: 389px;
+  }
+  .main-body-content-room .left-column .related-rooms-section {
+    max-width: 769px;
+  }
+  .main-body-content-room .left-column .related-rooms-section #related-title-pc {
+    padding-bottom: 13px;
+    font-size: 30px;
+  }
+  .main-body-content-room .left-column .related-rooms-section .divisor {
+    display: block;
+  }
+  .main-body-content-room .left-column .related-rooms-section .related-room-list {
+    display: flex;
+    margin: 40px auto 250px;
+    max-width: 740px;
+  }
+  .main-body-content-room .left-column .related-rooms-section .related-room-list .related-room-card {
+    padding: 0 5px;
+  }
   .main-body-content-room .check-availability-form-container {
     display: flex;
     flex-direction: column;
+    width: 370px;
+    height: 614px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #222222;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form {
+    width: 78%;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form .form-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #222222;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form .form-input-container .check-label {
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form .form-input-container .check-availability-form-input {
+    padding: 22px 29px;
+    height: 60px;
+    color: #777777;
+    font-size: 14px;
+    border: none;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+  }
+  .main-body-content-room .check-availability-form-container .check-availability-form .form-input-container .check-availability-form-input:focus {
+    outline: none;
+  }
+  .main-body-content-room .check-availability-form-container .center .wide-golden-button {
+    width: 78%;
+  }
+
+  .single-room-common-title {
+    padding-left: 50px;
+    padding-bottom: 13px;
+    font-size: 30px;
   }
 }
 .contact-form-section {
