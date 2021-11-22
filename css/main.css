@@ -4726,6 +4726,10 @@ footer .logo-line #twitter {
     font-size: 16px;
   }
 }
+.about-navigator-container {
+  display: none;
+}
+
 .about-us-video {
   background-color: grey;
   height: 200px;
@@ -4834,6 +4838,55 @@ footer .logo-line #twitter {
   font-size: 25px;
 }
 
+@media only screen and (min-width: 1000px) {
+  #about-us-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 293px;
+    background-color: #222222;
+  }
+  #about-us-main .ultimate-header {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    padding-left: 5px;
+  }
+  #about-us-main .home-main-text {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 70px;
+    margin-left: 0;
+    font-size: 72px;
+    letter-spacing: -3.6px;
+    color: #FFFFFF;
+  }
+  #about-us-main .about-navigator-container {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    background-color: #FFFFFF;
+  }
+  #about-us-main .about-navigator-container .about-navigator-tag {
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+  }
+  #about-us-main .about-navigator-container #home-tag-about {
+    border-right: 1px solid #222222;
+  }
+  #about-us-main .about-navigator-container #about-tag-about {
+    color: #BEAD8E;
+  }
+}
 .ultimate-main {
   height: 150px;
   background-image: url("../Images/pexels-cottonbro-5379062.jpg");
