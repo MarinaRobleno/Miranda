@@ -5365,6 +5365,9 @@ footer .logo-line #twitter {
   width: 100%;
   height: 200px;
 }
+.single-room-section .room-background .section-header {
+  display: none;
+}
 .single-room-section .room-background .single-room-name-price {
   display: flex;
   width: 75%;

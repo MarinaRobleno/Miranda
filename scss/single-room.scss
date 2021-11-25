@@ -11,6 +11,9 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 200px;
+        .section-header{
+            display: none;
+        }
         .single-room-name-price{
             display: flex;
             width: 75%;
