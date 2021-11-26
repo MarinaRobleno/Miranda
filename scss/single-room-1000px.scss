@@ -157,7 +157,7 @@
         .check-availability-form-container{
             display: flex;
             flex-direction: column;
-            width: 370px;
+            min-width: 370px;
             height: 614px;
             align-items: center;
             justify-content: flex-start;
@@ -196,6 +196,7 @@
             .center{
                 .wide-golden-button{
                     width: 78%;
+                    cursor: pointer;
                 }
             }
         }
