@@ -486,6 +486,7 @@ template {
     letter-spacing: 0px;
     color: #111111;
     background-color: white;
+    cursor: pointer;
   }
   .header .drop-down-box .contact-and-icon-container {
     display: flex;
@@ -1075,7 +1076,7 @@ template {
     padding-top: 30px;
     padding-left: 0;
     padding-right: 70px;
-    font-size: 120px;
+    font-size: 100px;
     letter-spacing: -3.6px;
   }
   .home-main .home-main-container .home-main-button-line {
@@ -1097,8 +1098,10 @@ template {
   }
   .home-main .full-screen-main-image {
     display: block;
-    max-width: 700px;
-    height: 700px;
+    min-width: 50%;
+    max-width: 669px;
+    min-height: 669px;
+    max-height: 700px;
     object-fit: cover;
   }
 
@@ -1382,8 +1385,9 @@ template {
   .take-a-tour-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 238px 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 238px 17%;
   }
   .take-a-tour-section .take-a-tour-text {
     display: flex;
@@ -1404,8 +1408,7 @@ template {
     height: 60px;
   }
   .take-a-tour-section #discover-video {
-    height: 480px;
-    width: 612px;
+    width: 45%;
   }
 
   .testimonials-section {

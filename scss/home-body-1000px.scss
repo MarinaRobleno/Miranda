@@ -22,7 +22,7 @@
           padding-top: 30px;
           padding-left: 0;
           padding-right: 70px;
-          font-size: 120px;
+          font-size: 100px;
           letter-spacing: -3.6px;
         }
       
@@ -47,8 +47,10 @@
       }
       .full-screen-main-image{
         display: block;
-        max-width: 700px;
-        height: 700px;
+        min-width: 50%;
+        max-width: 669px;
+        min-height: 669px;
+        max-height: 700px;
         object-fit: cover;
       }
     }
@@ -332,8 +334,9 @@
     .take-a-tour-section{
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      margin: 238px 20%;
+      justify-content: space-around;
+      align-items: center;
+      margin: 238px 17%;
       .take-a-tour-text{
         display: flex;
         flex-direction: column;
@@ -353,8 +356,7 @@
         }
       }
       #discover-video{
-        height: 480px;
-        width: 612px;
+        width: 45%;
       }
     
     }
