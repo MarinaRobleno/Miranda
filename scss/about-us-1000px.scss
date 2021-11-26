@@ -7,6 +7,7 @@
         height: 293px;
         margin-bottom: 120px;
         background-color: #222222;
+        background-image: url('../Images/pexels-cottonbro-5379062.jpg');
         .ultimate-header{
             display: block;
             font-size: 14px;
@@ -68,12 +69,21 @@
                 margin-bottom: 104px;
             }
         }
+        .services-grid{
+            .service-card{
+                min-width: 200px;
+            }
+            .service-card-negative{
+                min-width: 200px;
+            }
+        }
     }
     .facilities-section{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 128px 0;
         margin-bottom: 118px;
         min-height: 1149px;
         #facilities{
@@ -165,13 +175,17 @@
             }
         }
         .counter-image-row{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            max-width: 1170px;
+            height: 400px;
+            margin: 0 auto;
             .counter-image{
-                width: 570px;
-                height: 400px;
                 background: #DFDFDF 0% 0% no-repeat padding-box;
+                object-fit: cover;
+                min-width: 100%;
+                height: 400px;
             }
         }
     }
