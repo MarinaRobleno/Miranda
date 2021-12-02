@@ -250,6 +250,7 @@
   #room-type-4{
     display: none;
   }
+  
 }
 #view-all-button{
   display: none;
@@ -467,6 +468,7 @@
       border: none;
       background: #ffffff 0% 0% no-repeat padding-box;
       border: 2px solid #e0e0e0;
+      cursor: pointer;
       .blog-arrow-left{
         font-size: 10px;
       }

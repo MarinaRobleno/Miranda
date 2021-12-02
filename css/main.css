@@ -992,6 +992,7 @@ template {
   border: none;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 2px solid #e0e0e0;
+  cursor: pointer;
 }
 .section-body-container .blog-button-line .blog-button .blog-arrow-left {
   font-size: 10px;
@@ -4708,7 +4709,7 @@ footer .logo-line .copy-icon {
   padding: 13px;
   background: #212121 0% 0% no-repeat padding-box;
 }
-footer .logo-line #twitter {
+footer .logo-line :hover {
   background: #BEAD8E 0% 0% no-repeat padding-box;
 }
 
