@@ -12,6 +12,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^1.0.18"
   }
 }
