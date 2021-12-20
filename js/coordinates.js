@@ -1,4 +1,4 @@
-var espanaComunidades = [
+const coordinates = [
     [
         [
             {
@@ -12400,3 +12400,5 @@ var espanaComunidades = [
         ]
     ]
 ];
+
+module.exports = { coordinates: coordinates }
