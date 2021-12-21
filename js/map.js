@@ -17,6 +17,10 @@ function initMap() {
   });
 
   // CUSTOM MARKER
+  let selectedCommunity = {
+    community: ''
+  };
+
   const svgMarker = {
     path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
     fillColor: "#000000",
@@ -26,18 +30,20 @@ function initMap() {
     scale: 2,
     anchor: new google.maps.Point(15, 30),
   };
-  const markers = locations.map((place) => {
-    const marker = new google.maps.Marker({
-      position: place.location,
-      icon: svgMarker,
-      title: place.name,
-    });
+  
+    const markers = (selectedCommunity.community != '' ? locations.filter(place => place.community === selectedCommunity.community) : locations).map((place) => {
+      const marker = new google.maps.Marker({
+        position: place.location,
+        icon: svgMarker,
+        title: place.name,
+      });
 
     // DROPDOWN
 
     let select = document.getElementById("dropdown");
     select.addEventListener("change", () => {
       let communityIndex = Number(select.value);
+      selectedCommunity.community = comunidadesAutonomas[communityIndex]
 
       if (typeof communityIndex == "number") {
         const communityCoords = coordinates[communityIndex];
@@ -102,6 +108,7 @@ function initMap() {
 
   inputText.type = "text";
   inputText.placeholder = "Enter a location";
+  inputText.classList.add('geolocation-input');
 
   const submitButton = document.createElement("input");
 
@@ -130,8 +137,20 @@ function initMap() {
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(submitButton);
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(clearButton);
   map.controls[google.maps.ControlPosition.LEFT_TOP].push(instructionsElement);
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(responseDiv);
+  /*
+  map.controls[google.maps.ControlPosition.LEFT_TOP].push(responseDiv);*/
+
+  const personIcon = {
+    path: 'M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z',
+    fillColor: "#000000",
+    fillOpacity: 1,
+    strokeWeight: 0,
+    rotation: 0,
+    scale: 2,
+    anchor: new google.maps.Point(15, 30),
+  }
   marker = new google.maps.Marker({
+    //icon: personIcon,
     map,
   });
   map.addListener("click", (e) => {
@@ -176,9 +195,6 @@ function initMap() {
   nearButton.addEventListener("click", () => {
     sidebar.style.display = "block";
   });
-  document.getElementById(
-    "request"
-  ).innerText = `Travel mode: ${request.travelMode}`;
   service.getDistanceMatrix(request).then((response) => {
     const distancesArray = [];
     const indexArray = [];
@@ -199,7 +215,7 @@ function initMap() {
     }
     document.getElementById(
       "response"
-    ).innerText = `${sortedPlaces.map((place) => place + '\n') }`;
+    ).innerText = `${sortedPlaces.map((place) => place + ' - ' + sortedDistances[sortedPlaces.indexOf(place)] + 'm' + '\n' + '\n') }`;
   });
 }
 
