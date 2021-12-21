@@ -14,8 +14,7 @@ function initMap() {
     disableAutoPan: true,
   });
 
-  // Create an array of alphabetical characters used to label the markers.
-  // Add some markers to the map.
+  // CUSTOM MARKER
   const svgMarker = {
     path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
     fillColor: "#000000",
@@ -32,19 +31,14 @@ function initMap() {
       title: place.name,
     });
 
-    // markers can only be keyboard focusable when they have click listeners
-    // open info window when marker is clicked
-    const selected = {
-      name: "",
-    };
+    // DROPDOWN
 
-    marker.addListener("click", () => {
-      infoWindow.setContent(place.name);
-      infoWindow.open(map, marker);
+    let select = document.getElementById("dropdown");
+    select.addEventListener("change", () => {
+      let communityIndex = Number(select.value);
 
-      if (selected.name != place.community) {
-        const communityCoords =
-          coordinates[comunidadesAutonomas.indexOf(place.community)];
+      if (typeof communityIndex == "number") {
+        const communityCoords = coordinates[communityIndex];
 
         const communityPolygon = new google.maps.Polygon({
           paths: communityCoords,
@@ -56,21 +50,25 @@ function initMap() {
         });
 
         communityPolygon.setMap(map);
-        selected.name = place.community;
       }
+    });
+
+    marker.addListener("click", () => {
+      infoWindow.setContent(place.name);
+      infoWindow.open(map, marker);
     });
     return marker;
   });
 
-  // Add a marker clusterer to manage the markers.
+  // CLUSTERER
   const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   const locationButton = document.createElement("button");
-
+// MY LOCATION.
   locationButton.textContent = "My Current Location";
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
-    // Try HTML5 geolocation.
+    
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -95,6 +93,7 @@ function initMap() {
   });
   geocoder = new google.maps.Geocoder();
 
+  //INPUT 
   const inputText = document.createElement("input");
 
   inputText.type = "text";
@@ -176,59 +175,61 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+
+
 const locations = [
   {
-    name: "Madrid",
+    name: "Hotel Miranda - Madrid",
     community: "Madrid, Comunidad de",
     location: { lat: 40.4165, lng: -3.70256 },
   },
   {
-    name: "Sevilla",
+    name: "Hotel Miranda - Sevilla",
     community: "Andalucía",
     location: { lat: 37.38283, lng: -5.97317 },
   },
   {
-    name: "Barcelona",
+    name: "Hotel Miranda - Barcelona",
     community: "Cataluña / Catalunya",
     location: { lat: 41.38879, lng: 2.15899 },
   },
   {
-    name: "Móstoles",
+    name: "Hotel Miranda - Móstoles",
     community: "Madrid, Comunidad de",
     location: { lat: 40.32234, lng: -3.86496 },
   },
   {
-    name: "Leganés",
+    name: "Hotel Miranda - Leganés",
     community: "Madrid, Comunidad de",
     location: { lat: 40.32718, lng: -3.7635 },
   },
   {
-    name: "Santander",
+    name: "Hotel Miranda - Santander",
     community: "Cantabria",
     location: { lat: 43.46472, lng: -3.80444 },
   },
   {
-    name: "Oviedo",
+    name: "Hotel Miranda - Oviedo",
     community: "Asturias, Principado de",
     location: { lat: 43.36029, lng: -5.84476 },
   },
   {
-    name: "Logroño",
+    name: "Hotel Miranda - Logroño",
     community: "Rioja, La",
     location: { lat: 42.46667, lng: -2.45 },
   },
   {
-    name: "Cáceres",
+    name: "Hotel Miranda - Cáceres",
     community: "Extremadura",
     location: { lat: 39.47649, lng: -6.37224 },
   },
   {
-    name: "Ceuta",
+    name: "Hotel Miranda - Ceuta",
     community: "Ceuta",
     location: { lat: 35.88933, lng: -5.31979 },
   },
   {
-    name: "Cuenca",
+    name: "Hotel Miranda - Cuenca",
     community: "Castilla - La Mancha",
     location: { lat: 40.06667, lng: -2.13333 },
   },

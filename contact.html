@@ -162,7 +162,34 @@
           </div>
         </section>
 
-        <section class="satelite-map" id="map"></section>
+        <section class="flex">
+          <section class="satelite-map" id="map"></section>
+          <div class='column'>
+            <select class="community-dropdown" id="dropdown">
+              <option selected value="-1">Select Community</option>
+              <option value="0">Andalucía</option>
+              <option value="1">Aragón</option>
+              <option value="2">Asturias, Principado de</option>
+              <option value="3">Balears, Illes</option>
+              <option value="4">Canarias</option>
+              <option value="5">Cantabria</option>
+              <option value="6">Castilla y León</option>
+              <option value="7">Castilla - La Mancha</option>
+              <option value="8">Cataluña / Catalunya</option>
+              <option value="9">Comunitat Valenciana</option>
+              <option value="10">Extremadura</option>
+              <option value="11">Galicia</option>
+              <option value="12">Madrid, Comunidad de</option>
+              <option value="13">Murcia, Región de</option>
+              <option value="14">Navarra, Comunidad Foral de</option>
+              <option value="15">País Vasco / Euskadi</option>
+              <option value="16">Rioja, La</option>
+              <option value="17">Ceuta</option>
+              <option value="18">Melilla</option>
+            </select>
+            <button id="find-near-location">Find my nearest location</button>
+          </div>
+        </section>
       </div>
     </div>
 
@@ -199,7 +226,7 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src='js/map.js'></script>
+    <script src="js/map.js"></script>
     <script
       async
       defer

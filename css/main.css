@@ -5916,7 +5916,7 @@ footer .logo-line :hover {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2.8px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 0;
     padding-left: 5px;
   }
@@ -5928,7 +5928,7 @@ footer .logo-line :hover {
     margin-left: 0;
     font-size: 72px;
     letter-spacing: -3.6px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   #contact-main .contact-navigator-container {
     display: flex;
@@ -5937,7 +5937,7 @@ footer .logo-line :hover {
     justify-content: center;
     width: 200px;
     height: 60px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   #contact-main .contact-navigator-container .contact-navigator-tag {
     padding: 0 10px;
@@ -5950,13 +5950,24 @@ footer .logo-line :hover {
     border-right: 1px solid #222222;
   }
   #contact-main .contact-navigator-container #about-tag-contact {
-    color: #BEAD8E;
+    color: #bead8e;
   }
 
-  .satelite-map {
+  .flex {
+    display: inline-flex;
+  }
+  .flex .satelite-map {
     width: 1170px;
     height: 700px;
     margin: 0 0 130px;
+  }
+  .flex .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex .column .community-dropdown {
+    max-height: 30px;
+    margin-bottom: 20px;
   }
 
   .contact-information-section {

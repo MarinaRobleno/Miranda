@@ -1,132 +1,141 @@
-@media only screen and (min-width: 1000px){
-    #contact-main{
+@media only screen and (min-width: 1000px) {
+  #contact-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 293px;
+    margin-bottom: 120px;
+    background-color: #222222;
+    .ultimate-header {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2.8px;
+      color: #ffffff;
+      padding-top: 0;
+      padding-left: 5px;
+    }
+    .home-main-text {
+      width: 100%;
+      padding-top: 30px;
+      padding-left: 0;
+      padding-right: 70px;
+      margin-left: 0;
+      font-size: 72px;
+      letter-spacing: -3.6px;
+      color: #ffffff;
+    }
+    .contact-navigator-container {
+      display: flex;
+      align-self: flex-end;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+      background-color: #ffffff;
+      .contact-navigator-tag {
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.48px;
+      }
+      #home-tag-contact {
+        color: #222222;
+        border-right: 1px solid #222222;
+      }
+      #about-tag-contact {
+        color: #bead8e;
+      }
+    }
+  }
+  .flex {
+    display: inline-flex;
+
+    .satelite-map {
+      width: 1170px;
+      height: 700px;
+      margin: 0 0 130px;
+    }
+    .column {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        height: 293px;
-        margin-bottom: 120px;
-        background-color: #222222;
-        .ultimate-header{
-            display: block;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2.8px;
-            color: #FFFFFF;
-            padding-top: 0;
-            padding-left: 5px;
-        }
-        .home-main-text {
-            width: 100%;
-            padding-top: 30px;
-            padding-left: 0;
-            padding-right: 70px;
-            margin-left: 0;
-            font-size: 72px;
-            letter-spacing: -3.6px;
-            color: #FFFFFF;
-        }
-        .contact-navigator-container{
-            display: flex;
-            align-self: flex-end;
-            align-items: center;
-            justify-content: center;
-            width: 200px;
-            height: 60px;
-            background-color: #FFFFFF;
-            .contact-navigator-tag{
-                padding: 0 10px;
-                font-size: 16px;
-                font-weight: 700;
-                letter-spacing: -0.48px;
-            }
-            #home-tag-contact{
-                color: #222222;
-                border-right: 1px solid #222222;
-            }
-            #about-tag-contact{
-                color: #BEAD8E;
-                
-            }
-        }
+        flex-direction: column;
+      .community-dropdown {
+        max-height: 30px;
+        margin-bottom: 20px;
+      }
 
-        
     }
-    .satelite-map{
-        width: 1170px;
-        height: 700px;
-        margin: 0 0 130px;
+  }
+
+  .contact-information-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .contact-information-card {
+      width: 370px;
+      height: 189px;
+      .contact-information-icon {
+        font-size: 40px;
+        padding: 0;
+        margin-top: -60px;
+        margin-left: 46px;
+      }
+      .contact-information-text {
+        margin: 32px 56px 42px 21px;
+        padding: 0;
+        .contact-information-text-title {
+          font-size: 24px;
+          padding-bottom: 30px;
+        }
+        .contact-information-text-description {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .contact-information-count {
+        display: none;
+      }
     }
-    .contact-information-section{
+  }
+
+  .contact-form-section {
+    margin: 0 20% 340px;
+    .contact-form-container {
+      width: 970px;
+      display: grid;
+      grid-gap: 30px;
+      padding: 0;
+      margin-bottom: 30px;
+      .contact-form-input {
+        margin: 0;
+        padding: 25px;
+        font-size: 16px;
+      }
+      .full-name {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .mail-address {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      .enter-message {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .contact-information-card{
-            width: 370px;
-            height: 189px;
-            .contact-information-icon{
-                font-size: 40px;
-                padding: 0;
-                margin-top: -60px;
-                margin-left: 46px;
-            }
-            .contact-information-text{
-                margin: 32px 56px 42px 21px;
-                padding: 0;
-                .contact-information-text-title{
-                    font-size: 24px;
-                    padding-bottom: 30px;
-                }
-                .contact-information-text-description{
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-            }
-            .contact-information-count{
-                display: none;
-            }
-        }
+        padding-bottom: 250px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
     }
-
-    .contact-form-section{
-        margin: 0 20% 340px;
-        .contact-form-container{
-            width: 970px;
-            display: grid;
-            grid-gap: 30px;
-            padding:0;
-            margin-bottom: 30px;
-            .contact-form-input{
-                margin: 0;
-                padding: 25px;
-                font-size: 16px;
-            }
-            .full-name{
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-            .mail-address{
-                grid-column-start: 2;
-                grid-column-end: 3;
-            }
-            .enter-message{
-                display: flex;
-                padding-bottom: 250px;
-                grid-column-start: 1;
-                grid-column-end: 3;
-            }
-        }
-        .center{
-            .wide-golden-button{
-                width: 258px;
-                height: 60px;
-                font-size: 16px;
-                letter-spacing: 3.2px;
-                cursor: pointer;
-            }
-        }
+    .center {
+      .wide-golden-button {
+        width: 258px;
+        height: 60px;
+        font-size: 16px;
+        letter-spacing: 3.2px;
+        cursor: pointer;
+      }
     }
-
-
+  }
 }
