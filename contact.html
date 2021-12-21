@@ -22,6 +22,7 @@
     />
     <meta name="theme-color" content="#fafafa" />
     <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
 
   <body>
@@ -188,6 +189,12 @@
               <option value="18">Melilla</option>
             </select>
             <button id="find-near-location">Find my nearest location</button>
+            <div id="sidebar" style='display: none'>
+              <h3 style="flex-grow: 0">Settings: </h3>
+              <div id="request"></div>
+              <h3 style="flex-grow: 0">Closest Miranda Hotel: </h3>
+              <div id="response"></div>
+            </div>
           </div>
         </section>
       </div>

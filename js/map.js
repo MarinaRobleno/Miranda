@@ -4,6 +4,8 @@ let geocoder;
 let responseDiv;
 let response;
 function initMap() {
+  const bounds = new google.maps.LatLngBounds();
+  const markersArray = [];
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 6,
     center: { lat: 40.2085, lng: -3.713 },
@@ -63,12 +65,14 @@ function initMap() {
   // CLUSTERER
   const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   const locationButton = document.createElement("button");
-// MY LOCATION.
+  // MY LOCATION.
+  const myLocation = {
+    coords: { lat: 40.305, lng: -3.73268 },
+  };
   locationButton.textContent = "My Current Location";
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
-    
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -93,7 +97,7 @@ function initMap() {
   });
   geocoder = new google.maps.Geocoder();
 
-  //INPUT 
+  //INPUT
   const inputText = document.createElement("input");
 
   inputText.type = "text";
@@ -140,7 +144,65 @@ function initMap() {
     clear();
   });
   clear();
+
+  // DISTANCE MATRIX
+  const service = new google.maps.DistanceMatrixService();
+
+  const nearButton = document.getElementById("find-near-location");
+  const sidebar = document.getElementById("sidebar");
+
+  /*navigator.geolocation.getCurrentPosition((position) => {
+      const pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+      };
+      myLocation.coords = pos;
+    });*/
+
+  let myHotels = [];
+  for (let i = 0; i < locations.length; i++) {
+    myHotels.push(locations[i].location);
+  }
+
+  const request = {
+    origins: [myLocation.coords],
+    destinations: myHotels,
+    travelMode: google.maps.TravelMode.DRIVING,
+    unitSystem: google.maps.UnitSystem.METRIC,
+    avoidHighways: false,
+    avoidTolls: false,
+  };
+
+  nearButton.addEventListener("click", () => {
+    sidebar.style.display = "block";
+  });
+  document.getElementById(
+    "request"
+  ).innerText = `Travel mode: ${request.travelMode}`;
+  service.getDistanceMatrix(request).then((response) => {
+    const distancesArray = [];
+    const indexArray = [];
+    const sortedDistances = [];
+    const sortedPlaces = []
+    for (let j = 0; j < response.rows[0].elements.length; j++) {
+      distancesArray.push(response.rows[0].elements[j].distance.value);
+      sortedDistances.push(response.rows[0].elements[j].distance.value);
+    }
+    sortedDistances.sort(function (a, b) {
+      return a - b;
+    });
+    for (let k = 0; k < distancesArray.length; k++) {
+      indexArray.push(distancesArray.indexOf(sortedDistances[k]));
+    }
+    for (let l = 0; l<response.destinationAddresses.length; l++){
+      sortedPlaces.push(response.destinationAddresses[indexArray[l]])
+    }
+    document.getElementById(
+      "response"
+    ).innerText = `${sortedPlaces.map((place) => place + '\n') }`;
+  });
 }
+
 function clear() {
   marker.setMap(null);
   responseDiv.style.display = "none";
@@ -175,8 +237,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-
-
 const locations = [
   {
     name: "Hotel Miranda - Madrid",
@@ -199,11 +259,6 @@ const locations = [
     location: { lat: 40.32234, lng: -3.86496 },
   },
   {
-    name: "Hotel Miranda - Leganés",
-    community: "Madrid, Comunidad de",
-    location: { lat: 40.32718, lng: -3.7635 },
-  },
-  {
     name: "Hotel Miranda - Santander",
     community: "Cantabria",
     location: { lat: 43.46472, lng: -3.80444 },
@@ -212,16 +267,6 @@ const locations = [
     name: "Hotel Miranda - Oviedo",
     community: "Asturias, Principado de",
     location: { lat: 43.36029, lng: -5.84476 },
-  },
-  {
-    name: "Hotel Miranda - Logroño",
-    community: "Rioja, La",
-    location: { lat: 42.46667, lng: -2.45 },
-  },
-  {
-    name: "Hotel Miranda - Cáceres",
-    community: "Extremadura",
-    location: { lat: 39.47649, lng: -6.37224 },
   },
   {
     name: "Hotel Miranda - Ceuta",
