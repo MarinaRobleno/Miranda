@@ -1053,6 +1053,12 @@ template {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1000px) {
   .home-main {
     display: flex;
@@ -1149,7 +1155,7 @@ template {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 2px solid #E6E6E680;
+    border: 2px solid #e6e6e680;
     background: #22222200 0% 0% no-repeat padding-box;
   }
   .arrow-down-section .arrow-down-external .arrow-down-internal {
@@ -1158,8 +1164,8 @@ template {
     color: white;
     width: 60px;
     height: 60px;
-    background: #BEAD8E 0% 0% no-repeat padding-box;
-    box-shadow: 0px 14px 24px #BEAD8E4D;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #bead8e4d;
     border-radius: 50%;
   }
 
@@ -1464,7 +1470,7 @@ template {
     font-family: "Archivo", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: #BDAC8D;
+    color: #bdac8d;
     letter-spacing: 2.8px;
   }
   .testimonials-section .testimonials-extra-panel .testimonials-extra-panel-title {
@@ -1586,8 +1592,8 @@ template {
     margin-right: 5px;
     font-size: 40px;
     font-weight: 700;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 14px 24px #8B8B8B1A;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #8b8b8b1a;
   }
   .subscribe-section .subscribe-text {
     width: 720px;
@@ -1604,20 +1610,20 @@ template {
     width: 724px;
     height: 90px;
     margin-bottom: 120px;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
   }
   .subscribe-section .subscribe-form .subscribe-input {
     width: 524px;
     height: 90px;
     padding: 37px 50px;
     text-align: left;
-    color: #AEAEAE;
+    color: #aeaeae;
     font-size: 16px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 3.2px;
     border: none;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
   }
   .subscribe-section .subscribe-form .subscribe-input:focus {
     outline: none;
@@ -1632,8 +1638,13 @@ template {
     font-size: 14px;
     font-weight: 700;
     border: none;
-    background: #BEAD8E 0% 0% no-repeat padding-box;
+    background: #bead8e 0% 0% no-repeat padding-box;
     cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
 /*!
@@ -5852,6 +5863,10 @@ footer .logo-line :hover {
   margin-top: 0;
 }
 
+.contact-navigator-container {
+  display: none;
+}
+
 .contact-information-section {
   display: flex;
   flex-direction: column;
@@ -5898,7 +5913,7 @@ footer .logo-line :hover {
   width: 100%;
   height: 200px;
   margin-bottom: 20px;
-  background-color: grey;
+  background-color: pink;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -5916,7 +5931,7 @@ footer .logo-line :hover {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2.8px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 0;
     padding-left: 5px;
   }
@@ -5928,7 +5943,7 @@ footer .logo-line :hover {
     margin-left: 0;
     font-size: 72px;
     letter-spacing: -3.6px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   #contact-main .contact-navigator-container {
     display: flex;
@@ -5937,7 +5952,7 @@ footer .logo-line :hover {
     justify-content: center;
     width: 200px;
     height: 60px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   #contact-main .contact-navigator-container .contact-navigator-tag {
     padding: 0 10px;
@@ -5950,13 +5965,44 @@ footer .logo-line :hover {
     border-right: 1px solid #222222;
   }
   #contact-main .contact-navigator-container #about-tag-contact {
-    color: #BEAD8E;
+    color: #bead8e;
   }
 
-  .satelite-map {
-    width: 1170px;
+  .flex {
+    display: inline-flex;
     height: 700px;
     margin: 0 0 130px;
+  }
+  .flex .satelite-map {
+    width: 1170px;
+    height: 700px;
+  }
+  .flex .column {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F8F8F8;
+    padding: 20px 20px;
+  }
+  .flex .column .community-dropdown {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 15px;
+  }
+  .flex .column #response {
+    text-align: justify;
+    width: 100%;
   }
 
   .contact-information-section {
@@ -6026,6 +6072,43 @@ footer .logo-line :hover {
     font-size: 16px;
     letter-spacing: 3.2px;
     cursor: pointer;
+  }
+
+  .geolocation-input {
+    min-width: 140px;
+    font-size: 12px;
+  }
+
+  .button-primary, .button-secondary {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 2px 20px #afa7a7;
+  }
+
+  .custom-map-control-button {
+    margin-bottom: 20px;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 2px 20px #afa7a7;
   }
 }
 html, * {

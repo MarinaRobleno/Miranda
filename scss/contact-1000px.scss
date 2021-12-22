@@ -1,132 +1,196 @@
-@media only screen and (min-width: 1000px){
-    #contact-main{
+@media only screen and (min-width: 1000px) {
+  #contact-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 293px;
+    margin-bottom: 120px;
+    background-color: #222222;
+    .ultimate-header {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2.8px;
+      color: #ffffff;
+      padding-top: 0;
+      padding-left: 5px;
+    }
+    .home-main-text {
+      width: 100%;
+      padding-top: 30px;
+      padding-left: 0;
+      padding-right: 70px;
+      margin-left: 0;
+      font-size: 72px;
+      letter-spacing: -3.6px;
+      color: #ffffff;
+    }
+    .contact-navigator-container {
+      display: flex;
+      align-self: flex-end;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+      background-color: #ffffff;
+      .contact-navigator-tag {
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.48px;
+      }
+      #home-tag-contact {
+        color: #222222;
+        border-right: 1px solid #222222;
+      }
+      #about-tag-contact {
+        color: #bead8e;
+      }
+    }
+  }
+  .flex {
+    display: inline-flex;
+    height: 700px;
+    margin: 0 0 130px;
+    .satelite-map {
+      width: 1170px;
+      height: 700px;
+
+    }
+    .column {
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #F8F8F8;;
+      padding: 20px 20px;
+      .community-dropdown {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        background: #bead8e 0% 0% no-repeat padding-box;
+        font-family: inherit;
+        font-weight: 600;
+        text-align: left;
+        padding: 0 15px;
+      }
+      #response {
+        text-align: justify;
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-information-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .contact-information-card {
+      width: 370px;
+      height: 189px;
+      .contact-information-icon {
+        font-size: 40px;
+        padding: 0;
+        margin-top: -60px;
+        margin-left: 46px;
+      }
+      .contact-information-text {
+        margin: 32px 56px 42px 21px;
+        padding: 0;
+        .contact-information-text-title {
+          font-size: 24px;
+          padding-bottom: 30px;
+        }
+        .contact-information-text-description {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .contact-information-count {
+        display: none;
+      }
+    }
+  }
+
+  .contact-form-section {
+    margin: 0 20% 340px;
+    .contact-form-container {
+      width: 970px;
+      display: grid;
+      grid-gap: 30px;
+      padding: 0;
+      margin-bottom: 30px;
+      .contact-form-input {
+        margin: 0;
+        padding: 25px;
+        font-size: 16px;
+      }
+      .full-name {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .mail-address {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      .enter-message {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        height: 293px;
-        margin-bottom: 120px;
-        background-color: #222222;
-        .ultimate-header{
-            display: block;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2.8px;
-            color: #FFFFFF;
-            padding-top: 0;
-            padding-left: 5px;
-        }
-        .home-main-text {
-            width: 100%;
-            padding-top: 30px;
-            padding-left: 0;
-            padding-right: 70px;
-            margin-left: 0;
-            font-size: 72px;
-            letter-spacing: -3.6px;
-            color: #FFFFFF;
-        }
-        .contact-navigator-container{
-            display: flex;
-            align-self: flex-end;
-            align-items: center;
-            justify-content: center;
-            width: 200px;
-            height: 60px;
-            background-color: #FFFFFF;
-            .contact-navigator-tag{
-                padding: 0 10px;
-                font-size: 16px;
-                font-weight: 700;
-                letter-spacing: -0.48px;
-            }
-            #home-tag-contact{
-                color: #222222;
-                border-right: 1px solid #222222;
-            }
-            #about-tag-contact{
-                color: #BEAD8E;
-                
-            }
-        }
-
-        
+        padding-bottom: 250px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
     }
-    .satelite-map{
-        width: 1170px;
-        height: 700px;
-        margin: 0 0 130px;
+    .center {
+      .wide-golden-button {
+        width: 258px;
+        height: 60px;
+        font-size: 16px;
+        letter-spacing: 3.2px;
+        cursor: pointer;
+      }
     }
-    .contact-information-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .contact-information-card{
-            width: 370px;
-            height: 189px;
-            .contact-information-icon{
-                font-size: 40px;
-                padding: 0;
-                margin-top: -60px;
-                margin-left: 46px;
-            }
-            .contact-information-text{
-                margin: 32px 56px 42px 21px;
-                padding: 0;
-                .contact-information-text-title{
-                    font-size: 24px;
-                    padding-bottom: 30px;
-                }
-                .contact-information-text-description{
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-            }
-            .contact-information-count{
-                display: none;
-            }
-        }
-    }
+  }
 
-    .contact-form-section{
-        margin: 0 20% 340px;
-        .contact-form-container{
-            width: 970px;
-            display: grid;
-            grid-gap: 30px;
-            padding:0;
-            margin-bottom: 30px;
-            .contact-form-input{
-                margin: 0;
-                padding: 25px;
-                font-size: 16px;
-            }
-            .full-name{
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-            .mail-address{
-                grid-column-start: 2;
-                grid-column-end: 3;
-            }
-            .enter-message{
-                display: flex;
-                padding-bottom: 250px;
-                grid-column-start: 1;
-                grid-column-end: 3;
-            }
-        }
-        .center{
-            .wide-golden-button{
-                width: 258px;
-                height: 60px;
-                font-size: 16px;
-                letter-spacing: 3.2px;
-                cursor: pointer;
-            }
-        }
-    }
+  .geolocation-input {
+    min-width: 140px;
+    font-size: 12px;
+  }
 
-
+  .button-primary, .button-secondary {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 2px 20px #afa7a7;
+  }
+  .custom-map-control-button{
+    margin-bottom: 20px;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 2px 20px #afa7a7;
+  }
 }
