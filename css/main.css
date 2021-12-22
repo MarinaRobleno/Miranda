@@ -1053,6 +1053,12 @@ template {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1000px) {
   .home-main {
     display: flex;
@@ -1149,7 +1155,7 @@ template {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 2px solid #E6E6E680;
+    border: 2px solid #e6e6e680;
     background: #22222200 0% 0% no-repeat padding-box;
   }
   .arrow-down-section .arrow-down-external .arrow-down-internal {
@@ -1158,8 +1164,8 @@ template {
     color: white;
     width: 60px;
     height: 60px;
-    background: #BEAD8E 0% 0% no-repeat padding-box;
-    box-shadow: 0px 14px 24px #BEAD8E4D;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #bead8e4d;
     border-radius: 50%;
   }
 
@@ -1464,7 +1470,7 @@ template {
     font-family: "Archivo", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: #BDAC8D;
+    color: #bdac8d;
     letter-spacing: 2.8px;
   }
   .testimonials-section .testimonials-extra-panel .testimonials-extra-panel-title {
@@ -1586,8 +1592,8 @@ template {
     margin-right: 5px;
     font-size: 40px;
     font-weight: 700;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 14px 24px #8B8B8B1A;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #8b8b8b1a;
   }
   .subscribe-section .subscribe-text {
     width: 720px;
@@ -1604,20 +1610,20 @@ template {
     width: 724px;
     height: 90px;
     margin-bottom: 120px;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
   }
   .subscribe-section .subscribe-form .subscribe-input {
     width: 524px;
     height: 90px;
     padding: 37px 50px;
     text-align: left;
-    color: #AEAEAE;
+    color: #aeaeae;
     font-size: 16px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 3.2px;
     border: none;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
   }
   .subscribe-section .subscribe-form .subscribe-input:focus {
     outline: none;
@@ -1632,8 +1638,13 @@ template {
     font-size: 14px;
     font-weight: 700;
     border: none;
-    background: #BEAD8E 0% 0% no-repeat padding-box;
+    background: #bead8e 0% 0% no-repeat padding-box;
     cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
 /*!
@@ -5850,6 +5861,10 @@ footer .logo-line :hover {
 }
 .contact-form-section .center {
   margin-top: 0;
+}
+
+.contact-navigator-container {
+  display: none;
 }
 
 .contact-information-section {

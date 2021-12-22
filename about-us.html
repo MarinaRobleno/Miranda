@@ -1,292 +1,363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Miranda Hotel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Miranda Hotel</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header class='header'>
-    <div class='header-bar'>
-        <div class='hotel-miranda-title'>
-          <div class='hotel-miranda-icon'>H</div>
+  <body>
+    <header class="header">
+      <div class="header-bar">
+        <div class="hotel-miranda-title">
+          <div class="hotel-miranda-icon">H</div>
           <div>
-            <div class='hotel-bold'>HOTEL</div> 
-            <div>MIRANDA</div>
+            <a class="link" href="./index.html">
+              <div class="hotel-bold">HOTEL</div>
+              <div>MIRANDA</div>
+            </a>
           </div>
         </div>
-        <i class="fa fa-bars hamburger-button" id='hamburger-button' aria-hidden="true"></i>    
-    </div>
-    <div id='drop-down-box' class='drop-down-box'>
-        <ul class='drop-down-list'>
-            <li class='drop-down-element'>
-                About Us
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Rooms
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Offers
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                News
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Contact
-            </li>
+        <i
+          class="fa fa-bars hamburger-button"
+          id="hamburger-button"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div id="drop-down-box" class="drop-down-box">
+        <ul class="drop-down-list">
+          <li class="drop-down-element">
+            <a class="link" href="./about-us.html"> About Us </a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" href="./room-list.html"> Rooms</a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" class="link" href="./room-list.html"> Offers </a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">News</li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" href="./contact.html"> Contact</a>
+          </li>
         </ul>
-        <div class='contact-and-icon-container'>
-          <div class='contact-and-icon'>
+        <div class="contact-and-icon-container">
+          <div class="contact-and-icon">
             <div>
-              <div class='contact-text'>Phone Number</div>
-              <div id='phone-number' class='drop-down-contact'>+908 987 877 09</div>
+              <div class="contact-text">Phone Number</div>
+              <div id="phone-number" class="drop-down-contact">
+                +908 987 877 09
+              </div>
             </div>
             <i class="fa fa-phone drop-down-icon" aria-hidden="true"></i>
           </div>
-          <div class='contact-and-icon'>
+          <div class="contact-and-icon">
             <div>
-              <div class='contact-text'>Email Address</div>
-              <div id='contact-mail' class='drop-down-contact'>info@webmail.com</div>
+              <div class="contact-text">Email Address</div>
+              <div id="contact-mail" class="drop-down-contact">
+                info@webmail.com
+              </div>
             </div>
             <i class="fa fa-envelope drop-down-icon" aria-hidden="true"></i>
           </div>
         </div>
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <section class='home-main' id='about-us-main'>
-    <div>
-      <div class='ultimate-header'>THE ULTIMATE LUXURY</div>
-      <div class='home-main-text'>About Us</div>
-    </div>
-    <div class='about-navigator-container'>
-      <div class='about-navigator-tag' id='home-tag-about'>
-        Home
-      </div>
-      <div class='about-navigator-tag' id='about-tag-about'>
-        About
-      </div>
-    </div>
-  </section>
-  
-  <section class='about-us-intro-section'>
-    <div class='inverted-container'>
-      <div class='section-body-center' style='margin-top: 20px'>
-        Hello. Our hotel has been present for over 20 years. We make the best for all our customers.    
-      </div>
-      <div class='about-us-video'></div>
-    </div>
-    <div class='services-grid'>
-      <button class='service-card'>
-        <img src='./Images/icon-1.png' class='service-icon'/>
-        <p class='service-card-text'>BREAKFAST</p>
-      </button>
-      <button class='service-card-negative'>
-        <img src='./Images/icon@2x.png' class='service-icon'/>
-        <p class='service-card-text-negative'>AIRPORT PICKUP</p>
-      </button>
-      <button class='service-card'>
-        <i class="fa fa-star-o service-icon" id='luxury-icon' aria-hidden="true"></i>
-        <p class='service-card-text'>LUXURY ROOM</p>
-      </button>
-      <button class='service-card' id='bbq-party'>
-        <img src='./Images/icon(2).png' class='service-icon'/>
-        <p class='service-card-text'>BBQ PARTY</p>
-      </button>
-      <button class='service-card'>
-        <img src='./Images/icon3.png' class='service-icon'/>
-        <p class='service-card-text'>CITY GUIDE</p>
-      </button>
-    </div>
-  </section>  
-
-  <section class='facilities-section'>
-    <div class='section-header' id='facilities'>FACILITIES</div>
-    <div class='section-body-center' id='core-features'>Core Features</div>
-    <div class='services-grid' id='features-grid'>
-      <div class='service-card features-card'>
-        <div class='features-icon-row'>
-          <img src='./Images/icon-2.png' class='features-icon'/>
-          <div class='features-number'>01</div>
-        </div>
-        <div class='features-title'>Have High Rating</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-      <div class='service-card features-card'>
-        <div class='features-icon-row'>
-          <img src='./Images/icon-1(1).png' class='features-icon'/>
-          <div class='features-number'>02</div>
-        </div>
-        <div class='features-title'>Quiet Hours</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-      <div class='service-card features-card'>
-        <div class='features-icon-row'>
-          <img src='./Images/icon(1).png' class='features-icon'/>
-          <div class='features-number'>03</div>
-        </div>
-        <div class='features-title'>Free Cancellation</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-      <div class='service-card features-card'>
-        <div class='features-icon-row'>
-          <i class="fa fa-credit-card features-icon" style='opacity: 0.8' aria-hidden="true"></i>
-          <div class='features-number'>04</div>
-        </div>
-        <div class='features-title'>Payment Options</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-      <div class='service-card features-card' id='extra-card'>
-        <div class='features-icon-row'>
-          <i class="fa fa-map-marker features-icon" style='opacity: 0.8' aria-hidden="true"></i>
-          <div class='features-number'>05</div>
-        </div>
-        <div class='features-title'>Best Locations</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-      <div class='service-card features-card' id='extra-card'>
-        <div class='features-icon-row'>
-          <i class="fa fa-percent features-icon" style='opacity: 0.8' aria-hidden="true"></i>
-          <div class='features-number'>06</div>
-        </div>
-        <div class='features-title'>Special Offers</div>
-        <p class='features-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class='counter-section'>
-    <div class='section-header'>COUNTER</div>
-    <div class='section-body'>Some Fun Facts</div>
-    <div class='counter-container'>
-      <div class='counter-card'>
-        <i class="fa fa-user counter-icon" aria-hidden="true"></i>
-        <div class='count-and-text'>
-          <div class='counter-number'>8000</div>
-          <div class='counter-text'>Happy Users</div>
-        </div>
-        <i class="fa fa-long-arrow-right counter-arrow" aria-hidden="true"></i>
-      </div>
-      <div class='counter-card'>
-        <i class="fa fa-thumbs-o-up counter-icon" aria-hidden="true"></i>
-        <div class='count-and-text'>
-          <div class='counter-number'>10M</div>
-          <div class='counter-text'>Reviews & Appriciate</div>
-        </div>
-        <i class="fa fa-long-arrow-right counter-arrow" aria-hidden="true"></i>
-      </div>
-      <div class='counter-card'>
-        <i class="fa fa-globe counter-icon" aria-hidden="true"></i>
-        <div class='count-and-text'>
-          <div class='counter-number'>100</div>
-          <div class='counter-text'>Country Coverage</div>
-        </div>
-        <i class="fa fa-long-arrow-right counter-arrow" aria-hidden="true"></i>
-      </div>
-    </div>
-    <div class='counter-image-row'>
-      <img src='./Images/pexels-max-vakhtbovych-6434631.jpg' class='counter-image'/>
-      <img src='./Images/pexels-max-vakhtbovych-6394711.jpg' class='counter-image'/>
-    </div>
-  </section>
-
-  <section class='blog-section' id='about-blog-section'>
-    <div class='section-header'>BLOG</div>
-    <div class='section-body-container'>
-      <div class='section-body'>News Feeds</div>
-      <div class='blog-button-line'>
-        <button class='blog-button' id='white-button'>
-          <i class="fa fa-arrow-left blog-arrow-left" aria-hidden="true"></i>
-        </button>
-        <button class='blog-button' id='golden-button'>
-          <i class="fa fa-arrow-right blog-arrow-right" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class='post-container'>
-      <div class='post'>
-        <img src='./Images/news-feeds-photo-1.jpeg' class='post-image'/>
-        <div class='post-data'>
-          <div class='post-card-data'>
-            <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>23rd March 2019</p>
-          </div>
-          <div class='post-card-data'>
-            <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>By Admin</p>
-          </div>
-        </div>
-        <div class='post-title'>Each of our 8 double rooms has its own distinct.</div> 
-        <div class='post-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-      </div>
-      <div class='post'>
-        <img src='./Images/news-feeds-photo-2.jpg' class='post-image'/>
-        <div class='post-data'>
-          <div class='post-card-data'>
-            <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>23rd March 2019</p>
-          </div>
-          <div class='post-card-data'>
-            <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>By Admin</p>
-          </div>
-        </div>
-        <div class='post-title'>Each of our 8 double rooms has its own distinct.</div> 
-        <div class='post-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class='subscribe-section'>
-    <div class='hotel-miranda-title'>
-      <div class='hotel-miranda-icon'>H</div>
+    <section class="home-main" id="about-us-main">
       <div>
-        <div class='hotel-bold'>HOTEL</div> 
-        <div>MIRANDA</div>
+        <div class="ultimate-header">THE ULTIMATE LUXURY</div>
+        <div class="home-main-text">About Us</div>
       </div>
-    </div>
-    <p class='subscribe-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doing eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-    <div class='subscribe-form'>
-      <input placeholder="ENTER YOUR EMAIL ADDRESS" class='subscribe-input'/>
-      <button class='subscribe-button'>SUBSCRIBE</button>
-    </div>
-  </section>
+      <div class="about-navigator-container">
+        <div class="about-navigator-tag" id="home-tag-about">Home</div>
+        <div class="about-navigator-tag" id="about-tag-about">About</div>
+      </div>
+    </section>
 
-  <footer>
-    <div class='copyright'>COPYRIGHT BY@EXAMPLE</div>
-    <div class='logo-line'>
-      <i class="fa fa-facebook copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-twitter copy-icon" id='twitter' aria-hidden="true"></i>
-      <i class="fa fa-behance copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-youtube-play copy-icon" aria-hidden="true"></i>
-    </div>
-  </footer>
+    <section class="about-us-intro-section">
+      <div class="inverted-container">
+        <div class="section-body-center" style="margin-top: 20px">
+          Hello. Our hotel has been present for over 20 years. We make the best
+          for all our customers.
+        </div>
+        <div class="about-us-video"></div>
+      </div>
+      <div class="services-grid">
+        <button class="service-card">
+          <img src="./Images/icon-1.png" class="service-icon" />
+          <p class="service-card-text">BREAKFAST</p>
+        </button>
+        <button class="service-card-negative">
+          <img src="./Images/icon@2x.png" class="service-icon" />
+          <p class="service-card-text-negative">AIRPORT PICKUP</p>
+        </button>
+        <button class="service-card">
+          <i
+            class="fa fa-star-o service-icon"
+            id="luxury-icon"
+            aria-hidden="true"
+          ></i>
+          <p class="service-card-text">LUXURY ROOM</p>
+        </button>
+        <button class="service-card" id="bbq-party">
+          <img src="./Images/icon(2).png" class="service-icon" />
+          <p class="service-card-text">BBQ PARTY</p>
+        </button>
+        <button class="service-card">
+          <img src="./Images/icon3.png" class="service-icon" />
+          <p class="service-card-text">CITY GUIDE</p>
+        </button>
+      </div>
+    </section>
 
+    <section class="facilities-section">
+      <div class="section-header" id="facilities">FACILITIES</div>
+      <div class="section-body-center" id="core-features">Core Features</div>
+      <div class="services-grid" id="features-grid">
+        <div class="service-card features-card">
+          <div class="features-icon-row">
+            <img src="./Images/icon-2.png" class="features-icon" />
+            <div class="features-number">01</div>
+          </div>
+          <div class="features-title">Have High Rating</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="service-card features-card">
+          <div class="features-icon-row">
+            <img src="./Images/icon-1(1).png" class="features-icon" />
+            <div class="features-number">02</div>
+          </div>
+          <div class="features-title">Quiet Hours</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="service-card features-card">
+          <div class="features-icon-row">
+            <img src="./Images/icon(1).png" class="features-icon" />
+            <div class="features-number">03</div>
+          </div>
+          <div class="features-title">Free Cancellation</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="service-card features-card">
+          <div class="features-icon-row">
+            <i
+              class="fa fa-credit-card features-icon"
+              style="opacity: 0.8"
+              aria-hidden="true"
+            ></i>
+            <div class="features-number">04</div>
+          </div>
+          <div class="features-title">Payment Options</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="service-card features-card" id="extra-card">
+          <div class="features-icon-row">
+            <i
+              class="fa fa-map-marker features-icon"
+              style="opacity: 0.8"
+              aria-hidden="true"
+            ></i>
+            <div class="features-number">05</div>
+          </div>
+          <div class="features-title">Best Locations</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="service-card features-card" id="extra-card">
+          <div class="features-icon-row">
+            <i
+              class="fa fa-percent features-icon"
+              style="opacity: 0.8"
+              aria-hidden="true"
+            ></i>
+            <div class="features-number">06</div>
+          </div>
+          <div class="features-title">Special Offers</div>
+          <p class="features-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-</body>
+    <section class="counter-section">
+      <div class="section-header">COUNTER</div>
+      <div class="section-body">Some Fun Facts</div>
+      <div class="counter-container">
+        <div class="counter-card">
+          <i class="fa fa-user counter-icon" aria-hidden="true"></i>
+          <div class="count-and-text">
+            <div class="counter-number">8000</div>
+            <div class="counter-text">Happy Users</div>
+          </div>
+          <i
+            class="fa fa-long-arrow-right counter-arrow"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <div class="counter-card">
+          <i class="fa fa-thumbs-o-up counter-icon" aria-hidden="true"></i>
+          <div class="count-and-text">
+            <div class="counter-number">10M</div>
+            <div class="counter-text">Reviews & Appriciate</div>
+          </div>
+          <i
+            class="fa fa-long-arrow-right counter-arrow"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <div class="counter-card">
+          <i class="fa fa-globe counter-icon" aria-hidden="true"></i>
+          <div class="count-and-text">
+            <div class="counter-number">100</div>
+            <div class="counter-text">Country Coverage</div>
+          </div>
+          <i
+            class="fa fa-long-arrow-right counter-arrow"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+      <div class="counter-image-row">
+        <img
+          src="./Images/pexels-max-vakhtbovych-6434631.jpg"
+          class="counter-image"
+        />
+        <img
+          src="./Images/pexels-max-vakhtbovych-6394711.jpg"
+          class="counter-image"
+        />
+      </div>
+    </section>
 
+    <section class="blog-section" id="about-blog-section">
+      <div class="section-header">BLOG</div>
+      <div class="section-body-container">
+        <div class="section-body">News Feeds</div>
+        <div class="blog-button-line">
+          <button class="blog-button" id="white-button">
+            <i class="fa fa-arrow-left blog-arrow-left" aria-hidden="true"></i>
+          </button>
+          <button class="blog-button" id="golden-button">
+            <i
+              class="fa fa-arrow-right blog-arrow-right"
+              aria-hidden="true"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post">
+          <img src="./Images/news-feeds-photo-1.jpeg" class="post-image" />
+          <div class="post-data">
+            <div class="post-card-data">
+              <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">23rd March 2019</p>
+            </div>
+            <div class="post-card-data">
+              <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">By Admin</p>
+            </div>
+          </div>
+          <div class="post-title">
+            Each of our 8 double rooms has its own distinct.
+          </div>
+          <div class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </div>
+        </div>
+        <div class="post">
+          <img src="./Images/news-feeds-photo-2.jpg" class="post-image" />
+          <div class="post-data">
+            <div class="post-card-data">
+              <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">23rd March 2019</p>
+            </div>
+            <div class="post-card-data">
+              <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">By Admin</p>
+            </div>
+          </div>
+          <div class="post-title">
+            Each of our 8 double rooms has its own distinct.
+          </div>
+          <div class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="hotel-miranda-title">
+        <div class="hotel-miranda-icon">H</div>
+        <div>
+          <div class="hotel-bold">HOTEL</div>
+          <div>MIRANDA</div>
+        </div>
+      </div>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doing
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi.
+      </p>
+      <div class="subscribe-form">
+        <input placeholder="ENTER YOUR EMAIL ADDRESS" class="subscribe-input" />
+        <button class="subscribe-button">SUBSCRIBE</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">COPYRIGHT BY@EXAMPLE</div>
+      <div class="logo-line">
+        <i class="fa fa-facebook copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-twitter copy-icon" id="twitter" aria-hidden="true"></i>
+        <i class="fa fa-behance copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play copy-icon" aria-hidden="true"></i>
+      </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

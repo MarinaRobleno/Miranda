@@ -1,354 +1,436 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Miranda Hotel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Miranda Hotel</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <header class='header'>
-    <div class='header-bar'>
-        <div class='hotel-miranda-title'>
-          <div class='hotel-miranda-icon'>H</div>
+  <body>
+    <header class="header">
+      <div class="header-bar">
+        <div class="hotel-miranda-title">
+          <div class="hotel-miranda-icon">H</div>
           <div>
-            <div class='hotel-bold'>HOTEL</div> 
-            <div>MIRANDA</div>
+            <a class="home-link" href="./index.html">
+              <div class="hotel-bold">HOTEL</div>
+              <div>MIRANDA</div>
+            </a>
           </div>
         </div>
-        <i class="fa fa-bars hamburger-button" id='hamburger-button' aria-hidden="true"></i>    
-    </div>
-    <div id='drop-down-box' class='drop-down-box'>
-        <ul class='drop-down-list'>
-            <li class='drop-down-element'>
-                About Us
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Rooms
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Offers
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                News
-            </li>
-            <div class='space'></div>
-            <li class='drop-down-element'>
-                Contact
-            </li>
+        <i
+          class="fa fa-bars hamburger-button"
+          id="hamburger-button"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div id="drop-down-box" class="drop-down-box">
+        <ul class="drop-down-list">
+          <li class="drop-down-element">
+            <a class="link" href="./about-us.html"> About Us </a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" href="./room-list.html"> Rooms</a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" class="link" href="./room-list.html"> Offers </a>
+          </li>
+          <div class="space"></div>
+          <li class="drop-down-element">News</li>
+          <div class="space"></div>
+          <li class="drop-down-element">
+            <a class="link" href="./contact.html"> Contact</a>
+          </li>
         </ul>
-        <div class='contact-and-icon-container'>
-          <div class='contact-and-icon'>
+        <div class="contact-and-icon-container">
+          <div class="contact-and-icon">
             <div>
-              <div class='contact-text'>Phone Number</div>
-              <div id='phone-number' class='drop-down-contact'>+908 987 877 09</div>
+              <div class="contact-text">Phone Number</div>
+              <div id="phone-number" class="drop-down-contact">
+                +908 987 877 09
+              </div>
             </div>
             <i class="fa fa-phone drop-down-icon" aria-hidden="true"></i>
           </div>
-          <div class='contact-and-icon'>
+          <div class="contact-and-icon">
             <div>
-              <div class='contact-text'>Email Address</div>
-              <div id='contact-mail' class='drop-down-contact'>info@webmail.com</div>
+              <div class="contact-text">Email Address</div>
+              <div id="contact-mail" class="drop-down-contact">
+                info@webmail.com
+              </div>
             </div>
             <i class="fa fa-envelope drop-down-icon" aria-hidden="true"></i>
           </div>
         </div>
-    </div>
-  </header>
-
-  <section class='home-main'>
-    <div class='home-main-container'>
-      <div class='ultimate-header'>THE ULTIMATE LUXURY EXPERIENCE</div>
-      <div class='home-main-text'>The Perfect Base For You</div>
-      <div class='home-main-button-line'>
-          <button class='home-main-button' id='main-button-1'>TAKE A TOUR</button>
-          <button class='home-main-button' id='main-button-2'>LEARN MORE</button>
       </div>
-    </div>
-    <img src='./Images/pexels-ricardo-ortiz-6263634.jpg' class='full-screen-main-image'/> 
-  </section>
+    </header>
 
-  <section class='book-panel'>
-      <div class='check-in-line-panel'>
-          <div class='check-in-panel' id='check-in'>
-            <p>CHECK IN</p>
-            <input class='check-in-input' type="date">
-          </div>
-          <div class='check-in-panel' id='check-out'>
-            <p>CHECK OUT</p>
-            <input class='check-in-input' type="date">
-          </div>
+    <section class="home-main">
+      <div class="home-main-container">
+        <div class="ultimate-header">THE ULTIMATE LUXURY EXPERIENCE</div>
+        <div class="home-main-text">The Perfect Base For You</div>
+        <div class="home-main-button-line">
+          <button class="home-main-button" id="main-button-1">
+            TAKE A TOUR
+          </button>
+          <button class="home-main-button" id="main-button-2">
+            LEARN MORE
+          </button>
+        </div>
       </div>
-      <button class='book-button'>Book Now</button>
-  </section>
+      <img
+        src="./Images/pexels-ricardo-ortiz-6263634.jpg"
+        class="full-screen-main-image"
+      />
+    </section>
 
-  <section class='arrow-down-section'>
-    <div class='arrow-down-external'>
-      <i class='fa fa-arrow-down arrow-down-internal' aria-hidden="true"></i>
-    </div>    
-  </section>
+    <section class="book-panel">
+      <div class="check-in-line-panel">
+        <div class="check-in-panel" id="check-in">
+          <p>CHECK IN</p>
+          <input class="check-in-input" type="date" />
+        </div>
+        <div class="check-in-panel" id="check-out">
+          <p>CHECK OUT</p>
+          <input class="check-in-input" type="date" />
+        </div>
+      </div>
+      <button class="book-button">Book Now</button>
+    </section>
 
-  <section class='services-section'>
-    <div class='section-header'>
-      <div class='since'>SINCE</div>
-      <div class='year'>1994</div>
-    </div>
-    <div class='section-body-center'>
-      Situated In Prime Position At The Foot Of The Slopes Of Courchevel Moriond.
-    </div>
-    <div class='services-grid'>
-      <button class='service-card first-height'>
-        <img src='Images/icon-1.png' class='service-icon'/>
-        <p class='service-card-text'>BREAKFAST</p>
-      </button>
-      <button class='service-card-negative second-height'>
-        <img src='Images/icon@2x.png' class='service-icon'/>
-        <p class='service-card-text-negative'>AIRPORT PICKUP</p>
-      </button>
-      <button class='service-card third-height'>
-        <i class="fa fa-star-o service-icon" id='luxury-icon' aria-hidden="true"></i>
-        <p class='service-card-text'>LUXURY ROOM</p>
-      </button>
-      <button class='service-card second-height' id='bbq-party'>
-        <img src='Images/icon(2).png' class='service-icon'/>
-        <p class='service-card-text'>BBQ PARTY</p>
-      </button>
-      <button class='service-card first-height'>
-        <img src='Images/icon3.png' class='service-icon'/>
-        <p class='service-card-text'>CITY GUIDE</p>
-      </button>
-    </div>
-  </section>
+    <section class="arrow-down-section">
+      <div class="arrow-down-external">
+        <i class="fa fa-arrow-down arrow-down-internal" aria-hidden="true"></i>
+      </div>
+    </section>
 
-  <section class='room-type-section'>
-    <div class='section-header'>ROOM TYPE</div>
-    <div class='section-body'>Inspired Lodging</div>
-    <!--<div class='room-type-nav'>
+    <section class="services-section">
+      <div class="section-header">
+        <div class="since">SINCE</div>
+        <div class="year">1994</div>
+      </div>
+      <div class="section-body-center">
+        Situated In Prime Position At The Foot Of The Slopes Of Courchevel
+        Moriond.
+      </div>
+      <div class="services-grid">
+        <button class="service-card first-height">
+          <img src="Images/icon-1.png" class="service-icon" />
+          <p class="service-card-text">BREAKFAST</p>
+        </button>
+        <button class="service-card-negative second-height">
+          <img src="Images/icon@2x.png" class="service-icon" />
+          <p class="service-card-text-negative">AIRPORT PICKUP</p>
+        </button>
+        <button class="service-card third-height">
+          <i
+            class="fa fa-star-o service-icon"
+            id="luxury-icon"
+            aria-hidden="true"
+          ></i>
+          <p class="service-card-text">LUXURY ROOM</p>
+        </button>
+        <button class="service-card second-height" id="bbq-party">
+          <img src="Images/icon(2).png" class="service-icon" />
+          <p class="service-card-text">BBQ PARTY</p>
+        </button>
+        <button class="service-card first-height">
+          <img src="Images/icon3.png" class="service-icon" />
+          <p class="service-card-text">CITY GUIDE</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="room-type-section">
+      <div class="section-header">ROOM TYPE</div>
+      <div class="section-body">Inspired Lodging</div>
+      <!--<div class='room-type-nav'>
       <button class='room-type-nav-button'>Luxury</button>
       <button class='room-type-nav-button'>Family</button>
       <button class='room-type-nav-button'>Double Bed</button>
       <button class='room-type-nav-button'>Relax</button>
     </div>-->
-    <div class='room-type-grid'>
-      <div class='room-type-grid-item' id='room-type-1'>
-        <div class='room-type-grid-data'>
-          <i class="fa fa-th grid-icon" aria-hidden="true"></i>
-          <div class='room-type-number-rooms'>12 ROOMS</div>
-        </div>
-        <div class='room-type-grid-title'>Junior Suite</div>
-      </div>
-      <div class='room-type-grid-item' id='room-type-2'>
-        <div class='room-type-grid-data'>
-          <i class="fa fa-th grid-icon" aria-hidden="true"></i>
-          <div class='room-type-number-rooms'>12 ROOMS</div>
-        </div>
-        <div class='room-type-grid-title'>Junior Suite</div>
-      </div> 
-      <div class='room-type-grid-item' id='room-type-3'>
-        <div class='room-type-grid-data'>
-          <i class="fa fa-th grid-icon" aria-hidden="true"></i>
-          <div class='room-type-number-rooms'>03 ROOMS</div>
-        </div>
-        <div class='room-type-grid-title'>Luxury Home Of Fame</div>
-      </div> 
-      <div class='room-type-grid-item' id='room-type-4'>
-        <div class='room-type-grid-data'>
-          <i class="fa fa-th grid-icon" aria-hidden="true"></i>
-          <div class='room-type-number-rooms'>10 ROOMS</div>
-        </div>
-        <div class='room-type-grid-title'>Pacific Room</div>
-      </div> 
-    </div>
-    <button class='home-main-button' id='view-all-button'>VIEW ALL ROOMS</button>
-  </section>
-
-  <section class='call-to-action-section'>
-    <div class='tour-header'>
-      <div class='section-header'>CALL TO ACTION</div>
-      <div class='section-body'>The Thin Escape.</div>
-      <div class='paragraph-and-button'>
-        <p class='action-paragraph'>Miranda has everything for your trip & every single things.</p>
-        <button class='action-button' id='tour-button'>TAKE A TOUR</button>
-      </div>
-    </div>
-    <div class='tour-advantages'>
-      <div class='individual-advantage'>
-        <div class='advantage-icon-frame'>
-          <i class="fa fa-plane advantage-icon" aria-hidden="true"></i>
-        </div>
-        <div class='advantage-text-container'>
-          <div class='advantage-title'>Easy & Free Transport</div>
-          <p class='advantage-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-      <div class='individual-advantage'>
-        <div class='advantage-icon-frame' id='negative-frame'>
-          <i class="fa fa-coffee advantage-icon" id='negative-icon' aria-hidden="true"></i>
-        </div>
-        <div class='advantage-text-container'>
-          <div class='advantage-title'>Clean & Fresh Food</div>
-          <p class='advantage-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-      <div class='individual-advantage'>
-        <div class='advantage-icon-frame'>
-          <i class="fa fa-life-ring advantage-icon" aria-hidden="true"></i>
-        </div>
-        <div class='advantage-text-container'>
-          <div class='advantage-title'>Play Ground & Swiming Pool</div>
-          <p class='advantage-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class='border-bottom-advantages'></div>
-
-  <section class='carousel-section'>
-    <div class='carousel-container'>
-      <img src='' class='carousel-image'/>
-    </div>
-    <div class='carousel-detail-box'>
-      <div class='carousel-detail-box-header'>
-        <i class="fa fa-bed carousel-detail-box-icon" aria-hidden="true"></i>
-        <div class='carousel-detail-box-counter'>01/08</div>
-      </div>
-      <div class='carousel-detail-box-title'>Luxury Room</div>
-      <p class='carousel-detail-box-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-    </div>
-  </section>
-
-  <section class='take-a-tour-section'>
-    <div class='take-a-tour-text'>
-      <div class='section-header'>TAKE A TOUR</div>
-      <div class='section-body'>Discover Our Underground.</div>
-      <p class='take-a-tour-paragraph'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <button class='home-main-button' id='view-all-button'>BOOK NOW</button>
-    </div>
-    <iframe id='discover-video' width="100%" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-
-  <section class='testimonials-section'>
-    <div class='section-header'>TESTIMONIALS</div>
-    <div class='section-body'>Client Feedback</div>
-    <div class='feedback-container'>
-      <div class='feedback-card'>
-        <img src='./Images/stock person.jpg' class='feedback-image'/>
-        <i class="fa fa-check feedback-check" aria-hidden="true"></i>
-        <p class='feedback-name'>Donald H. Hilixer</p>
-        <p class='feedback-job'>FOUNDER, QUX CO.</p>
-        <p class='feedback-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-    </div>
-    <div class='testimonials-extra-panel'>
-      <div class='section-header' id='extra-panel-header'>
-        OUR ROOMS
-      </div>
-      <div class='testimonials-extra-panel-title'>
-        Each of our nine lovely double guest rooms feature a private bath, wi-fi, cable television and include full breakfast.
-      </div>
-      <div class='extra-panel-button-line'>
-        <button class='home-main-button' id='main-button-1'>TAKE A TOUR</button>
-        <button class='home-main-button' id='main-button-2'>PACKAGE & POLICY</button>
-      </div>
-    </div>
-  </section>
-
-  <section class='blog-section'>
-    <div class='section-header'>BLOG</div>
-    <div class='section-body-container'>
-      <div class='section-body'>News Feeds</div>
-      <div class='blog-button-line'>
-        <button class='blog-button' id='white-button'>
-          <i class="fa fa-arrow-left blog-arrow-left" aria-hidden="true"></i>
-        </button>
-        <button class='blog-button' id='golden-button'>
-          <i class="fa fa-arrow-right blog-arrow-right" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class='post-container'>
-      <div class='post'>
-        <img src='./Images/news-feeds-photo-1.jpeg' class='post-image'/>
-        <div class='post-data'>
-          <div class='post-card-data'>
-            <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>23rd March 2019</p>
+      <div class="room-type-grid">
+        <div class="room-type-grid-item" id="room-type-1">
+          <div class="room-type-grid-data">
+            <i class="fa fa-th grid-icon" aria-hidden="true"></i>
+            <div class="room-type-number-rooms">12 ROOMS</div>
           </div>
-          <div class='post-card-data'>
-            <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>By Admin</p>
+          <div class="room-type-grid-title">Junior Suite</div>
+        </div>
+        <div class="room-type-grid-item" id="room-type-2">
+          <div class="room-type-grid-data">
+            <i class="fa fa-th grid-icon" aria-hidden="true"></i>
+            <div class="room-type-number-rooms">12 ROOMS</div>
+          </div>
+          <div class="room-type-grid-title">Junior Suite</div>
+        </div>
+        <div class="room-type-grid-item" id="room-type-3">
+          <div class="room-type-grid-data">
+            <i class="fa fa-th grid-icon" aria-hidden="true"></i>
+            <div class="room-type-number-rooms">03 ROOMS</div>
+          </div>
+          <div class="room-type-grid-title">Luxury Home Of Fame</div>
+        </div>
+        <div class="room-type-grid-item" id="room-type-4">
+          <div class="room-type-grid-data">
+            <i class="fa fa-th grid-icon" aria-hidden="true"></i>
+            <div class="room-type-number-rooms">10 ROOMS</div>
+          </div>
+          <div class="room-type-grid-title">Pacific Room</div>
+        </div>
+      </div>
+      <button class="home-main-button" id="view-all-button">
+        VIEW ALL ROOMS
+      </button>
+    </section>
+
+    <section class="call-to-action-section">
+      <div class="tour-header">
+        <div class="section-header">CALL TO ACTION</div>
+        <div class="section-body">The Thin Escape.</div>
+        <div class="paragraph-and-button">
+          <p class="action-paragraph">
+            Miranda has everything for your trip & every single things.
+          </p>
+          <button class="action-button" id="tour-button">TAKE A TOUR</button>
+        </div>
+      </div>
+      <div class="tour-advantages">
+        <div class="individual-advantage">
+          <div class="advantage-icon-frame">
+            <i class="fa fa-plane advantage-icon" aria-hidden="true"></i>
+          </div>
+          <div class="advantage-text-container">
+            <div class="advantage-title">Easy & Free Transport</div>
+            <p class="advantage-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
         </div>
-        <div class='post-title'>Each of our 8 double rooms has its own distinct.</div> 
-        <div class='post-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-      </div>
-      <div class='post'>
-        <img src='./Images/news-feeds-photo-2.jpg' class='post-image'/>
-        <div class='post-data'>
-          <div class='post-card-data'>
-            <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>23rd March 2019</p>
+        <div class="individual-advantage">
+          <div class="advantage-icon-frame" id="negative-frame">
+            <i
+              class="fa fa-coffee advantage-icon"
+              id="negative-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class='post-card-data'>
-            <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
-            <p class='post-card-text'>By Admin</p>
+          <div class="advantage-text-container">
+            <div class="advantage-title">Clean & Fresh Food</div>
+            <p class="advantage-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
         </div>
-        <div class='post-title'>Each of our 8 double rooms has its own distinct.</div> 
-        <div class='post-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+        <div class="individual-advantage">
+          <div class="advantage-icon-frame">
+            <i class="fa fa-life-ring advantage-icon" aria-hidden="true"></i>
+          </div>
+          <div class="advantage-text-container">
+            <div class="advantage-title">Play Ground & Swiming Pool</div>
+            <p class="advantage-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <div class="border-bottom-advantages"></div>
 
-  <section class='subscribe-section'>
-    <div class='hotel-miranda-title'>
-      <div class='hotel-miranda-icon'>H</div>
-      <div>
-        <div class='hotel-bold'>HOTEL</div> 
-        <div>MIRANDA</div>
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <img src="" class="carousel-image" />
       </div>
-    </div>
-    <p class='subscribe-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doing eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-    <div class='subscribe-form'>
-      <input placeholder="ENTER YOUR EMAIL ADDRESS" class='subscribe-input'/>
-      <button class='subscribe-button'>SUBSCRIBE</button>
-    </div>
-  </section>
+      <div class="carousel-detail-box">
+        <div class="carousel-detail-box-header">
+          <i class="fa fa-bed carousel-detail-box-icon" aria-hidden="true"></i>
+          <div class="carousel-detail-box-counter">01/08</div>
+        </div>
+        <div class="carousel-detail-box-title">Luxury Room</div>
+        <p class="carousel-detail-box-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
+      </div>
+    </section>
 
-  <footer>
-    <div class='copyright'>COPYRIGHT BY@EXAMPLE</div>
-    <div class='logo-line'>
-      <i class="fa fa-facebook copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-twitter copy-icon" id='twitter' aria-hidden="true"></i>
-      <i class="fa fa-behance copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
-      <i class="fa fa-youtube-play copy-icon" aria-hidden="true"></i>
-    </div>
-  </footer>
+    <section class="take-a-tour-section">
+      <div class="take-a-tour-text">
+        <div class="section-header">TAKE A TOUR</div>
+        <div class="section-body">Discover Our Underground.</div>
+        <p class="take-a-tour-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button class="home-main-button" id="view-all-button">BOOK NOW</button>
+      </div>
+      <iframe
+        id="discover-video"
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <section class="testimonials-section">
+      <div class="section-header">TESTIMONIALS</div>
+      <div class="section-body">Client Feedback</div>
+      <div class="feedback-container">
+        <div class="feedback-card">
+          <img src="./Images/stock person.jpg" class="feedback-image" />
+          <i class="fa fa-check feedback-check" aria-hidden="true"></i>
+          <p class="feedback-name">Donald H. Hilixer</p>
+          <p class="feedback-job">FOUNDER, QUX CO.</p>
+          <p class="feedback-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+      </div>
+      <div class="testimonials-extra-panel">
+        <div class="section-header" id="extra-panel-header">OUR ROOMS</div>
+        <div class="testimonials-extra-panel-title">
+          Each of our nine lovely double guest rooms feature a private bath,
+          wi-fi, cable television and include full breakfast.
+        </div>
+        <div class="extra-panel-button-line">
+          <button class="home-main-button" id="main-button-1">
+            TAKE A TOUR
+          </button>
+          <button class="home-main-button" id="main-button-2">
+            PACKAGE & POLICY
+          </button>
+        </div>
+      </div>
+    </section>
 
+    <section class="blog-section">
+      <div class="section-header">BLOG</div>
+      <div class="section-body-container">
+        <div class="section-body">News Feeds</div>
+        <div class="blog-button-line">
+          <button class="blog-button" id="white-button">
+            <i class="fa fa-arrow-left blog-arrow-left" aria-hidden="true"></i>
+          </button>
+          <button class="blog-button" id="golden-button">
+            <i
+              class="fa fa-arrow-right blog-arrow-right"
+              aria-hidden="true"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <div class="post-container">
+        <div class="post">
+          <img src="./Images/news-feeds-photo-1.jpeg" class="post-image" />
+          <div class="post-data">
+            <div class="post-card-data">
+              <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">23rd March 2019</p>
+            </div>
+            <div class="post-card-data">
+              <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">By Admin</p>
+            </div>
+          </div>
+          <div class="post-title">
+            Each of our 8 double rooms has its own distinct.
+          </div>
+          <div class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </div>
+        </div>
+        <div class="post">
+          <img src="./Images/news-feeds-photo-2.jpg" class="post-image" />
+          <div class="post-data">
+            <div class="post-card-data">
+              <i class="fa fa-calendar news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">23rd March 2019</p>
+            </div>
+            <div class="post-card-data">
+              <i class="fa fa-user-o news-feeds-icon" aria-hidden="true"></i>
+              <p class="post-card-text">By Admin</p>
+            </div>
+          </div>
+          <div class="post-title">
+            Each of our 8 double rooms has its own distinct.
+          </div>
+          <div class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <section class="subscribe-section">
+      <div class="hotel-miranda-title">
+        <div class="hotel-miranda-icon">H</div>
+        <div>
+          <div class="hotel-bold">HOTEL</div>
+          <div>MIRANDA</div>
+        </div>
+      </div>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doing
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi.
+      </p>
+      <div class="subscribe-form">
+        <input placeholder="ENTER YOUR EMAIL ADDRESS" class="subscribe-input" />
+        <button class="subscribe-button">SUBSCRIBE</button>
+      </div>
+    </section>
 
+    <footer>
+      <div class="copyright">COPYRIGHT BY@EXAMPLE</div>
+      <div class="logo-line">
+        <i class="fa fa-facebook copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-twitter copy-icon" id="twitter" aria-hidden="true"></i>
+        <i class="fa fa-behance copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play copy-icon" aria-hidden="true"></i>
+      </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
