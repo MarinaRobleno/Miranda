@@ -429,6 +429,10 @@ template {
 .header .drop-down-box--visible {
   display: block;
 }
+.header a, .header a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 
 @media only screen and (min-width: 1000px) {
   #hamburger-button {
@@ -440,6 +444,10 @@ template {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .header .header-bar {
+    width: 243px;
+    margin: 0 auto;
   }
   .header .header-bar .hotel-miranda-title {
     display: flex;
@@ -476,6 +484,7 @@ template {
     padding: 0;
     padding-left: 3%;
     align-items: center;
+    color: white;
   }
   .header .drop-down-box .drop-down-list .drop-down-element {
     padding-right: 25px;
@@ -1051,12 +1060,6 @@ template {
 
 .subscribe-section {
   display: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1640,11 +1643,6 @@ a {
     border: none;
     background: #bead8e 0% 0% no-repeat padding-box;
     cursor: pointer;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
   }
 }
 /*!
