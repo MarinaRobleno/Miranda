@@ -142,7 +142,8 @@
       }
       .enter-message {
         display: flex;
-        padding-bottom: 250px;
+        height: 250px;
+        padding: 25px;
         grid-column-start: 1;
         grid-column-end: 3;
       }
