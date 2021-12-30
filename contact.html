@@ -202,8 +202,21 @@
               <option value="18">Melilla</option>
             </select>
             <button class="community-dropdown" id="find-near-location">
-              Find my nearest location
-            </button>
+              Find my nearest location</button
+            ><input
+              class="geolocation-input"
+              id="geolocation-input"
+              type="text"
+              placeholder="Enter a location"
+            />
+            <div class='geocode-buttons'>
+              <button
+                class="community-dropdown search-loc"
+                id="search-location-button"
+                value="Search"
+              >Search</button>
+              <button class='community-dropdown search-loc' id='clear-location-button' value='Clear'>Clear</button>
+            </div>
             <div id="sidebar" style="display: none">
               <h3 style="flex-grow: 0">
                 Closest Miranda Hotel to my location.
@@ -252,7 +265,7 @@
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDUM_cAYGbY7wKsruKQhRkWmXzrZFPc-k&callback=initMap"
     ></script>
   </body>
 </html>

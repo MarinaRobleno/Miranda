@@ -77,7 +77,7 @@ function initMap() {
   };
   locationButton.textContent = "My Current Location";
   locationButton.classList.add("custom-map-control-button");
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(locationButton);
   locationButton.addEventListener("click", () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -104,41 +104,18 @@ function initMap() {
   geocoder = new google.maps.Geocoder();
 
   //INPUT
-  const inputText = document.createElement("input");
+  const inputText = document.getElementById("geolocation-input");
 
-  inputText.type = "text";
-  inputText.placeholder = "Enter a location";
-  inputText.classList.add('geolocation-input');
+  const submitButton = document.getElementById("search-location-button");
 
-  const submitButton = document.createElement("input");
+  const clearButton = document.getElementById("clear-location-button");
 
-  submitButton.type = "button";
-  submitButton.value = "Geocode";
-  submitButton.classList.add("button", "button-primary");
-
-  const clearButton = document.createElement("input");
-
-  clearButton.type = "button";
-  clearButton.value = "Clear";
-  clearButton.classList.add("button", "button-secondary");
   response = document.createElement("pre");
   response.id = "response";
   response.innerText = "";
   responseDiv = document.createElement("div");
   responseDiv.id = "response-container";
   responseDiv.appendChild(response);
-
-  const instructionsElement = document.createElement("p");
-
-  instructionsElement.id = "instructions";
-  instructionsElement.innerHTML =
-    "<strong>Instructions</strong>: Enter an address in the textbox to geocode or click on the map to reverse geocode.";
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(inputText);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(submitButton);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(clearButton);
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(instructionsElement);
-  /*
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(responseDiv);*/
 
   const personIcon = {
     path: 'M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z',
