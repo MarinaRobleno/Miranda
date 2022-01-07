@@ -57,11 +57,7 @@
             <a class="link" class="link" href="./room-offers.html"> Offers </a>
           </li>
           <div class="space"></div>
-          <li class="drop-down-element">
-            <a class="link" class="link" href="./single-room.html">
-              News
-            </a>
-          </li>
+          <li class="drop-down-element">News</li>
           <div class="space"></div>
           <li class="drop-down-element">
             <a class="link" href="./contact.html"> Contact</a>
@@ -119,9 +115,11 @@
             placeholder="Add phone number"
             class="contact-form-input add-phone"
           />
-          <select class="contact-form-input select-subject">
-            <option disabled selected>Select Subject</option>
-          </select>
+          <input
+            type="text"
+            placeholder="Enter Subject"
+            class="contact-form-input select-subject"
+          />
           <textarea
             placeholder="Enter messages"
             class="contact-form-input enter-message"
@@ -142,7 +140,7 @@
             <div class="contact-information-text">
               <div class="contact-information-text-title">Office Address</div>
               <div class="contact-information-text-description">
-                19/A, Cirikon City hall Tower New York, NYC
+                OXYGEN, Princesa 31, Madrid
               </div>
             </div>
             <div class="contact-information-count">01</div>
@@ -155,8 +153,7 @@
             <div class="contact-information-text">
               <div class="contact-information-text-title">Phone Number</div>
               <div class="contact-information-text-description">
-                <div>+97656-8675-7864-7</div>
-                <div>+876-766-8675-765-6</div>
+                <div>+622-37-37-22</div>
               </div>
             </div>
             <div class="contact-information-count">02</div>
@@ -169,7 +166,7 @@
             <div class="contact-information-text">
               <div class="contact-information-text-title">Email Address</div>
               <div class="contact-information-text-description">
-                info@webmail.com jobs.webmail@mail.com
+                marinarsanisidro@gmail.com
               </div>
             </div>
             <div class="contact-information-count">03</div>
@@ -209,13 +206,21 @@
               type="text"
               placeholder="Enter a location"
             />
-            <div class='geocode-buttons'>
+            <div class="geocode-buttons">
               <button
                 class="community-dropdown search-loc"
                 id="search-location-button"
                 value="Search"
-              >Search</button>
-              <button class='community-dropdown search-loc' id='clear-location-button' value='Clear'>Clear</button>
+              >
+                Search
+              </button>
+              <button
+                class="community-dropdown search-loc"
+                id="clear-location-button"
+                value="Clear"
+              >
+                Clear
+              </button>
             </div>
             <div id="sidebar" style="display: none">
               <h3 style="flex-grow: 0">
@@ -248,12 +253,19 @@
     </section>
 
     <footer>
-      <div class="copyright">COPYRIGHT BY@EXAMPLE</div>
+      <div class="copyright">COPYRIGHT BY@MARINAROBLEÑO</div>
       <div class="logo-line">
-        <i class="fa fa-facebook copy-icon" aria-hidden="true"></i>
+        <a href="https://github.com/MarinaRobleno" target="_blank">
+          <i class="fa fa-github copy-icon" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marina-robleno-velez-fullstack-mern/"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
+        </a>
         <i class="fa fa-twitter copy-icon" id="twitter" aria-hidden="true"></i>
         <i class="fa fa-behance copy-icon" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square copy-icon" aria-hidden="true"></i>
         <i class="fa fa-youtube-play copy-icon" aria-hidden="true"></i>
       </div>
     </footer>
