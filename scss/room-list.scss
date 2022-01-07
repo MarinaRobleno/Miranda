@@ -89,6 +89,10 @@
             .room-list-card-booking-text{
                 font-weight: 700;
                 color: #BDBDBD;
+                &:hover{
+                    cursor: pointer;
+                    border-bottom: 1px solid #BEAD8E;
+                }
             }
             .room-offers-benefits-list{
                 display: none;

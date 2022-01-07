@@ -577,6 +577,10 @@ template {
   border: 2px solid #e0e0e0;
   cursor: pointer;
 }
+.home-main .home-main-button-line #main-button-2:hover {
+  color: #ffffff;
+  background: #bead8e 0% 0% no-repeat padding-box;
+}
 .home-main .full-screen-main-image {
   display: none;
 }
@@ -661,13 +665,13 @@ template {
 }
 .services-grid .service-card {
   background: #ffffff 0% 0% no-repeat padding-box;
+  color: #bead8e;
   box-shadow: 0px 14px 24px #b8b8b81a;
   width: 150px;
   height: 150px;
   border: none;
 }
 .services-grid .service-card .service-icon {
-  color: #bead8e;
   font-size: 45px;
   width: 40px;
   height: 40px;
@@ -680,31 +684,11 @@ template {
   letter-spacing: 2.4px;
 }
 .services-grid .service-card:hover {
-  box-shadow: 5px 14px 24px #bead8e;
+  color: #ffffff;
+  background: #bead8e 0% 0% no-repeat padding-box;
 }
 .services-grid .service-card #luxury-icon {
   opacity: 0.8;
-}
-.services-grid .service-card-negative {
-  background: #bead8e 0% 0% no-repeat padding-box;
-  box-shadow: 0px 14px 24px #bead8e4d;
-  width: 150px;
-  height: 150px;
-  border: none;
-}
-.services-grid .service-card-negative .service-icon {
-  width: 40px;
-  height: 40px;
-}
-.services-grid .service-card-negative .service-card-text-negative {
-  padding-top: 5px;
-  color: white;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 2.4px;
-}
-.services-grid .service-card-negative:hover {
-  box-shadow: 5px 14px 24px #bead8e;
 }
 .services-grid #bbq-party {
   display: none;
@@ -1068,7 +1052,7 @@ template {
     align-items: center;
     justify-content: center;
     height: 700px;
-    margin-top: 120px;
+    margin-top: 40px;
     padding: 0 14%;
     background-color: white;
     background-image: none;
@@ -5150,6 +5134,10 @@ footer .logo-line :hover {
 .room-list-card .room-list-card-content .room-list-card-booking .room-list-card-booking-text {
   font-weight: 700;
   color: #BDBDBD;
+}
+.room-list-card .room-list-card-content .room-list-card-booking .room-list-card-booking-text:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #BEAD8E;
 }
 .room-list-card .room-list-card-content .room-list-card-booking .room-offers-benefits-list {
   display: none;
