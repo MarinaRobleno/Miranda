@@ -466,7 +466,7 @@ template {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 20px;
     font-size: 40px;
     font-weight: 700;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1133,14 +1133,11 @@ template {
 
   .arrow-down-section {
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    right: 50%;
-    top: 850px;
+    position: fixed;
+    top: 730px;
+    left: 50%;
     z-index: 10;
-    justify-content: center;
-    align-items: center;
-    margin: 110px 0 0;
+    margin: 110px 0 0 -43px;
   }
   .arrow-down-section .arrow-down-external {
     display: flex;
@@ -1170,7 +1167,7 @@ template {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20%;
+    margin: 100px 20% 0;
   }
   .services-section .section-header {
     font-size: 14px;
@@ -1234,7 +1231,10 @@ template {
   }
 
   .room-type-section {
-    margin: 300px 20%;
+    background-image: url("../Images/brush@2x.png");
+  }
+  .room-type-section .room-inner-type-section {
+    margin: 200px 20%;
   }
 
   .room-type-grid {
@@ -1297,30 +1297,38 @@ template {
   }
 
   .call-to-action-section {
-    margin: 300px 20% 20px;
+    margin: 200px 20% 20px;
+    padding: 0 30px;
     display: flex;
+    position: relative;
+    z-index: 5;
     justify-content: center;
     align-items: flex-start;
+    box-shadow: 0px 14px 28px #0000000A;
   }
   .call-to-action-section .tour-header {
     flex-direction: column;
     max-width: 45%;
+    z-index: 5;
   }
   .call-to-action-section .tour-header .paragraph-and-button {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
+    z-index: 5;
   }
   .call-to-action-section .tour-header .paragraph-and-button .action-paragraph {
     margin: 30px 0;
     font-size: 20px;
     line-height: 32px;
+    z-index: 5;
   }
   .call-to-action-section .tour-header .paragraph-and-button .action-button {
     width: 216px;
     height: 60px;
     font-size: 14px;
     letter-spacing: 2.8px;
+    z-index: 5;
   }
   .call-to-action-section .tour-advantages {
     max-width: 55%;
@@ -1346,9 +1354,17 @@ template {
     font-size: 14px;
     line-height: 24px;
   }
+  .call-to-action-section .fa-paper-plane-o {
+    font-size: 350px;
+    z-index: 1;
+    color: #F6F6F6;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
 
   .border-bottom-advantages {
-    height: 20px;
+    height: 15px;
     width: 1100px;
     margin-bottom: 120px;
   }
@@ -1462,7 +1478,7 @@ template {
   }
   .testimonials-section .testimonials-extra-panel .section-header {
     display: block;
-    margin: 118px 0 34px;
+    margin: 70px 0 24px;
     font-family: "Archivo", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -1585,7 +1601,7 @@ template {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 20px;
     font-size: 40px;
     font-weight: 700;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -4711,7 +4727,8 @@ footer .logo-line .copy-icon {
   padding: 13px;
   background: #212121 0% 0% no-repeat padding-box;
 }
-footer .logo-line :hover {
+footer .logo-line .copy-icon:hover {
+  cursor: pointer;
   background: #BEAD8E 0% 0% no-repeat padding-box;
 }
 
@@ -6129,7 +6146,7 @@ body {
 
 a {
   text-decoration: none;
-  color: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */

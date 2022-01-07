@@ -88,14 +88,11 @@
 
   .arrow-down-section {
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    right: 50%;
-    top: 850px;
+    position: fixed;
+    top: 730px;
+    left: 50%;
     z-index: 10;
-    justify-content: center;
-    align-items: center;
-    margin: 110px 0 0;
+    margin: 110px 0 0 -43px;
     .arrow-down-external {
       display: flex;
       align-items: center;
@@ -125,7 +122,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20%;
+    margin: 100px 20% 0;
     .section-header {
       font-size: 14px;
       letter-spacing: 2.8px;
@@ -186,7 +183,11 @@
   }
 
   .room-type-section {
-    margin: 300px 20%;
+    background-image: url('../Images/brush@2x.png');
+    
+    .room-inner-type-section{
+      margin: 200px 20%;
+    }
   }
 
   .room-type-grid {
@@ -248,27 +249,35 @@
   }
 
   .call-to-action-section {
-    margin: 300px 20% 20px;
+    margin: 200px 20% 20px;
+    padding: 0 30px;
     display: flex;
+    position: relative;
+    z-index: 5;
     justify-content: center;
     align-items: flex-start;
+    box-shadow: 0px 14px 28px #0000000A;
     .tour-header {
       flex-direction: column;
       max-width: 45%;
+      z-index: 5;
       .paragraph-and-button {
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
+        z-index: 5;
         .action-paragraph {
           margin: 30px 0;
           font-size: 20px;
           line-height: 32px;
+          z-index: 5;
         }
         .action-button {
           width: 216px;
           height: 60px;
           font-size: 14px;
           letter-spacing: 2.8px;
+          z-index: 5;
         }
       }
     }
@@ -298,9 +307,17 @@
         }
       }
     }
+    .fa-paper-plane-o{
+      font-size: 350px;
+      z-index: 1;
+      color: #F6F6F6;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+    }
   }
   .border-bottom-advantages {
-    height: 20px;
+    height: 15px;
     width: 1100px;
     margin-bottom: 120px;
   }
@@ -412,7 +429,7 @@
       font-size: 80px;
       .section-header {
         display: block;
-        margin: 118px 0 34px;
+        margin: 70px 0 24px;
         font-family: "Archivo", sans-serif;
         font-weight: 700;
         font-size: 14px;
@@ -537,7 +554,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 5px;
+        margin-right: 20px;
         font-size: 40px;
         font-weight: 700;
         background: #ffffff 0% 0% no-repeat padding-box;

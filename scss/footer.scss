@@ -21,9 +21,10 @@ footer{
             font-size: 12px;
             padding: 13px;
             background: #212121 0% 0% no-repeat padding-box;
-        }
-        :hover{
-            background: #BEAD8E 0% 0% no-repeat padding-box;
+            &:hover{
+                cursor: pointer;
+                background: #BEAD8E 0% 0% no-repeat padding-box;
+            }
         }
     }
 }
