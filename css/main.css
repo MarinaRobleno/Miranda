@@ -1141,7 +1141,6 @@ template {
     justify-content: center;
     align-items: center;
     margin: 110px 0 0;
-    cursor: pointer;
   }
   .arrow-down-section .arrow-down-external {
     display: flex;
@@ -1163,6 +1162,7 @@ template {
     background: #bead8e 0% 0% no-repeat padding-box;
     box-shadow: 0px 14px 24px #bead8e4d;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .services-section {

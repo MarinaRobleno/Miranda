@@ -7,4 +7,17 @@ function openDropdown() {
 }
 openButton.addEventListener("click", openDropdown);
 
+$(".arrow-down-section").click(function () {
+  var $target = $(".scroll-section.active").next(".scroll-section");
+  if ($target.length == 0) $target = $(".scroll-section:first");
 
+  $("html, body").animate(
+    {
+      scrollTop: $target.offset().top,
+    },
+    "slow"
+  );
+
+  $(".active").removeClass("active");
+  $target.addClass("active");
+});

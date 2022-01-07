@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -86,7 +87,13 @@
       </div>
     </header>
 
-    <section class="home-main">
+    <section class="arrow-down-section" id="arrow-down-section">
+      <div class="arrow-down-external">
+        <i class="fa fa-arrow-down arrow-down-internal" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section class="home-main scroll-section active">
       <div class="home-main-container">
         <div class="ultimate-header">THE ULTIMATE LUXURY EXPERIENCE</div>
         <div class="home-main-text">The Perfect Base For You</div>
@@ -104,7 +111,7 @@
       />
     </section>
 
-    <section class="book-panel">
+    <section class="book-panel scroll-section">
       <div class="check-in-line-panel">
         <div class="check-in-panel" id="check-in">
           <p>CHECK IN</p>
@@ -118,13 +125,8 @@
       <button class="book-button">Book Now</button>
     </section>
 
-    <section class="arrow-down-section">
-      <div class="arrow-down-external">
-        <i class="fa fa-arrow-down arrow-down-internal" aria-hidden="true"></i>
-      </div>
-    </section>
 
-    <section class="services-section">
+    <section class="services-section scroll-section">
       <div class="section-header">
         <div class="since">SINCE</div>
         <div class="year">1994</div>
@@ -161,7 +163,7 @@
       </div>
     </section>
 
-    <section class="room-type-section">
+    <section class="room-type-section scroll-section">
       <div class="section-header">ROOM TYPE</div>
       <div class="section-body">Inspired Lodging</div>
       <!--<div class='room-type-nav'>
@@ -205,7 +207,7 @@
       </button>
     </section>
 
-    <section class="call-to-action-section">
+    <section class="call-to-action-section scroll-section">
       <div class="tour-header">
         <div class="section-header">CALL TO ACTION</div>
         <div class="section-body">The Thin Escape.</div>
@@ -264,10 +266,11 @@
           </div>
         </div>
       </div>
+      <div class="border-bottom-advantages"></div>
     </section>
-    <div class="border-bottom-advantages"></div>
+    
 
-    <section class="carousel-section">
+    <section class="carousel-section scroll-section">
       <div class="carousel-container">
         <img src="" class="carousel-image" />
       </div>
@@ -284,7 +287,7 @@
       </div>
     </section>
 
-    <section class="take-a-tour-section">
+    <section class="take-a-tour-section scroll-section">
       <div class="take-a-tour-text">
         <div class="section-header">TAKE A TOUR</div>
         <div class="section-body">Discover Our Underground.</div>
@@ -308,7 +311,7 @@
       ></iframe>
     </section>
 
-    <section class="testimonials-section">
+    <section class="testimonials-section scroll-section">
       <div class="section-header">TESTIMONIALS</div>
       <div class="section-body">Client Feedback</div>
       <div class="feedback-container">
@@ -340,7 +343,7 @@
       </div>
     </section>
 
-    <section class="blog-section">
+    <section class="blog-section scroll-section">
       <div class="section-header">BLOG</div>
       <div class="section-body-container">
         <div class="section-body">News Feeds</div>
@@ -400,7 +403,7 @@
       </div>
     </section>
 
-    <section class="subscribe-section">
+    <section class="subscribe-section scroll-section">
       <div class="hotel-miranda-title">
         <div class="hotel-miranda-icon">H</div>
         <div>
