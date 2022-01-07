@@ -1133,9 +1133,15 @@ template {
 
   .arrow-down-section {
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 50%;
+    top: 850px;
+    z-index: 10;
     justify-content: center;
     align-items: center;
-    margin: 110px 0;
+    margin: 110px 0 0;
+    cursor: pointer;
   }
   .arrow-down-section .arrow-down-external {
     display: flex;
