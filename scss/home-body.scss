@@ -280,10 +280,9 @@
       .advantage-icon {
         padding: 12px 0;
         font-size: 46px;
-        
       }
-      &:hover{
-        color:#ffffff;
+      &:hover {
+        color: #ffffff;
         background-color: #bead8e;
       }
     }
@@ -452,19 +451,20 @@
       border: none;
       background: #ffffff 0% 0% no-repeat padding-box;
       border: 2px solid #e0e0e0;
+      color: black;
       cursor: pointer;
       .blog-arrow-left {
         font-size: 10px;
       }
       .blog-arrow-right {
         font-size: 10px;
-        color: white;
       }
-    }
-    #golden-button {
-      border-color: #bead8e;
-      background: #bead8e 0% 0% no-repeat padding-box;
-      box-shadow: 0px 14px 24px #bead8e4d;
+      &:hover {
+        color: white;
+        border-color: #bead8e;
+        background: #bead8e 0% 0% no-repeat padding-box;
+        box-shadow: 0px 14px 24px #bead8e4d;
+      }
     }
   }
 }
