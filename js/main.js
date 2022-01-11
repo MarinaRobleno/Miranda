@@ -26,4 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Flatpickr
   execute_flatpickr();
+
+  //Splide
+  execute_slider();
 });
