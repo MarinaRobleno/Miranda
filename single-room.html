@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -117,11 +119,11 @@
             <div class="check-availability-form-container">
               <div class="check-availability-check-in-container">
                 <div class="check-in-header">Check In</div>
-                <input class="check-in-input" type="date" />
+                <input class="check-in-input" type="text" />
               </div>
               <div class="check-availability-check-in-container">
                 <div class="check-in-header">Check Out</div>
-                <input class="check-in-input" type="date" />
+                <input class="check-in-input" type="text" />
               </div>
             </div>
             <div class="center">
@@ -332,11 +334,11 @@
         <div class="check-availability-form">
           <div class="form-input-container">
             <label class="check-label">Check In</label>
-            <input type="date" class="check-availability-form-input" />
+            <input type="text" class="check-availability-form-input" id='calendar-check-in' />
           </div>
           <div class="form-input-container">
             <label class="check-label">Check Out</label>
-            <input type="date" class="check-availability-form-input" />
+            <input type="text" class="check-availability-form-input" id='calendar-check-out' />
           </div>
           <div class="form-input-container">
             <label class="check-label">Full Name</label>
@@ -397,6 +399,7 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/flatpickr.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

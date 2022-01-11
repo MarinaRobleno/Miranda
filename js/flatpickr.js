@@ -1,6 +1,6 @@
 function execute_flatpickr() {
     const config = {
-        dateFormat: "Y-m-d",
+        dateFormat: "m-d-y",
     };
     flatpickr(".check-in-input", config);
 }
