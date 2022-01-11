@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;500;600;700&family=Old+Standard+TT&family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -113,7 +115,7 @@
       <div class="check-in-line-panel">
         <div class="check-in-panel" id="check-in">
           <p>CHECK IN</p>
-          <input class="check-in-input" type="date" />
+          <input class="check-in-input" type="date" id="check-in-calendar" />
         </div>
         <div class="check-in-panel" id="check-out">
           <p>CHECK OUT</p>
@@ -440,6 +442,7 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/flatpickr.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
