@@ -1402,7 +1402,7 @@ template {
     height: 480px;
   }
   .carousel-section .carousel-detail-box {
-    margin: auto 0;
+    top: 5px;
     left: 100px;
     height: 400px;
     width: 370px;
