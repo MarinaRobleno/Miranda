@@ -320,16 +320,29 @@
 }
 
 .carousel-section {
-  background-color: grey;
+  position:relative;
   justify-content: center;
   height: 280px;
+  width: 100%;
   .carousel-container {
     width: 100%;
+    max-height: 280px;
+    .splide__slide {
+      width: 100%;
+      max-height: 280px;
+      .carousel-image {
+        object-fit: cover;
+        width: 250px;
+        height: 280px;
+      }
+    }
   }
   .carousel-detail-box {
-    width: 45%;
+    width: 170px;
     height: 170px;
     padding: 15px;
+    position: absolute;
+    top: 20px;
     margin: 40px;
     background: #111111 0% 0% no-repeat padding-box;
     box-shadow: 0px 16px 32px #11111133;

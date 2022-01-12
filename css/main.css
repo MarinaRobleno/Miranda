@@ -853,17 +853,30 @@ template {
 }
 
 .carousel-section {
-  background-color: grey;
+  position: relative;
   justify-content: center;
   height: 280px;
+  width: 100%;
 }
 .carousel-section .carousel-container {
   width: 100%;
+  max-height: 280px;
+}
+.carousel-section .carousel-container .splide__slide {
+  width: 100%;
+  max-height: 280px;
+}
+.carousel-section .carousel-container .splide__slide .carousel-image {
+  object-fit: cover;
+  width: 250px;
+  height: 280px;
 }
 .carousel-section .carousel-detail-box {
-  width: 45%;
+  width: 170px;
   height: 170px;
   padding: 15px;
+  position: absolute;
+  top: 20px;
   margin: 40px;
   background: #111111 0% 0% no-repeat padding-box;
   box-shadow: 0px 16px 32px #11111133;
@@ -1306,7 +1319,7 @@ template {
     z-index: 5;
     justify-content: center;
     align-items: flex-start;
-    box-shadow: 0px 14px 28px #0000000A;
+    box-shadow: 0px 14px 28px #0000000a;
   }
   .call-to-action-section .tour-header {
     flex-direction: column;
@@ -1359,7 +1372,7 @@ template {
   .call-to-action-section .fa-paper-plane-o {
     font-size: 350px;
     z-index: 1;
-    color: #F6F6F6;
+    color: #f6f6f6;
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -1372,11 +1385,25 @@ template {
   }
 
   .carousel-section {
-    height: 580px;
+    height: 480px;
     margin-bottom: 239px;
   }
+  .carousel-section .carousel-container {
+    width: 100%;
+    max-height: 480px;
+  }
+  .carousel-section .carousel-container .splide__list .splide__slide {
+    width: 100%;
+    max-height: 480px;
+  }
+  .carousel-section .carousel-container .splide__list .splide__slide .carousel-image {
+    object-fit: cover;
+    width: 550px;
+    height: 480px;
+  }
   .carousel-section .carousel-detail-box {
-    margin: 80px 375px;
+    margin: auto 0;
+    left: 100px;
     height: 400px;
     width: 370px;
   }
