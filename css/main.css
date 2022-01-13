@@ -5934,6 +5934,8 @@ footer .logo-line .copy-icon:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-color: #FFFFFF;
+  padding: 40px;
 }
 .contact-form-section .contact-form-container {
   width: 80%;
@@ -5985,7 +5987,7 @@ footer .logo-line .copy-icon:hover {
   left: -17px;
   font-size: 60px;
   font-weight: 700;
-  color: #F8F8F8;
+  color: #e4e4e4;
 }
 .contact-information-section .contact-information-card .contact-information-icon {
   padding-right: 15px;
@@ -6069,7 +6071,7 @@ footer .logo-line .copy-icon:hover {
   .flex {
     display: inline-flex;
     height: 700px;
-    margin: 0 0 130px;
+    margin: 70px 0;
   }
   .flex .satelite-map {
     width: 1170px;
@@ -6105,12 +6107,14 @@ footer .logo-line .copy-icon:hover {
   .contact-information-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .contact-information-section .contact-information-card {
+    position: relative;
     width: 370px;
     height: 189px;
+    background-color: #ffffff;
   }
   .contact-information-section .contact-information-card .contact-information-icon {
     font-size: 40px;
@@ -6121,6 +6125,7 @@ footer .logo-line .copy-icon:hover {
   .contact-information-section .contact-information-card .contact-information-text {
     margin: 10px 56px 42px 21px;
     padding: 0;
+    z-index: 1;
   }
   .contact-information-section .contact-information-card .contact-information-text .contact-information-text-title {
     font-size: 24px;
@@ -6131,11 +6136,16 @@ footer .logo-line .copy-icon:hover {
     line-height: 24px;
   }
   .contact-information-section .contact-information-card .contact-information-count {
-    display: none;
+    font-size: 150px;
+    margin: 0;
+    margin-left: 55%;
+    bottom: 0;
+    color: #e9e9e9;
+    z-index: 0;
   }
 
   .contact-form-section {
-    margin: 0 20% 340px;
+    margin: 0 20% 140px;
   }
   .contact-form-section .contact-form-container {
     width: 970px;

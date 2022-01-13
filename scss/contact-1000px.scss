@@ -52,7 +52,7 @@
   .flex {
     display: inline-flex;
     height: 700px;
-    margin: 0 0 130px;
+    margin: 70px 0;
     .satelite-map {
       width: 1170px;
       height: 700px;
@@ -89,11 +89,13 @@
   .contact-information-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     .contact-information-card {
+      position: relative;
       width: 370px;
       height: 189px;
+      background-color: #ffffff;
       .contact-information-icon {
         font-size: 40px;
         padding: 0;
@@ -103,6 +105,7 @@
       .contact-information-text {
         margin: 10px 56px 42px 21px;
         padding: 0;
+        z-index: 1;
         .contact-information-text-title {
           font-size: 24px;
           padding-bottom: 5px;
@@ -113,13 +116,18 @@
         }
       }
       .contact-information-count {
-        display: none;
+        font-size: 150px;
+        margin: 0;
+        margin-left: 55%;
+        bottom: 0;
+        color: #e9e9e9;
+        z-index: 0;
       }
     }
   }
 
   .contact-form-section {
-    margin: 0 20% 340px;
+    margin: 0 20% 140px;
     .contact-form-container {
       width: 970px;
       display: grid;
