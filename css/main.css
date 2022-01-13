@@ -1022,6 +1022,7 @@ template {
 .post-container .post {
   text-align: left;
   max-width: 50%;
+  background-color: #FFFFFF;
 }
 .post-container .post .post-image {
   max-width: 100%;
@@ -1375,9 +1376,11 @@ template {
     line-height: 24px;
   }
   .call-to-action-section .fa-paper-plane-o {
+    display: block;
     font-size: 350px;
-    z-index: 1;
-    color: #f6f6f6;
+    z-index: 50;
+    opacity: 0.3;
+    color: #dbd6d6;
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -1615,6 +1618,8 @@ template {
   }
 
   .subscribe-section {
+    background-color: #ffffff;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5135,6 +5140,9 @@ footer .logo-line .copy-icon:hover {
   color: #222222;
 }
 
+.room-list-card {
+  background-color: #FFFFFF;
+}
 .room-list-card .room-list-image {
   max-width: 100%;
   object-fit: cover;
@@ -5489,13 +5497,16 @@ footer .logo-line .copy-icon:hover {
   max-width: 100%;
 }
 .check-availability-container .check-availability-header {
-  margin-left: 25px;
+  padding-left: 25px;
   font-weight: 700;
   font-size: 12px;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 .check-availability-container .check-availability-form-container {
   display: flex;
   justify-content: space-between;
+  background-color: #FFFFFF;
 }
 .check-availability-container .check-availability-form-container .check-availability-check-in-container {
   margin: 10px;
@@ -5562,6 +5573,7 @@ footer .logo-line .copy-icon:hover {
 
 .single-room-amenities {
   margin: 15px 15px 0;
+  background-color: #FFFFFF;
 }
 .single-room-amenities .single-room-amenities-container {
   display: flex;
@@ -5593,7 +5605,9 @@ footer .logo-line .copy-icon:hover {
 }
 
 .cancellation-section {
-  margin: 25px 15px;
+  margin: 25px 0;
+  padding: 0 15px;
+  background-color: #FFFFFF;
 }
 .cancellation-section .cancellation-text {
   color: #777777;
@@ -5617,6 +5631,7 @@ footer .logo-line .copy-icon:hover {
   align-items: center;
   margin: 15px 0;
   box-shadow: 0px 14px 24px #BEAD8E33;
+  background-color: #FFFFFF;
 }
 .related-room-card .related-room-image {
   display: flex;
@@ -5703,41 +5718,42 @@ footer .logo-line .copy-icon:hover {
   .main-body-content-room .left-column {
     display: flex;
     flex-direction: column;
+    margin-right: 15px;
   }
   .main-body-content-room .left-column .single-room-section .room-background {
     width: 770px;
     height: 490px;
     margin-bottom: 55px;
   }
-  .main-body-content-room .left-column .single-room-section .white-background {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     width: 730px;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .section-header {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .section-header {
     margin-left: 50px;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .single-room-name-price {
     display: flex;
     align-items: center;
     width: 730px;
     padding: 0 0 19px;
     margin-left: 0;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-name {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .single-room-name-price .single-room-name {
     font-size: 48px;
     letter-spacing: -1.44px;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .single-room-name-price .single-room-price {
     padding: 0;
     margin: 0;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price .single-room-price-number {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .single-room-name-price .single-room-price .single-room-price-number {
     font-size: 40px;
   }
-  .main-body-content-room .left-column .single-room-section .white-background .single-room-name-price .single-room-price .single-room-price-night {
+  .main-body-content-room .left-column .single-room-section .room-background .white-background .single-room-name-price .single-room-price .single-room-price-night {
     font-size: 16px;
   }
   .main-body-content-room .left-column .check-availability-container .check-availability-header {
@@ -5769,7 +5785,7 @@ footer .logo-line .copy-icon:hover {
     padding: 14px 45px;
   }
   .main-body-content-room .left-column .single-room-amenities .single-room-amenities-container .amenities-list .amenities-individual .amenities-individual-icon {
-    color: #BEAD8E;
+    color: #bead8e;
   }
   .main-body-content-room .left-column #availability-description-extra {
     display: block;
@@ -5804,7 +5820,7 @@ footer .logo-line .copy-icon:hover {
     padding: 10px 0;
   }
   .main-body-content-room .left-column .house-rules-section .house-rules .house-individual-rule .house-rules-icon {
-    color: #BDAC8D;
+    color: #bdac8d;
     padding-right: 5px;
   }
   .main-body-content-room .left-column .house-rules-section .house-rules .house-individual-rule .house-rules-text {
@@ -5846,10 +5862,13 @@ footer .logo-line .copy-icon:hover {
     display: flex;
     flex-direction: column;
     min-width: 370px;
-    height: 614px;
+    height: 814px;
+    margin-top: 0;
+    padding-top: 20px;
     align-items: center;
     justify-content: flex-start;
     color: #222222;
+    background-color: #FFFFFF;
   }
   .main-body-content-room .check-availability-form-container .check-availability-form-header {
     font-size: 18px;
@@ -5876,7 +5895,7 @@ footer .logo-line .copy-icon:hover {
     color: #777777;
     font-size: 14px;
     border: none;
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #f8f8f8 0% 0% no-repeat padding-box;
   }
   .main-body-content-room .check-availability-form-container .check-availability-form .form-input-container .check-availability-form-input:focus {
     outline: none;
