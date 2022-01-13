@@ -6,7 +6,7 @@
     .header-bar {
         display: inline-flex;
         position: relative;
-        z-index: 1;
+        z-index: 15;
         width: 100%;
         min-height: 80px;
         justify-content: space-between;
@@ -37,7 +37,7 @@
         background-color: #f7f9fa;
         position: absolute;
         right: 0px;
-        z-index: 0;
+        z-index: 5;
         text-align: right;
       
         .drop-down-list {

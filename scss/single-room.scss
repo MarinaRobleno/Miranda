@@ -1,267 +1,269 @@
-.room-detail-main{
-    display: none;
+.room-detail-main {
+  display: none;
 }
 
-.single-room-section{
-    width: 100%;
-    .room-background{
-        background-image: url('../Images/pexels-photo-1457845.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-        .section-header{
-            display: none;
-        }
-        .single-room-name-price{
-            display: flex;
-            width: 75%;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 10px;
-            background-color: white;
-            .single-room-name{
-                font-family: 'Old Standard TT', sans-serif;
-            }
-            .single-room-price{
-                display: flex;
-                margin-bottom: 15px;
-                .single-room-price-number{
-                    font-size: 15px;
-                    font-weight: 700;
-                    color: #BEAD8E;
-                }
-                .single-room-price-night{
-                    font-size: 10px;
-                    font-weight: 700;
-                    color: #BEAD8E;
-                }
-            }
-        }
-    }
-    
-}
-
-.check-availability-container { 
-    margin: 15px 0;
-    width: 100%;
-    max-width: 100%;
-    
-	.check-availability-header { 
-        padding-left: 25px;
-        font-weight: 700;
-        font-size: 12px;
-        width: 100%;
-        background-color: #FFFFFF;
-	}
-	.check-availability-form-container { 
-        display: flex;
-        justify-content: space-between;
-        background-color: #FFFFFF;
-		.check-availability-check-in-container { 
-            margin: 10px;
-            color: #222222;
-			.check-in-header { 
-                margin-bottom: 5px;
-                font-weight: 700;
-                font-size: 10px;
-			}
-
-			.check-in-input { 
-                font-size: 10px;
-                text-align: left;
-                padding: 10px 30px 10px 10px;
-                letter-spacing: 0px;
-                color: #777777;
-                border: none;
-                background: #F8F8F8 0% 0% no-repeat padding-box;
-
-                &:focus{
-                    outline: none;
-                    border-color: #bead8e;
-                }
-			}
-		}
-	}
-	.check-availability-description { 
-        font-size: 10px;
-        margin: 15px;
-        color: #777777;
-        
-	}
-}
-#availability-description-extra{
-    display: none;
-}
-.center{
-    width: 100%;
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .wide-golden-button{
-        width: 60%;
-        text-align: center;
-        padding: 17px;
-        letter-spacing: 1.8px;
-        font-size: 10px;
-        font-weight: 700;
-        color: #FFFFFF;
-        border: none;
-        background: #BEAD8E 0% 0% no-repeat padding-box;
-    }
-}
-.single-room-common-title { 
-    font-family: 'Old Standard TT', sans-serif;
-    padding-bottom: 5px;
-    
-}
-.divisor{
-    width: 100%;
-    height: 0.5px;
-    background: #F1F1F1 0% 0% no-repeat padding-box;
-    margin-bottom: 5px;
-}
-.single-room-amenities { 
-    margin: 15px 15px 0;
-    background-color: #FFFFFF;
-
-	.single-room-amenities-container { 
-        display: flex;
-        max-height: 120px;
-        font-size: 12px;
-		.amenities-list { 
-            list-style: none;
-            display: flex;
-            padding: 0;
-            flex-direction: column;
-            flex-wrap: wrap;
-			.amenities-individual { 
-                display: flex;
-                align-items: center;
-
-                .amenities-individual-icon{
-                    padding:5px;
-                }
-
-				.amenities-individual-name { 
-                    font-weight: 700;
-                    padding-right: 5px;
-                    color: #777777;
-				}
-			}
-		}
-	}
-}
-.house-rules-section{
-    display: none;
-}
-
-.cancellation-section { 
-    margin: 25px 0;
-    padding: 0 15px;
-    background-color: #FFFFFF;
-	.cancellation-text { 
-        color: #777777;
-        font-size: 11px;
-	}
-
-
-}
-.location { 
-    margin: 10px 0;
+.single-room-section {
+  width: 100%;
+  position: relative;
+  .room-background {
+    background-image: url("../Images/pexels-photo-1457845.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 200px;
-    background-color: grey;
-}
-
-.related-rooms-section{
-    .divisor{
-        display:none;
+  }
+  .white-background {
+      position: absolute;
+      z-index: 2;
+      margin: 0;
+      top: 0px;
+      width: 50%;
+      padding: 3px 0 0 7px;
+      background-color: white;
+    .section-header {
+      display: none;
     }
+    .single-room-name-price {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+      .single-room-name {
+        font-family: "Old Standard TT", sans-serif;
+      }
+      .single-room-price {
+        display: flex;
+        margin-bottom: 12px;
+        .single-room-price-number {
+          font-size: 15px;
+          font-weight: 700;
+          color: #bead8e;
+        }
+        .single-room-price-night {
+          font-size: 10px;
+          font-weight: 700;
+          color: #bead8e;
+        }
+      }
+    }
+  }
 }
 
-.related-room-card{
+.check-availability-container {
+  margin: 15px 0;
+  width: 100%;
+  max-width: 100%;
+
+  .check-availability-header {
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .check-availability-form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    .check-availability-check-in-container {
+      margin: 10px;
+      color: #222222;
+      .check-in-header {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 10px;
+      }
+
+      .check-in-input {
+        font-size: 10px;
+        text-align: left;
+        padding: 10px 30px 10px 10px;
+        letter-spacing: 0px;
+        color: #777777;
+        border: none;
+        background: #f8f8f8 0% 0% no-repeat padding-box;
+
+        &:focus {
+          outline: none;
+          border-color: #bead8e;
+        }
+      }
+    }
+  }
+  .check-availability-description {
+    font-size: 10px;
+    margin: 15px;
+    color: #777777;
+  }
+}
+#availability-description-extra {
+  display: none;
+}
+.center {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wide-golden-button {
+    width: 60%;
+    text-align: center;
+    padding: 17px;
+    letter-spacing: 1.8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+  }
+}
+.single-room-common-title {
+  font-family: "Old Standard TT", sans-serif;
+  padding-bottom: 5px;
+}
+.divisor {
+  width: 100%;
+  height: 0.5px;
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+  margin-bottom: 5px;
+}
+.single-room-amenities {
+  margin: 15px 15px 0;
+  background-color: #ffffff;
+  padding: 5px;
+  .single-room-amenities-container {
+    display: flex;
+    max-height: 120px;
+    font-size: 12px;
+    .amenities-list {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .amenities-individual {
+        display: flex;
+        align-items: center;
+
+        .amenities-individual-icon {
+          padding: 5px;
+        }
+
+        .amenities-individual-name {
+          font-weight: 700;
+          padding-right: 5px;
+          color: #777777;
+        }
+      }
+    }
+  }
+}
+.house-rules-section {
+  display: none;
+}
+
+.cancellation-section {
+  margin: 25px 0;
+  padding: 15px;
+  background-color: #ffffff;
+  .cancellation-text {
+    color: #777777;
+    font-size: 11px;
+  }
+}
+.location {
+  margin: 10px 0;
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+}
+
+.related-rooms-section {
+  .divisor {
+    display: none;
+  }
+}
+
+.related-room-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  box-shadow: 0px 14px 24px #bead8e33;
+  background-color: #ffffff;
+  .related-room-image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 0;
-    box-shadow: 0px 14px 24px #BEAD8E33;
-    background-color: #FFFFFF;
-    .related-room-image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .room-icon-bar {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 185px;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0px 8px 16px #8a8a8a0a;
+    }
+  }
+  #image-1 {
+    background-image: url("../Images/pexels-engin-akyurt-1579253 (1).jpg");
+  }
+  #image-2 {
+    background-image: url("../Images/pexels-max-vakhtbovych-6434631.jpg");
+  }
+  .room-list-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 5px;
+    .room-list-card-information {
+      width: 70%;
+      margin: 20px 5px 10px;
+      .room-list-card-title {
+        margin-bottom: 10px;
+        font-family: "Old Standard TT", sans-serif;
+        font-size: 19px;
+      }
+      .room-list-card-text {
+        color: #777777;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    .room-list-card-booking {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      .room-list-card-price {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 200px;
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        .room-icon-bar{
-            width: 60%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 185px;
-            padding: 10px;
-            background-color: white;
-            box-shadow: 0px 8px 16px #8A8A8A0A;
+        align-items: flex-end;
+        padding: 0 10px;
+        .room-list-price-number {
+          font-size: 16px;
+          font-weight: 700;
+          color: #bead8e;
         }
-    }
-    #image-1{
-        background-image: url('../Images/pexels-engin-akyurt-1579253 (1).jpg'); 
-    }    
-    #image-2{
-        background-image: url('../Images/pexels-max-vakhtbovych-6434631.jpg'); 
-    }
-    .room-list-card-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 10px 5px;
-        .room-list-card-information{
-            width: 70%;
-            margin: 20px 5px 10px;
-            .room-list-card-title{
-                margin-bottom: 10px;
-                font-family: 'Old Standard TT', sans-serif;
-                font-size: 19px;
-            }
-            .room-list-card-text{
-                color: #777777;
-                font-size: 12px;
-                line-height: 18px;
-            }
+        .room-list-price-night {
+          font-size: 14px;
+          font-weight: 700;
+          color: #bead8e;
         }
-        .room-list-card-booking{
-            display: flex;
-            text-align: center;
-            align-items: center;
-            .room-list-card-price{
-                display: flex;
-                align-items: flex-end;
-                padding: 0 10px;
-                .room-list-price-number{
-                    font-size: 16px;
-                    font-weight: 700;
-                    color: #BEAD8E;
-                }
-                .room-list-price-night{
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: #BEAD8E;
-                }
-            }
-            .room-list-card-booking-text{
-                font-weight: 700;
-                color: #BDBDBD;
-                padding: 0 10px;
-            }
-        }
+      }
+      .room-list-card-booking-text {
+        font-weight: 700;
+        color: #bdbdbd;
+        padding: 0 10px;
+      }
     }
+  }
 }
-.check-availability-form-container{
-    display: none;
+.check-availability-form-container {
+  display: none;
 }
-

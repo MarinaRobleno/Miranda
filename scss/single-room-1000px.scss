@@ -8,16 +8,22 @@
       flex-direction: column;
       margin-right: 15px;
       .single-room-section {
+          position: static;
         .room-background {
           width: 770px;
           height: 490px;
           margin-bottom: 55px;
-          .white-background {
+          
+        }
+        .white-background {
             display: flex;
+            position: static;
             flex-direction: column;
             justify-content: center;
             background-color: white;
             width: 730px;
+            padding: 30px 0;
+            margin-bottom: -90px;
             .section-header {
               margin-left: 50px;
             }
@@ -27,6 +33,7 @@
               width: 730px;
               padding: 0 0 19px;
               margin-left: 0;
+              background-color: white;
               .single-room-name {
                 font-size: 48px;
                 letter-spacing: -1.44px;
@@ -43,7 +50,6 @@
               }
             }
           }
-        }
       }
       .check-availability-container {
         .check-availability-header {
@@ -65,7 +71,8 @@
         }
       }
       .single-room-amenities {
-        margin-bottom: 89px;
+        padding: 30px;
+        margin-bottom: 69px;
         .single-room-amenities-container {
           max-width: 769px;
           min-height: 250px;
@@ -122,6 +129,7 @@
       }
       .cancellation-section {
         max-width: 769px;
+        padding: 30px;
         margin-bottom: 109px;
         .cancellation-text {
           margin-top: 36px;
@@ -163,7 +171,7 @@
       align-items: center;
       justify-content: flex-start;
       color: #222222;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       .check-availability-form-header {
         font-size: 18px;
         font-weight: 700;
