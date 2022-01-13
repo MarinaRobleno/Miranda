@@ -476,7 +476,6 @@ template {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: white;
   }
   .header .drop-down-box .drop-down-list {
     display: flex;
@@ -494,7 +493,7 @@ template {
     font-size: 16px;
     letter-spacing: 0px;
     color: #111111;
-    background-color: white;
+    background-color: #f8f8f8;
     cursor: pointer;
   }
   .header .drop-down-box .contact-and-icon-container {
@@ -595,7 +594,6 @@ template {
   align-items: center;
   text-align: left;
   height: 70px;
-  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 14px 24px #8b8b8b0f;
   margin: 0px 20px 10px;
 }
@@ -613,6 +611,7 @@ template {
   border-bottom: 1px solid #777777;
   padding: 5px 0;
   color: #bead8e;
+  background-color: #ffffff;
 }
 .book-panel .check-in-line-panel .check-in-panel .check-in-input:focus {
   outline: none;
@@ -1069,8 +1068,11 @@ template {
     height: 700px;
     margin-top: 40px;
     padding: 0 12%;
-    background-color: white;
+    background-color: #f8f8f8;
     background-image: none;
+  }
+  .home-main .home-main-container {
+    position: relative;
   }
   .home-main .home-main-container .ultimate-header {
     display: block;
@@ -1118,12 +1120,13 @@ template {
   }
 
   .book-panel {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 60%;
-    margin: 0 auto;
+    margin: -60px auto 0;
+    width: 1000px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 14px 24px #8b8b8b0f;
   }
@@ -1246,10 +1249,12 @@ template {
   }
 
   .room-type-section {
-    background-image: url("../Images/brush@2x.png");
+    background-image: url("../Images/output-onlinepngtools.png");
   }
-  .room-type-section .room-inner-type-section {
+
+  .room-inner-type-section {
     margin: 200px 20%;
+    padding: 30px 0;
   }
 
   .room-type-grid {
@@ -1385,6 +1390,7 @@ template {
   }
 
   .carousel-section {
+    margin: 0 auto;
     height: 480px;
     margin-bottom: 239px;
   }
@@ -1431,31 +1437,37 @@ template {
   }
 
   .take-a-tour-section {
+    background-image: url("../Images/output-onlinepngtools2.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .take-a-tour-section .inner-take-a-tour {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 238px 17%;
+    padding: 30px;
+    margin: 138px 17%;
   }
-  .take-a-tour-section .take-a-tour-text {
+  .take-a-tour-section .inner-take-a-tour .take-a-tour-text {
     display: flex;
     flex-direction: column;
     max-width: 50%;
     justify-content: left;
     padding-right: 100px;
   }
-  .take-a-tour-section .take-a-tour-text .take-a-tour-paragraph {
+  .take-a-tour-section .inner-take-a-tour .take-a-tour-text .take-a-tour-paragraph {
     padding: 0;
     margin: 25px 0;
     font-size: 14px;
     line-height: 24px;
   }
-  .take-a-tour-section .take-a-tour-text #view-all-button {
+  .take-a-tour-section .inner-take-a-tour .take-a-tour-text #view-all-button {
     margin: 0;
     width: 216px;
     height: 60px;
   }
-  .take-a-tour-section #discover-video {
+  .take-a-tour-section .inner-take-a-tour #discover-video {
     width: 45%;
   }
 
@@ -6163,7 +6175,7 @@ html, * {
 }
 
 html {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
 }
 
 body {

@@ -6,9 +6,10 @@
     height: 700px;
     margin-top: 40px;
     padding: 0 12%;
-    background-color: white;
+    background-color: #f8f8f8;
     background-image: none;
     .home-main-container {
+      position: relative;
       .ultimate-header {
         display: block;
         font-size: 14px;
@@ -58,12 +59,13 @@
   }
 
   .book-panel {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 60%;
-    margin: 0 auto;
+    margin: -60px auto 0;
+    width: 1000px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 14px 24px #8b8b8b0f;
     .check-in-line-panel {
@@ -183,11 +185,11 @@
   }
 
   .room-type-section {
-    background-image: url("../Images/brush@2x.png");
-
-    .room-inner-type-section {
-      margin: 200px 20%;
-    }
+    background-image: url("../Images/output-onlinepngtools.png");
+  }
+  .room-inner-type-section {
+    margin: 200px 20%;
+    padding: 30px 0;
   }
 
   .room-type-grid {
@@ -323,6 +325,7 @@
   }
 
   .carousel-section {
+    margin: 0 auto;
     height: 480px;
     margin-bottom: 239px;
     .carousel-container {
@@ -370,33 +373,38 @@
       }
     }
   }
-
   .take-a-tour-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 238px 17%;
-    .take-a-tour-text {
+    background-image: url("../Images/output-onlinepngtools2.png");
+    background-position: center;
+    background-size: cover;
+    .inner-take-a-tour {
       display: flex;
-      flex-direction: column;
-      max-width: 50%;
-      justify-content: left;
-      padding-right: 100px;
-      .take-a-tour-paragraph {
-        padding: 0;
-        margin: 25px 0;
-        font-size: 14px;
-        line-height: 24px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px;
+      margin: 138px 17%;
+      .take-a-tour-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        justify-content: left;
+        padding-right: 100px;
+        .take-a-tour-paragraph {
+          padding: 0;
+          margin: 25px 0;
+          font-size: 14px;
+          line-height: 24px;
+        }
+        #view-all-button {
+          margin: 0;
+          width: 216px;
+          height: 60px;
+        }
       }
-      #view-all-button {
-        margin: 0;
-        width: 216px;
-        height: 60px;
+      #discover-video {
+        width: 45%;
       }
-    }
-    #discover-video {
-      width: 45%;
     }
   }
 
