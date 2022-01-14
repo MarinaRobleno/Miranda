@@ -1153,7 +1153,7 @@ template {
   .arrow-down-section {
     display: flex;
     position: fixed;
-    top: 730px;
+    top: 950px;
     left: 50%;
     z-index: 10;
     margin: 110px 0 0 -43px;
