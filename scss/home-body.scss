@@ -320,7 +320,7 @@
 }
 
 .carousel-section {
-  position:relative;
+  position: relative;
   justify-content: center;
   height: 280px;
   width: 100%;
@@ -372,7 +372,23 @@
       color: #d4d4d4;
       font-size: 9px;
     }
+    .carousel-detail-box-nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      font-size: 10px;
+      .carousel-detail-box-nav-number {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: #bead8e;
+        }
+      }
+    }
   }
+}
+.selected-room {
+  color: #bead8e;
 }
 
 .take-a-tour-paragraph {
@@ -489,7 +505,7 @@
   .post {
     text-align: left;
     max-width: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     .post-image {
       max-width: 100%;
       display: block;

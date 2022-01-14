@@ -359,6 +359,7 @@
         .carousel-detail-box-counter {
           font-size: 14px;
         }
+        
       }
       .carousel-detail-box-title {
         font-size: 36px;
@@ -372,6 +373,11 @@
         padding: 0;
         margin-top: 25px;
         margin-left: 40px;
+      }
+      .carousel-detail-box-nav{
+        margin: 0 auto;
+        width: 70%;
+        font-size: 20px;
       }
     }
   }
@@ -635,5 +641,8 @@
         cursor: pointer;
       }
     }
+  }
+  .hidden{
+    display: none;
   }
 }

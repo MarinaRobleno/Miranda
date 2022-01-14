@@ -906,6 +906,23 @@ template {
   color: #d4d4d4;
   font-size: 9px;
 }
+.carousel-section .carousel-detail-box .carousel-detail-box-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-nav .carousel-detail-box-nav-number {
+  color: white;
+  cursor: pointer;
+}
+.carousel-section .carousel-detail-box .carousel-detail-box-nav .carousel-detail-box-nav-number:hover {
+  color: #bead8e;
+}
+
+.selected-room {
+  color: #bead8e;
+}
 
 .take-a-tour-paragraph {
   margin: 0 15px 20px;
@@ -1022,7 +1039,7 @@ template {
 .post-container .post {
   text-align: left;
   max-width: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .post-container .post .post-image {
   max-width: 100%;
@@ -1438,6 +1455,11 @@ template {
     margin-top: 25px;
     margin-left: 40px;
   }
+  .carousel-section .carousel-detail-box .carousel-detail-box-nav {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 20px;
+  }
 
   .take-a-tour-section {
     background-image: url("../Images/output-onlinepngtools2.png");
@@ -1697,6 +1719,10 @@ template {
     border: none;
     background: #bead8e 0% 0% no-repeat padding-box;
     cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
   }
 }
 /*!
