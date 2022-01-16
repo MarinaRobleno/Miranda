@@ -24,6 +24,7 @@ function execute_slider() {
       speed: 4000,
       start: 0,
       pagination: false,
+      arrows: false
     });
     splide.on("mounted", function () {
       image_counter.innerText = `1/6`;
