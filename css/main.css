@@ -853,9 +853,15 @@ template {
 
 .carousel-section {
   position: relative;
+  z-index: 10;
   justify-content: center;
   height: 280px;
   width: 100%;
+}
+.carousel-section .hidden {
+  width: 1px;
+  position: absolute;
+  z-index: -50;
 }
 .carousel-section .carousel-container {
   width: 100%;
@@ -1456,7 +1462,7 @@ template {
     margin-left: 40px;
   }
   .carousel-section .carousel-detail-box .carousel-detail-box-nav {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
     font-size: 20px;
   }
@@ -1719,10 +1725,6 @@ template {
     border: none;
     background: #bead8e 0% 0% no-repeat padding-box;
     cursor: pointer;
-  }
-
-  .hidden {
-    display: none;
   }
 }
 /*!

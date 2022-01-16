@@ -321,9 +321,15 @@
 
 .carousel-section {
   position: relative;
+  z-index: 10;
   justify-content: center;
   height: 280px;
   width: 100%;
+  .hidden{
+    width: 1px;
+    position: absolute;
+    z-index: -50;
+    }
   .carousel-container {
     width: 100%;
     max-height: 280px;
@@ -544,3 +550,5 @@
 .subscribe-section {
   display: none;
 }
+
+
