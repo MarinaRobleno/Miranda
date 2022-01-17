@@ -53,6 +53,10 @@ function selectSingle() {
     image_counter2.classList.add("hidden")
     image_counter3.classList.add("hidden")
     image_counter4.classList.add("hidden")
+    navButton1.classList.add("selected");
+    navButton2.classList.remove("selected");
+    navButton3.classList.remove("selected");
+    navButton4.classList.remove("selected");
   }
 }
 
@@ -68,6 +72,10 @@ function selectDoubleBed() {
     image_counter1.classList.add("hidden")
     image_counter3.classList.add("hidden")
     image_counter4.classList.add("hidden")
+    navButton1.classList.remove("selected");
+    navButton2.classList.add("selected");
+    navButton3.classList.remove("selected");
+    navButton4.classList.remove("selected");
   }
 }
 
@@ -79,10 +87,10 @@ function selectDoubleSuperior() {
     splide2.classList.add("hidden")
     splide4.classList.add("hidden")
     splide3.classList.remove("hidden");
-    image_counter3.classList.remove("hidden")
-    image_counter2.classList.add("hidden")
-    image_counter1.classList.add("hidden")
-    image_counter4.classList.add("hidden")
+    navButton1.classList.remove("selected");
+    navButton2.classList.remove("selected");
+    navButton3.classList.add("selected");
+    navButton4.classList.remove("selected");
   }
 }
 
@@ -94,10 +102,10 @@ function selectSuite() {
     splide3.classList.add("hidden")
     splide2.classList.add("hidden")
     splide4.classList.remove("hidden");
-    image_counter4.classList.remove("hidden")
-    image_counter2.classList.add("hidden")
-    image_counter3.classList.add("hidden")
-    image_counter1.classList.add("hidden")
+    navButton1.classList.remove("selected");
+    navButton2.classList.remove("selected");
+    navButton3.classList.remove("selected");
+    navButton4.classList.add("selected");
   }
 }
 

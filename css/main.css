@@ -925,6 +925,9 @@ template {
 .carousel-section .carousel-detail-box .carousel-detail-box-nav .carousel-detail-box-nav-number:hover {
   color: #bead8e;
 }
+.carousel-section .carousel-detail-box .carousel-detail-box-nav .carousel-detail-box-nav-number.selected {
+  color: #bead8e;
+}
 
 .selected-room {
   color: #bead8e;
@@ -1178,7 +1181,7 @@ template {
     position: fixed;
     top: 720px;
     left: 50%;
-    z-index: 10;
+    z-index: 100;
     margin: 110px 0 0 -43px;
   }
   .arrow-down-section .arrow-down-external {
@@ -1464,7 +1467,7 @@ template {
   .carousel-section .carousel-detail-box .carousel-detail-box-nav {
     margin: 20px auto;
     width: 70%;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .take-a-tour-section {
