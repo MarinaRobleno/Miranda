@@ -77,9 +77,19 @@
 
                             .room-list-price-number{
                                 font-size: 40px;
+                                &.old-price{
+                                    font-size: 20px;
+                                    text-decoration: line-through;
+                                }
+                                &.offer{
+                                    color: red;
+                                }
                             }
                             .room-list-price-night{
                                 font-size: 16px;
+                                &.offer{
+                                    color: red;
+                                }
                             }
                         }
                         .room-list-card-booking-text{

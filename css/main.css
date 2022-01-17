@@ -5415,8 +5415,18 @@ footer .logo-line .copy-icon:hover {
   .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-number {
     font-size: 40px;
   }
+  .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-number.old-price {
+    font-size: 20px;
+    text-decoration: line-through;
+  }
+  .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-number.offer {
+    color: red;
+  }
   .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-night {
     font-size: 16px;
+  }
+  .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-price .room-list-price-night.offer {
+    color: red;
   }
   .room-offers-section .room-offers-card .icons-and-info .room-offers-card-content .room-list-card-booking .room-list-card-booking-text {
     font-weight: 700;
