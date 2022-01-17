@@ -5560,6 +5560,7 @@ footer .logo-line .copy-icon:hover {
   color: #777777;
   border: none;
   background: #f8f8f8 0% 0% no-repeat padding-box;
+  cursor: pointer;
 }
 .check-availability-container .check-availability-form-container .check-availability-check-in-container .check-in-input:focus {
   outline: none;

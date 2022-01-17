@@ -10,7 +10,7 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-
+    <meta name="theme-color" content="#fafafa" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <meta name="theme-color" content="#fafafa" />
+    
   </head>
 
   <body>
@@ -120,11 +120,11 @@
             <div class="check-availability-form-container">
               <div class="check-availability-check-in-container">
                 <div class="check-in-header">Check In</div>
-                <input class="check-in-input" type="text" />
+                <input class="check-in-input flatpickr" type="date" />
               </div>
               <div class="check-availability-check-in-container">
                 <div class="check-in-header">Check Out</div>
-                <input class="check-in-input" type="text" />
+                <input class="check-in-input flatpickr" type="date" />
               </div>
             </div>
             <div class="center">
@@ -334,27 +334,27 @@
         <div class="check-availability-form-header">Check Availability</div>
         <div class="check-availability-form">
           <div class="form-input-container">
-            <label class="check-label">Check In</label>
-            <input type="text" class="check-availability-form-input" id='calendar-check-in' />
+            <p class="check-label">Check In</p>
+            <input class="check-availability-form-input flatpickr" type="text" id='calendar-check-in'>
           </div>
           <div class="form-input-container">
-            <label class="check-label">Check Out</label>
-            <input type="text" class="check-availability-form-input" id='calendar-check-out' />
+            <p class="check-label">Check Out</p>
+            <input class="check-availability-form-input flatpickr" type="text" id='calendar-check-out'>
           </div>
           <div class="form-input-container">
-            <label class="check-label">Full Name</label>
+            <p class="check-label">Full Name</p>
             <input type="text" class="check-availability-form-input" />
           </div>
           <div class="form-input-container">
-            <label class="check-label">Email</label>
+            <p class="check-label">Email</p>
             <input type="text" class="check-availability-form-input" />
           </div>
           <div class="form-input-container">
-            <label class="check-label">Phone</label>
+            <p class="check-label">Phone</p>
             <input type="text" class="check-availability-form-input" />
           </div>
           <div class="form-input-container">
-            <label class="check-label">Message</label>
+            <p class="check-label">Message</p>
             <textarea type="text" class="check-availability-form-input"></textarea>
           </div>
         </div>
