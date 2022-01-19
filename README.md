@@ -2,27 +2,23 @@
 
 ## Description
 
-Here is published the webpage I developed during my Training at OXYGEN. 
+Here is the webpage I developed during my Training at OXYGEN published. 
 
 ### This webpage is conformed by six different kind of pages:
-    - Index Home page
-    - About Us page
-    - Room List page
-    - Room Offers List page
-    - Single Room page
-    - Contact Us page
+##### - Index Home page
+##### - About Us page
+##### - Room List page
+##### - Room Offers List page
+##### - Single Room page
+##### - Contact Us page
 
 ### The technologies used for its development were:
-    - HTML + CSS (SCSS)
-    - Javascript
-    - NodeJS
-    - Google Maps API
-    - Git
-    - Visual Libraries: flatpickr, splide...
-
-## Screenshots
-
-
+##### - HTML + CSS (SCSS)
+##### - Javascript
+##### - NodeJS
+##### - Google Maps API
+##### - Git
+##### - Visual Libraries: flatpickr, splide...
 
 ## Link to Github Pages
 
