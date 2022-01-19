@@ -165,7 +165,7 @@ function initMap() {
   responseDiv.appendChild(response);
 
   const personIcon = {
-    path: "M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z",
+    path: "M10,0.186c-3.427,0-6.204,2.778-6.204,6.204c0,5.471,6.204,6.806,6.204,13.424c0-6.618,6.204-7.953,6.204-13.424C16.204,2.964,13.427,0.186,10,0.186z M10,14.453c-0.66-1.125-1.462-2.076-2.219-2.974C6.36,9.797,5.239,8.469,5.239,6.39C5.239,3.764,7.374,1.63,10,1.63c2.625,0,4.761,2.135,4.761,4.761c0,2.078-1.121,3.407-2.541,5.089C11.462,12.377,10.66,13.328,10,14.453z",
     fillColor: "#000000",
     fillOpacity: 1,
     strokeWeight: 0,
@@ -174,14 +174,14 @@ function initMap() {
     anchor: new google.maps.Point(15, 30),
   };
   marker = new google.maps.Marker({
-    //icon: personIcon,
+    icon: personIcon,
     map,
   });
   map.addListener("click", (e) => {
     myLocation.coords = e.latLng;
     geocode({ location: e.latLng });
   });
-  submitButton.addEventListener("click", (e) => {
+  submitButton.addEventListener("click", () => {
     geocode({ address: inputText.value });
   });
   clearButton.addEventListener("click", () => {
@@ -204,7 +204,7 @@ function findMe() {
         };
         myLocation.coords = pos;
         infoWindow.setPosition(pos);
-        infoWindow.setContent("Location found.");
+        infoWindow.setContent("Your location was found");
         infoWindow.open(map);
         map.setCenter(pos);
       },
