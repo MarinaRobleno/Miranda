@@ -265,15 +265,16 @@ function calculateDistance() {
     for (let l = 0; l < response.destinationAddresses.length; l++) {
       sortedPlaces.push(response.destinationAddresses[indexArray[l]]);
     }
-    document.getElementById("response").innerText = `${sortedPlaces.map(
-      (place) =>
-        place +
-        " - " +
-        sortedDistances[sortedPlaces.indexOf(place)] +
-        "m" +
-        "\n" +
-        "\n"
-    )}`;
+    let responseList = document.getElementById("response");
+    while (responseList.lastElementChild) {
+      responseList.removeChild(responseList.lastElementChild);
+    }
+    for (let m = 0; m<sortedPlaces.length; m++){
+      let responseElement = document.createElement("div");
+      responseList.appendChild(responseElement);
+      responseElement.classList.add("map-response-element");
+      responseElement.innerText = `${sortedPlaces[m]} - ${sortedDistances[m]}`
+    }
   });
   const sidebar = document.getElementById("sidebar");
   sidebar.style.display = "block";
