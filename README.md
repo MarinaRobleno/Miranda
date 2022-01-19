@@ -24,5 +24,6 @@ Here is the webpage I developed during my Training at OXYGEN published.
 
 https://marinarobleno.github.io/Miranda/
 ## Author
-#### Marina Robleño
+#### Marina Robleño Vélez
 #### Email: marinarsanisidro@gmail.com
+#### LinkedIn: linkedin.com/in/marina-robleno-velez-fullstack-mern/
