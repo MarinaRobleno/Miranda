@@ -23,7 +23,6 @@ Here is the webpage I developed during my Training at OXYGEN published.
 ## Link to Github Pages
 
 https://marinarobleno.github.io/Miranda/
-
 ## Author
 #### Marina Robleño
 #### Email: marinarsanisidro@gmail.com
