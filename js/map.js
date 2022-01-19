@@ -89,6 +89,70 @@ function initMap() {
   //INPUT
   const inputText = document.getElementById("geolocation-input");
 
+  const defaultBounds = {
+    north: map.center.lat + 0.1,
+    south: map.center.lat - 0.1,
+    east: map.center.lng + 0.1,
+    west: map.center.lng - 0.1,
+  };
+  const options = {
+    bounds: defaultBounds,
+    componentRestrictions: { country: "es" },
+    fields: ["address_components", "geometry", "icon", "name"],
+    strictBounds: false,
+    types: ["establishment"],
+  };
+  const autocomplete = new google.maps.places.Autocomplete(inputText, options);
+  const infowindowContent = document.getElementById("infowindow-content");
+  autocomplete.addListener("place_changed", () => {
+    infowindow.close();
+    marker.setVisible(false);
+
+    const place = autocomplete.getPlace();
+
+    if (!place.geometry || !place.geometry.location) {
+      // User entered the name of a Place that was not suggested and
+      // pressed the Enter key, or the Place Details request failed.
+      window.alert("No details available for input: '" + place.name + "'");
+      return;
+    }
+
+    // If the place has a geometry, then present it on a map.
+    if (place.geometry.viewport) {
+      map.fitBounds(place.geometry.viewport);
+    } else {
+      map.setCenter(place.geometry.location);
+      map.setZoom(17); // Why 17? Because it looks good.
+    }
+
+    marker.setPosition(place.geometry.location);
+    marker.setVisible(true);
+
+    let address = "";
+
+    if (place.address_components) {
+      address = [
+        (place.address_components[0] &&
+          place.address_components[0].short_name) ||
+          "",
+        (place.address_components[1] &&
+          place.address_components[1].short_name) ||
+          "",
+        (place.address_components[2] &&
+          place.address_components[2].short_name) ||
+          "",
+      ].join(" ");
+    }
+
+    infowindowContent.children["place-icon"].src = place.icon;
+    infowindowContent.children["place-name"].textContent = place.name;
+    infowindowContent.children["place-address"].textContent = address;
+    infowindow.open(map, marker);
+  });
+
+  // Sets a listener on a given radio button. The radio buttons specify
+  // the countries used to restrict the autocomplete search.
+
   const submitButton = document.getElementById("search-location-button");
 
   const clearButton = document.getElementById("clear-location-button");
@@ -117,15 +181,13 @@ function initMap() {
     myLocation.coords = e.latLng;
     geocode({ location: e.latLng });
   });
-  submitButton.addEventListener("click", () => {
+  submitButton.addEventListener("click", (e) => {
     geocode({ address: inputText.value });
   });
   clearButton.addEventListener("click", () => {
     clear();
   });
   clear();
-
-  // DISTANCE MATRIX
 
   const nearButton = document.getElementById("find-near-location");
 
@@ -166,6 +228,7 @@ function locationForCalculation() {
   });
 }
 
+// DISTANCE MATRIX
 function calculateDistance() {
   /*myLocation.coords = await locationForCalculation();*/
   const service = new google.maps.DistanceMatrixService();
