@@ -273,11 +273,11 @@ function calculateDistance() {
       let responseElement = document.createElement("div");
       responseList.appendChild(responseElement);
       responseElement.classList.add("map-response-element");
-      responseElement.innerText = `${sortedPlaces[m]} - ${sortedDistances[m]}`
+      responseElement.innerText = `${sortedPlaces[m]} - ${sortedDistances[m]} m`
     }
   });
   const sidebar = document.getElementById("sidebar");
-  sidebar.style.display = "block";
+  sidebar.style.display = "flex";
 }
 
 function clear() {
