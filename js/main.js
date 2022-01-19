@@ -29,4 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Splide
   execute_slider();
+
+  //map
+  initMap();
 });
