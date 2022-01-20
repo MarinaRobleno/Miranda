@@ -79,7 +79,9 @@
         font-weight: 600;
         padding: 0 15px;
       }
-      .geolocation-input
+      .geolocation-input{
+        min-height: 40px;
+      }
       #sidebar {
         flex-direction: column;
         justify-content: space-between;

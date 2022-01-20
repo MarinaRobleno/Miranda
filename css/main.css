@@ -6142,24 +6142,27 @@ footer .logo-line .copy-icon:hover {
     font-weight: 600;
     padding: 0 15px;
   }
-  .flex .column .geolocation-input #sidebar {
+  .flex .column .geolocation-input {
+    min-height: 40px;
+  }
+  .flex .column #sidebar {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
   }
-  .flex .column .geolocation-input #sidebar .map-response-title {
+  .flex .column #sidebar .map-response-title {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .flex .column .geolocation-input #sidebar #response {
+  .flex .column #sidebar #response {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 100%;
   }
-  .flex .column .geolocation-input #sidebar #response .map-response-element {
+  .flex .column #sidebar #response .map-response-element {
     background-color: white;
     padding: 10px;
     font-size: 12px;
