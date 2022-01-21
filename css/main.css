@@ -6142,6 +6142,9 @@ footer .logo-line .copy-icon:hover {
     font-weight: 600;
     padding: 0 15px;
   }
+  .flex .column #find-near-location {
+    display: none;
+  }
   .flex .column .geolocation-input {
     min-height: 40px;
   }

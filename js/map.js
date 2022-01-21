@@ -5,6 +5,8 @@ let responseDiv;
 let response;
 let myLocation = {};
 let infoWindow;
+let place;
+const findNear = document.getElementById("find-near-location");
 function initMap() {
   const bounds = new google.maps.LatLngBounds();
   const markersArray = [];
@@ -108,7 +110,7 @@ function initMap() {
     infowindow.close();
     marker.setVisible(false);
 
-    const place = autocomplete.getPlace();
+    place = autocomplete.getPlace();
 
     if (!place.geometry || !place.geometry.location) {
       // User entered the name of a Place that was not suggested and
@@ -122,7 +124,7 @@ function initMap() {
       map.fitBounds(place.geometry.viewport);
     } else {
       map.setCenter(place.geometry.location);
-      map.setZoom(17); // Why 17? Because it looks good.
+      map.setZoom(17);
     }
 
     marker.setPosition(place.geometry.location);
@@ -166,7 +168,7 @@ function initMap() {
 
   const personIcon = {
     path: "M10,0.186c-3.427,0-6.204,2.778-6.204,6.204c0,5.471,6.204,6.806,6.204,13.424c0-6.618,6.204-7.953,6.204-13.424C16.204,2.964,13.427,0.186,10,0.186z M10,14.453c-0.66-1.125-1.462-2.076-2.219-2.974C6.36,9.797,5.239,8.469,5.239,6.39C5.239,3.764,7.374,1.63,10,1.63c2.625,0,4.761,2.135,4.761,4.761c0,2.078-1.121,3.407-2.541,5.089C11.462,12.377,10.66,13.328,10,14.453z",
-    fillColor: "#000000",
+    fillColor: "#bead8e",
     fillOpacity: 1,
     strokeWeight: 0,
     rotation: 0,
@@ -180,6 +182,7 @@ function initMap() {
   map.addListener("click", (e) => {
     myLocation.coords = e.latLng;
     geocode({ location: e.latLng });
+    findNear.style.display = 'block';
   });
   submitButton.addEventListener("click", () => {
     geocode({ address: inputText.value });
@@ -216,6 +219,8 @@ function findMe() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
+
+  findNear.style.display = 'block';
 }
 
 function locationForCalculation() {
