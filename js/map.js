@@ -14,6 +14,9 @@ let select = document.getElementById("dropdown");
 let selectedCommunity = {
   community: "",
 };
+let communityPolygon;
+
+//INITIALIZE MAP
 function initMap() {
   const bounds = new google.maps.LatLngBounds();
   const markersArray = [];
@@ -28,7 +31,6 @@ function initMap() {
   });
 
   // CUSTOM MARKER
-
   svgMarker = {
     path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
     fillColor: "#000000",
@@ -38,28 +40,28 @@ function initMap() {
     scale: 2,
     anchor: new google.maps.Point(15, 30),
   };
-
+  
+  //DECLARE INITIAL MARKERS
   markers = locations.map((place) => {
     const marker = new google.maps.Marker({
       position: place.location,
       icon: svgMarker,
       title: place.name,
     });
-
-    // DROPDOWN
-
     marker.addListener("click", () => {
       infoWindow.setContent(place.name);
       infoWindow.open(map, marker);
     });
     return marker;
   });
+
+  //COMUNITY DROPDOWN EVENT LISTENER
   select.addEventListener("change", selectCommunity);
 
   // CLUSTERER
-
   markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   const locationButton = document.createElement("button");
+
   // MY LOCATION.
   locationButton.textContent = "My Current Location";
   locationButton.classList.add("custom-map-control-button");
@@ -67,7 +69,7 @@ function initMap() {
   locationButton.addEventListener("click", findMe);
   geocoder = new google.maps.Geocoder();
 
-  //INPUT
+  //INPUT LOCATION
   const inputText = document.getElementById("geolocation-input");
 
   const defaultBounds = {
@@ -92,13 +94,10 @@ function initMap() {
     place = autocomplete.getPlace();
 
     if (!place.geometry || !place.geometry.location) {
-      // User entered the name of a Place that was not suggested and
-      // pressed the Enter key, or the Place Details request failed.
       window.alert("No details available for input: '" + place.name + "'");
       return;
     }
 
-    // If the place has a geometry, then present it on a map.
     if (place.geometry.viewport) {
       map.fitBounds(place.geometry.viewport);
     } else {
@@ -131,9 +130,6 @@ function initMap() {
     infowindow.open(map, marker);
   });
 
-  // Sets a listener on a given radio button. The radio buttons specify
-  // the countries used to restrict the autocomplete search.
-
   const submitButton = document.getElementById("search-location-button");
 
   const clearButton = document.getElementById("clear-location-button");
@@ -158,11 +154,15 @@ function initMap() {
     icon: personIcon,
     map,
   });
+
+  //CLICK ON MAP MARKER
   map.addListener("click", (e) => {
     myLocation.coords = e.latLng;
     geocode({ location: e.latLng });
     findNear.style.display = "block";
   });
+
+  //SEARCH AND CLEAR LOCATION SEARCH
   submitButton.addEventListener("click", () => {
     geocode({ address: inputText.value });
   });
@@ -176,20 +176,22 @@ function initMap() {
   nearButton.addEventListener("click", calculateDistance);
 }
 
+//GENERIC FUNCTION TO ITERATE AN CREATE MARKERS
 function setMapOnAll(map) {
   for (let i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
   }
 }
 
+//CLEAR CLUSTERS FUNCTION
 function clearClusters() {
   markerCluster.clearMarkers();
 }
 
+//ERASE OLD MARKERS, GET NEW MARKERS, SET NEW MARKERS
 function getMarkers(filteredLocations) {
   setMapOnAll(null);
   markers = [];
-  console.log(filteredLocations);
   markers = filteredLocations.map((place) => {
     const marker = new google.maps.Marker({
       position: place.location,
@@ -207,7 +209,11 @@ function getMarkers(filteredLocations) {
   setMapOnAll(map);
 }
 
+//SELECT COMMUNITY FUNCTION
 function selectCommunity() {
+  if (communityPolygon) {
+    communityPolygon.setMap(null);
+  }
   let communityIndex = Number(select.value);
   selectedCommunity.community = comunidadesAutonomas[communityIndex];
   if (communityIndex != -1) {
@@ -215,14 +221,14 @@ function selectCommunity() {
       (place) => place.community === selectedCommunity.community
     );
     getMarkers(filteredLocations);
-  }else{
-    getMarkers(locations)
+  } else {
+    getMarkers(locations);
   }
 
   if (typeof communityIndex == "number") {
     const communityCoords = coordinates[communityIndex];
 
-    const communityPolygon = new google.maps.Polygon({
+    communityPolygon = new google.maps.Polygon({
       paths: communityCoords,
       strokeColor: "#bead8e",
       strokeOpacity: 0.8,
@@ -235,6 +241,7 @@ function selectCommunity() {
   }
 }
 
+//SET MY LOCATION DATA FOR DISTANCE MATRIX
 function findMe() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
@@ -254,7 +261,6 @@ function findMe() {
       }
     );
   } else {
-    // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
@@ -273,7 +279,6 @@ function locationForCalculation() {
 
 // DISTANCE MATRIX
 function calculateDistance() {
-  /*myLocation.coords = await locationForCalculation();*/
   const service = new google.maps.DistanceMatrixService();
 
   let myHotels = [];
@@ -323,11 +328,13 @@ function calculateDistance() {
   sidebar.style.display = "flex";
 }
 
+//CLEAR
 function clear() {
   marker.setMap(null);
   responseDiv.style.display = "none";
 }
 
+//GEOCODE
 function geocode(request) {
   clear();
   geocoder
@@ -347,6 +354,7 @@ function geocode(request) {
     });
 }
 
+//ERROR HANDLING
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(
