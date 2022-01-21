@@ -1,12 +1,19 @@
 let map;
 let marker;
+let markers;
+let markerCluster;
 let geocoder;
 let responseDiv;
 let response;
 let myLocation = {};
 let infoWindow;
 let place;
+let svgMarker;
 const findNear = document.getElementById("find-near-location");
+let select = document.getElementById("dropdown");
+let selectedCommunity = {
+  community: "",
+};
 function initMap() {
   const bounds = new google.maps.LatLngBounds();
   const markersArray = [];
@@ -21,11 +28,8 @@ function initMap() {
   });
 
   // CUSTOM MARKER
-  let selectedCommunity = {
-    community: "",
-  };
 
-  const svgMarker = {
+  svgMarker = {
     path: "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
     fillColor: "#000000",
     fillOpacity: 1,
@@ -35,13 +39,7 @@ function initMap() {
     anchor: new google.maps.Point(15, 30),
   };
 
-  const markers = (
-    selectedCommunity.community != ""
-      ? locations.filter(
-          (place) => place.community === selectedCommunity.community
-        )
-      : locations
-  ).map((place) => {
+  markers = locations.map((place) => {
     const marker = new google.maps.Marker({
       position: place.location,
       icon: svgMarker,
@@ -50,36 +48,17 @@ function initMap() {
 
     // DROPDOWN
 
-    let select = document.getElementById("dropdown");
-    select.addEventListener("change", () => {
-      let communityIndex = Number(select.value);
-      selectedCommunity.community = comunidadesAutonomas[communityIndex];
-
-      if (typeof communityIndex == "number") {
-        const communityCoords = coordinates[communityIndex];
-
-        const communityPolygon = new google.maps.Polygon({
-          paths: communityCoords,
-          strokeColor: "#bead8e",
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: "#FF0000",
-          fillOpacity: 0,
-        });
-
-        communityPolygon.setMap(map);
-      }
-    });
-
     marker.addListener("click", () => {
       infoWindow.setContent(place.name);
       infoWindow.open(map, marker);
     });
     return marker;
   });
+  select.addEventListener("change", selectCommunity);
 
   // CLUSTERER
-  const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+
+  markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   const locationButton = document.createElement("button");
   // MY LOCATION.
   locationButton.textContent = "My Current Location";
@@ -182,7 +161,7 @@ function initMap() {
   map.addListener("click", (e) => {
     myLocation.coords = e.latLng;
     geocode({ location: e.latLng });
-    findNear.style.display = 'block';
+    findNear.style.display = "block";
   });
   submitButton.addEventListener("click", () => {
     geocode({ address: inputText.value });
@@ -195,6 +174,65 @@ function initMap() {
   const nearButton = document.getElementById("find-near-location");
 
   nearButton.addEventListener("click", calculateDistance);
+}
+
+function setMapOnAll(map) {
+  for (let i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+function clearClusters() {
+  markerCluster.clearMarkers();
+}
+
+function getMarkers(filteredLocations) {
+  setMapOnAll(null);
+  markers = [];
+  console.log(filteredLocations);
+  markers = filteredLocations.map((place) => {
+    const marker = new google.maps.Marker({
+      position: place.location,
+      icon: svgMarker,
+      title: place.name,
+    });
+    marker.addListener("click", () => {
+      infoWindow.setContent(place.name);
+      infoWindow.open(map, marker);
+    });
+    return marker;
+  });
+  clearClusters();
+  markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+  setMapOnAll(map);
+}
+
+function selectCommunity() {
+  let communityIndex = Number(select.value);
+  selectedCommunity.community = comunidadesAutonomas[communityIndex];
+  if (communityIndex != -1) {
+    let filteredLocations = locations.filter(
+      (place) => place.community === selectedCommunity.community
+    );
+    getMarkers(filteredLocations);
+  }else{
+    getMarkers(locations)
+  }
+
+  if (typeof communityIndex == "number") {
+    const communityCoords = coordinates[communityIndex];
+
+    const communityPolygon = new google.maps.Polygon({
+      paths: communityCoords,
+      strokeColor: "#bead8e",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0,
+    });
+
+    communityPolygon.setMap(map);
+  }
 }
 
 function findMe() {
@@ -220,7 +258,7 @@ function findMe() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
-  findNear.style.display = 'block';
+  findNear.style.display = "block";
 }
 
 function locationForCalculation() {
@@ -274,11 +312,11 @@ function calculateDistance() {
     while (responseList.lastElementChild) {
       responseList.removeChild(responseList.lastElementChild);
     }
-    for (let m = 0; m<sortedPlaces.length; m++){
+    for (let m = 0; m < sortedPlaces.length; m++) {
       let responseElement = document.createElement("div");
       responseList.appendChild(responseElement);
       responseElement.classList.add("map-response-element");
-      responseElement.innerText = `${sortedPlaces[m]} - ${sortedDistances[m]} m`
+      responseElement.innerText = `${sortedPlaces[m]} - ${sortedDistances[m]} m`;
     }
   });
   const sidebar = document.getElementById("sidebar");

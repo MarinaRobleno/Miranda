@@ -494,7 +494,6 @@ template {
     letter-spacing: 0px;
     color: #111111;
     background-color: #f8f8f8;
-    cursor: pointer;
   }
   .header .drop-down-box .contact-and-icon-container {
     display: flex;
@@ -6308,6 +6307,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
