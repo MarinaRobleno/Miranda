@@ -5231,10 +5231,20 @@ footer .logo-line .copy-icon:hover {
   font-weight: 700;
   color: #BEAD8E;
 }
+.room-list-card .room-list-card-content .room-list-card-booking .room-list-card-price .room-list-price-number.old-price {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.room-list-card .room-list-card-content .room-list-card-booking .room-list-card-price .room-list-price-number.offer {
+  color: red;
+}
 .room-list-card .room-list-card-content .room-list-card-booking .room-list-card-price .room-list-price-night {
   font-size: 16px;
   font-weight: 700;
   color: #BEAD8E;
+}
+.room-list-card .room-list-card-content .room-list-card-booking .room-list-card-price .room-list-price-night.offer {
+  color: red;
 }
 .room-list-card .room-list-card-content .room-list-card-booking .room-list-card-booking-text {
   font-weight: 700;

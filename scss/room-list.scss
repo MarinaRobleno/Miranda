@@ -81,11 +81,21 @@
                     font-size: 25px;
                     font-weight: 700;
                     color: #BEAD8E;
+                    &.old-price{
+                        font-size: 20px;
+                        text-decoration: line-through;
+                    }
+                    &.offer{
+                        color: red;
+                    }
                 }
                 .room-list-price-night{
                     font-size: 16px;
                     font-weight: 700;
                     color: #BEAD8E;
+                    &.offer{
+                        color: red;
+                    }
                 }
             }
             .room-list-card-booking-text{
