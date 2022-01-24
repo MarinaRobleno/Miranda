@@ -1,89 +1,163 @@
-.contact-form-section { 
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 40px;
+  .contact-form-container {
+    width: 80%;
+    padding: 15px 0;
+    .contact-form-input {
+      width: 100%;
+      font-size: 10px;
+      text-align: left;
+      padding: 15px 30px;
+      margin: 5px;
+      letter-spacing: 0px;
+      color: #777777;
+      border: none;
+      background: #f8f8f8 0% 0% no-repeat padding-box;
+      &:focus {
+        outline: none;
+        border-color: #bead8e;
+      }
+    }
+    .enter-message {
+      padding-bottom: 100px;
+    }
+  }
+  .center {
+    margin-top: 0;
+  }
+}
+.contact-navigator-container {
+  display: none;
+}
+
+.contact-information-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .contact-information-card {
+    width: 75%;
     display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px 0;
+    .contact-information-count {
+      position: absolute;
+      z-index: -1;
+      margin-left: 75%;
+      left: -17px;
+      font-size: 60px;
+      font-weight: 700;
+      color: #e4e4e4;
+    }
+    .contact-information-icon {
+      padding-right: 15px;
+      color: #bead8e;
+      font-size: 40px;
+    }
+    .contact-information-text {
+      width: 100%;
+      padding-left: 5px;
+      .contact-information-text-title {
+        font-size: 18px;
+        font-family: "Old Standard TT", sans-serif;
+        padding-bottom: 5px;
+      }
+      .contact-information-text-description {
+        font-size: 12px;
+        color: #777777;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.satelite-map {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  background-color: grey;
+}
+.column {
+  display: inline;
+  width: 100%;
+  margin: 0 auto;
+  .community-dropdown {
+    margin-bottom: 5px;
+    width: 50%;
+    min-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 0 15px;
+  }
+  .geolocation-input {
+    width: 50%;
+    min-height: 40px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 0 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  #sidebar {
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .map-response-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    #response {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      .map-response-element {
+        background-color: white;
+        padding: 10px;
+        font-size: 12px;
+        color: #bead8e;
+        font-weight: 500;
+      }
+    }
+  }
+  .geocode-buttons {
+    display: flex;
+    justify-content: space-around;
+    .search-loc {
+      width: 100px;
+    }
+  }
+  .custom-map-control-button {
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    padding: 40px;
-	.contact-form-container { 
-        width: 80%;
-        padding: 15px 0;
-		.contact-form-input { 
-            width: 100%;
-            font-size: 10px;
-            text-align: left;
-            padding: 15px 30px;
-            margin: 5px;
-            letter-spacing: 0px;
-            color: #777777;
-            border: none;
-            background: #F8F8F8 0% 0% no-repeat padding-box;
-            &:focus{
-                outline: none;
-                border-color: #bead8e;
-            }
-		}
-        .enter-message{
-            padding-bottom: 100px;
-        }
-	}
-    .center{
-        margin-top: 0;
-    }
+  }
+  #find-near-location {
+      width: 100%;
+      margin-bottom: 5px;
+      display: none;
+  }
 }
-.contact-navigator-container{
-    display: none;
-}
-
-.contact-information-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .contact-information-card{
-        width: 75%;
-        display: flex;
-        align-items: center;
-        text-align: left;
-        padding: 20px 0;
-        .contact-information-count{
-            position: absolute;
-            z-index: -1;
-            margin-left: 75%;
-            left: -17px;
-            font-size: 60px;
-            font-weight: 700;
-            color: #e4e4e4;
-        }
-        .contact-information-icon{
-            padding-right: 15px;
-            color: #bead8e;
-            font-size: 40px;
-        }
-        .contact-information-text{
-            width: 100%;
-            padding-left: 5px;
-            .contact-information-text-title{
-                font-size: 18px;
-                font-family: 'Old Standard TT', sans-serif;
-                padding-bottom: 5px;
-            } 
-            .contact-information-text-description{
-                font-size: 12px;
-                color: #777777;
-                flex-wrap: wrap;
-            }
-        }
-
-    }
-}
-
-
-.satelite-map{
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    background-color: grey;
-}
-
