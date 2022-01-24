@@ -5985,7 +5985,7 @@ footer .logo-line .copy-icon:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 40px;
 }
 .contact-form-section .contact-form-container {
@@ -6001,7 +6001,7 @@ footer .logo-line .copy-icon:hover {
   letter-spacing: 0px;
   color: #777777;
   border: none;
-  background: #F8F8F8 0% 0% no-repeat padding-box;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
 }
 .contact-form-section .contact-form-container .contact-form-input:focus {
   outline: none;
@@ -6063,8 +6063,88 @@ footer .logo-line .copy-icon:hover {
 .satelite-map {
   width: 100%;
   height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   background-color: grey;
+}
+
+.custom-map-control-button {
+  width: 120px;
+  height: 20px;
+  font-size: 11px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  background: #bead8e 0% 0% no-repeat padding-box;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: left;
+}
+
+.column {
+  display: inline;
+  width: 100%;
+  margin: 0 auto;
+}
+.column .community-dropdown {
+  margin-bottom: 5px;
+  width: 50%;
+  min-height: 40px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  background: #bead8e 0% 0% no-repeat padding-box;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 0 15px;
+}
+.column .geolocation-input {
+  width: 50%;
+  min-height: 40px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  border: none;
+  padding: 0 5px;
+}
+.column .geolocation-input:focus {
+  outline: none;
+}
+.column #sidebar {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.column #sidebar .map-response-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.column #sidebar #response {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.column #sidebar #response .map-response-element {
+  background-color: white;
+  padding: 10px;
+  font-size: 12px;
+  color: #bead8e;
+  font-weight: 500;
+}
+.column .geocode-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.column .geocode-buttons .search-loc {
+  width: 100px;
+}
+.column #find-near-location {
+  width: 100%;
+  margin-bottom: 5px;
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -6128,6 +6208,21 @@ footer .logo-line .copy-icon:hover {
     width: 1000px;
     height: 700px;
   }
+  .flex .custom-map-control-button {
+    margin-bottom: 20px;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: #bead8e 0% 0% no-repeat padding-box;
+    font-family: inherit;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 2px 20px #afa7a7;
+  }
   .flex .column {
     max-width: 300px;
     height: 100%;
@@ -6155,7 +6250,24 @@ footer .logo-line .copy-icon:hover {
     display: none;
   }
   .flex .column .geolocation-input {
-    min-height: 40px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0 5px;
+  }
+  .flex .column .geolocation-input:focus {
+    outline: none;
+  }
+  .flex .column .geocode-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex .column .geocode-buttons .search-loc {
+    max-width: 100px;
+    text-align: center;
   }
   .flex .column #sidebar {
     flex-direction: column;
@@ -6258,44 +6370,6 @@ footer .logo-line .copy-icon:hover {
     font-size: 16px;
     letter-spacing: 3.2px;
     cursor: pointer;
-  }
-
-  .geolocation-input {
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    margin-bottom: 10px;
-    border: none;
-    padding: 0 5px;
-  }
-  .geolocation-input:focus {
-    outline: none;
-  }
-
-  .geocode-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .geocode-buttons .search-loc {
-    max-width: 100px;
-    text-align: center;
-  }
-
-  .custom-map-control-button {
-    margin-bottom: 20px;
-    width: 140px;
-    height: 30px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    background: #bead8e 0% 0% no-repeat padding-box;
-    font-family: inherit;
-    font-weight: 600;
-    text-align: center;
-    margin-right: 10px;
-    box-shadow: 5px 2px 20px #afa7a7;
   }
 }
 html, * {
